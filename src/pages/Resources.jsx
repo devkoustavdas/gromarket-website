@@ -2,7 +2,7 @@ import ResourceList from '../Resources/ResourceList';
 import Meta from '../components/Html.jsx/Meta';
 const Resources = () => {
     return (
-        <section>
+        <section className='min-h-1/2'>
             <Meta
                 title={"Resources from GroMarket"}
                 description={

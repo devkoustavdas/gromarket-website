@@ -1,5 +1,5 @@
-import LandingHeader from "./Home/LandingHeader";
-import GetStarted from "./Home/GetStarted";
+import LandingHeader from "../components/Home/LandingHeader";
+import GetStarted from "../components/Home/GetStarted";
 
 const Home = () => {
   return (
