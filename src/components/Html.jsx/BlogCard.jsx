@@ -20,15 +20,15 @@ const BlogCard = ({ head, body, link, tag }) => {
             </h2>
             <div className="hr"></div>
                 <p className="">{body.length > 200 ? `${body.slice(0, 200)}...` : body}</p>
-            <div className="mt-2 flex flex-row gap-2">
+                <div className="mt-2 inline-block whitespace-nowrap">
                     {tag.map((tagItem, index) => (
-                        <span key={index} className="bg-gray-200 px-2 py-1 rounded-xl">
+                        <span key={index} className="bg-gray-200 px-2 py-1 mx-1 rounded-xl">
                             {tagItem}
                         </span>
                     ))}
+                </div>
             </div>
-        </div>
-    </Link>
+        </Link>
     );
 };
 BlogCard.propTypes = {
