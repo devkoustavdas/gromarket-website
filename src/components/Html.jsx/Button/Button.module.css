@@ -1,0 +1,100 @@
+button.btn-style-neutral, button.btn-style-success, button.btn-style-danger, button.btn-style-warning, button.btn-style-blank {
+    font-size: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: 10ch;
+    cursor: pointer;
+    text-align: center;
+    text-rendering: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: normal;
+    text-decoration: none;
+    text-shadow: none;
+    white-space: normal;
+    font-optical-sizing: auto;
+    font-kerning: auto;
+    text-transform: none;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    background-position: center;
+    transition: background 800ms;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    display: inline-flex;
+    column-gap: 5px;
+    vertical-align: baseline;
+    text-shadow: 1px 1px 5px rgba(17,10,10,0.51);
+}
+
+button.btn-style-neutral {
+    background-color: #2196f3;
+}
+
+
+.btn-style-neutral:hover {
+  background: #47a7f5  radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+
+.btn-style-neutral:active {
+  outline: none;
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+button.btn-style-danger {
+    background-color: rgb(255, 69, 69);
+}
+
+
+.btn-style-danger:hover {
+  background: rgb(255, 107, 107)  radial-gradient(circle, transparent 1%, rgb(255, 82, 82) 1%) center/15000%;
+}
+
+.btn-style-danger:active {
+  outline: none;
+  background-color: rgb(254, 140, 140);
+  background-size: 100%;
+  transition: background 0s;
+}
+
+button.btn-style-warning {
+    background-color: #fbbd08;
+}
+
+
+.btn-style-warning:hover {
+  background: #ffd146  radial-gradient(circle, transparent 1%, #ffd146 1%) center/15000%;
+}
+
+.btn-style-warning:active {
+  outline: none;
+  background-color: #ffdf7f;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+button.btn-style-blank {
+    background-color: transparent;
+    border: solid 1px #ffffff;
+    box-shadow: none;
+}
+
+
+.btn-style-blank:hover {
+  background: #444444  radial-gradient(circle, transparent 1%, #444444 1%) center/15000%;
+}
+
+.btn-style-blank:active {
+  outline: none;
+  background-color: #919191 ;
+  background-size: 100%;
+  transition: background 0s;
+}
