@@ -11,15 +11,22 @@ const BudgetRule = () => {
         <Heading title="Mastering the Art of Spending: How the 50/30/20 Budget Rule Can Help You Achieve Financial Freedom and Still Enjoy Your Life" date={"01/011/2024"}
           tag={["Personal Finance", "Template", "Budget"]} />
         <Img name="503020-Budget-Rule.avif" describe={"50/30/20 Budget Rule"} />
-        <div className="px-4 py-3 text-justify">
-          <p>Are you tired of constantly feeling like you're living pay check to pay check, with no money left over for savings or unexpected expenses?</p>
-          <p>The best way to save money is to not spend it at all. But that’s not possible, right?</p>
-          <p>It's time to fix your personal finance. The 50/30/20 budget rule might be just what you need to take control of your finances and start saving money, even after spending.</p>
-          <h3>The 50/30/20 rule of thumb is a simple budgeting plan where one allocates the income in three categories — needs, wants, and savings.</h3>
+        <div className="px-6">
+          <div className="py-3 text-justify">
+            <p>Are you tired of constantly feeling like you're living pay check to pay check, with no money left over for savings or unexpected expenses?</p>
+            <p>The best way to save money is to not spend it at all. But that’s not possible, right?</p>
+            <p>It's time to fix your personal finance. The 50/30/20 budget rule might be just what you need to take control of your finances and start saving money, even after spending.</p>
+            <h3>The 50/30/20 rule of thumb is a simple budgeting plan where one allocates the income in three categories — needs, wants, and savings.</h3>
+          </div>
+          <Box head="Key Takeaways of 50/30/20 Budget Rule" body={<List text={["The 50/30/20 budget rule is a guideline for allocating your budget accordingly: 50% to “needs,” 30% to “wants,” and 20% to “savings”.", "The rule was popularised in a book by Elizabeth Warren and her daughter, Amelia Warren Tyagi.", "Your percentages may need to be adjusted based on your personal circumstances."]} />} />
+          <h2 className="subHead">50% — Needs</h2>
+          <p>The expenses you should absolutely pay and the items you need to survive are considered Needs. These include:</p>
+          <List text={["Mortgage or Rent Payments", "Groceries", "Utilities, such as water, electricity, cooking gas, and sewer service", "Insurance Premium Payments", "Medical Expenses"]} />
+          <p>Half of your post-tax income should be all that you need to meet your needs and obligations. If you are spending more than that on your needs, you will have to reduce your wants or try to adjust your lifestyle, perhaps to a smaller home or a more modest car. A solution might be to travel together in a car, use public transportation, or cook more frequently at home.</p>
         </div>
-        <Box head="Key Takeaways of 50/30/20 Budget Rule" body={<List text={["The 50/30/20 budget rule is a guideline for allocating your budget accordingly: 50% to “needs,” 30% to “wants,” and 20% to “savings”.", "The rule was popularised in a book by Elizabeth Warren and her daughter, Amelia Warren Tyagi.", "Your percentages may need to be adjusted based on your personal circumstances."]} />} />
       </div>
       <div className="w-full lg:w-2/5">
+      
         <BlogList />
       </div>
     </main>

@@ -4,20 +4,29 @@
 
 @layer base {
   html {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: repeat;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg height=%22auto%22 viewBox=%220 0 2000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath d=%22M0 991.662c21-6.218 63-19.197 105-31.09 42-11.892 63-5.937 105-28.372 42-22.434 63-66.06 105-83.801s63 10.147 105-4.904 63-65.168 105-70.35c42-5.184 63 61.26 105 44.435 42-16.826 63-94.554 105-128.563 42-34.009 63-34.59 105-41.483 42-6.891 63 12.012 105 7.024s63 .059 105-31.965 63-122.092 105-128.154c42-6.062 63 68.87 105 97.844 42 28.974 63 71.303 105 47.024 42-24.28 63-133.148 105-168.423 42-35.275 63 38.378 105-7.953 42-46.332 63-219.204 105-223.704s63 154.975 105 201.202c42 46.228 63 81.67 105 29.936 42-51.733 84-230.881 105-288.602l5 818.237H0Z%22 fill=%22%236366f11a%22%2F%3E%3Cpath d=%22M0 991.662c21-6.218 63-19.197 105-31.09 42-11.892 63-5.937 105-28.372 42-22.434 63-66.06 105-83.801s63 10.147 105-4.904 63-65.168 105-70.35c42-5.184 63 61.26 105 44.435 42-16.826 63-94.554 105-128.563 42-34.009 63-34.59 105-41.483 42-6.891 63 12.012 105 7.024s63 .059 105-31.965 63-122.092 105-128.154c42-6.062 63 68.87 105 97.844 42 28.974 63 71.303 105 47.024 42-24.28 63-133.148 105-168.423 42-35.275 63 38.378 105-7.953 42-46.332 63-219.204 105-223.704s63 154.975 105 201.202c42 46.228 63 81.67 105 29.936 42-51.733 84-230.881 105-288.602%22 fill=%22none%22 stroke=%22rgba(99%2C102%2C241%2C1)%22 stroke-width=%226%22%2F%3E%3C%2Fsvg%3E");
     @apply scroll-smooth scroll-pt-6 not-sr-only;
   }
+
   body {
     @apply normal-nums break-normal antialiased text-base font-serif align-middle w-space-1;
   }
+
   p {
     @apply text-justify;
   }
+
   u {
     text-decoration: underline;
     text-decoration-color: #5271FF;
     text-decoration-thickness: 1.5px;
     text-underline-offset: 2px;
   }
+
   /* ul {
     @apply list-disc list-inside;
   } */
@@ -25,11 +34,15 @@
 
 @layer components {
   .subHead {
-    @apply py-1 text-2xl font-semibold text-left font-sans text-indigo-500;
+    @apply py-1 text-1.5xl font-semibold text-left font-sans text-indigo-500;
   }
+
+  .titleHead {
+    @apply text-center text-3xl font-title mt-2 font-medium text-indigo-500;
+  }
+
   .hr {
-    @apply border border-solid w-5/12 
-     mb-2;
+    @apply border border-solid w-5/12 mb-2;
   }
 }
 
@@ -37,13 +50,25 @@
   .w-space-0 {
     word-spacing: normal;
   }
+
   .w-space-1 {
     word-spacing: 0.2ch;
   }
+
   .min-h-1\/2 {
     min-height: 50vh;
   }
+
   .text-shadow {
-    text-shadow: 2px 2px 5px rgba(17,10,10,0.51);
+    text-shadow: 2px 2px 5px rgba(17, 10, 10, 0.51);
+  }
+
+  .text-1\.5xl {
+    font-size: 1.375rem
+      /* 22px */
+    ;
+    line-height: 1.875rem
+      /* 30px */
+    ;
   }
 }

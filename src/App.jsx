@@ -16,6 +16,8 @@ import BillTracker from "./Resources/BillTracker";
 
 import BudgetRule from './Blogs/BudgetRule';
 
+import NiftyFMCG from './Stocks/NiftyFMCG';
+
 function App() {
 
   return (
@@ -28,9 +30,11 @@ function App() {
           <Route path='/resources/free-monthly-budget-spreadsheet-template' element={<MonthlyBudgetSpreadsheet />} />
           <Route path='/resources/free-bill-tracker-template' element={<BillTracker />} />
 
-
           <Route path='/blogs' element={<Blogs />} />
           <Route path='/blogs/50-30-20-Budget-Rule' element={<BudgetRule />} />
+
+          <Route path="/stocks/niftyfmcg" element={<NiftyFMCG />} />
+
           <Route path='*' element={<Error />} />
         </Routes>
       </div>

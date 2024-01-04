@@ -1,6 +1,7 @@
 import Heading from '../components/BlogMarkdown/Heading';
 import Box from '../components/Html.jsx/Box';
 import ResourceList from "../Resources/ResourceList";
+import Share from '../components/Html.jsx/Share';
 
 const MonthlyBudgetSpreadsheet = () => {
   return (
@@ -13,6 +14,12 @@ const MonthlyBudgetSpreadsheet = () => {
         />
         <div className='lg:flex flex-row'>
           <section>
+            <Share
+              title={
+                "Free Monthly Budget Spreadsheet Template (available for Excel & Google Sheets)"
+              }
+              link={"free-monthly-budget-spreadsheet-template"}
+            />
             <Box
               id={"free-monthly-budget-template"}
               head={"Free Monthly Budget Template"}

@@ -1,0 +1,147 @@
+.stockTitle {
+    color: rgb(128, 128, 128);
+    font-size: 1.3rem;
+    margin: 5px 25px;
+    font-weight: 600;
+}
+
+.stockTitle2 {
+    color: rgb(128, 128, 128);
+    font-size: 0.85rem;
+    margin-left: 25px;
+    font-weight: 400;
+}
+
+.stockPriceBlock {
+    color: #2a394e;
+    font-size: 1.2rem;
+    margin: 5px 25px;
+    display: flex;
+    white-space: nowrap;
+    vertical-align: baseline;
+    height: max-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.stockPrice {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 20px;
+    line-height: normal;
+}
+
+table.stockTable {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    table-layout: fixed;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 12vh;
+    right: 1vw;
+}
+
+table.stockTable caption h2 {
+    font-size: 1.2em;
+    margin: .5em 0 .75em;
+    text-align: center;
+}
+
+table.stockTable tr {
+    background-color: #f8f8f8;
+    border: 1px solid rgb(209, 209, 209);
+    padding: .35em;
+}
+
+table.stockTable tr:nth-child(2n) {
+    background-color: rgb(234, 234, 234);
+}
+
+table.stockTable th,
+table.stockTable td {
+    padding: .625em;
+    text-align: center;
+}
+
+table.stockTable th {
+    font-size: 1em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: rgb(234, 234, 234);
+}
+
+.stockChart {
+    transform: scale(0.7);
+    margin: 0;
+    position: relative;
+    left: -10vw;
+}
+
+@media screen and (max-width: 800px) {
+    table.stockTable {
+        position: initial;
+        width: 90vw;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    table.stockTable {
+        border: 0;
+    }
+
+    table.stockTable caption h2 {
+        font-size: 1.1em;
+    }
+
+    table.stockTable thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table.stockTable tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table.stockTable tr:nth-child(2n) {
+        background-color: #f8f8f8;
+    }
+
+    table.stockTable td:nth-child(1) {
+        background-color: rgb(234, 234, 234);
+    }
+
+    table.stockTable td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    table.stockTable td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table.stockTable td:last-child {
+        border-bottom: 0;
+    }
+
+    .stockChart {
+        transform: scale(0.9);
+        left: 0vw;
+    }
+}
