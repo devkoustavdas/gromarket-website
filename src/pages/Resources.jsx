@@ -13,7 +13,7 @@ const Resources = () => {
                 }
                 link={"/resources"}
             />
-            <ResourceList />
+            <ResourceList type={"full"} />
         </section>
     );
 }

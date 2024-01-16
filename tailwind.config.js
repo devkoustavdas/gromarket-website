@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,jsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        '3xl': '1600px',
+        '4xl': '1800px',
+      },
+},
     fontFamily: {
       'sans': ["'Source Serif Pro', sans-serif"],
       'serif': ['"Barlow", sans-serif'],

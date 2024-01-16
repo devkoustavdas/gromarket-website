@@ -5,7 +5,7 @@ import ResourceList from "../Resources/ResourceList";
 const BillTracker = () => {
   return (
     <main className="flex flex-col lg:flex-row">
-      <div className="w-full lg:w-3/5">
+      <div className="w-full lg:w-3/5 shadow-lg m-3 rounded">
         <Heading
           title={"Free Bill Tracker Template (available for Excel & Google Sheets)"}
           date={"24 December, 2023"}
