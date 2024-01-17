@@ -23,9 +23,9 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div className=''>
         <Routes>
           <Route path='/' element={<Home />} />
+
           <Route path='/resources' element={<Resources />} />
           <Route path='/resources/free-monthly-budget-spreadsheet-template' element={<MonthlyBudgetSpreadsheet />} />
           <Route path='/resources/free-bill-tracker-template' element={<BillTracker />} />
@@ -37,7 +37,6 @@ function App() {
 
           <Route path='*' element={<Error />} />
         </Routes>
-      </div>
       <Footer />
     </Router>
   );

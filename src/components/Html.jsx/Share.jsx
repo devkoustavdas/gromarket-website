@@ -23,7 +23,7 @@ const Share = ({ title, link }) => {
         <React.Suspense fallback={<div>Loading...</div>}>
             <section
                 style={{
-                    margin: "10px 25px",
+                    margin: "10px 0px",
                     lineHeight: "30px",
                     borderLeft: "solid 3px #ffbe45",
                     paddingLeft: "10px",

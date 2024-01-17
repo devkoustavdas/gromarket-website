@@ -24,9 +24,9 @@
     text-underline-offset: 2px;
   }
 
-  /* ul {
-    @apply list-disc list-inside;
-  } */
+  hr {
+    @apply border border-solid border-teal-500 w-10/12 mt-3 mb-2 mx-auto;
+  }
 }
 
 @layer components {

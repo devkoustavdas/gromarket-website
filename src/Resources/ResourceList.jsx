@@ -1,4 +1,5 @@
 import BlogCard from "../components/Html.jsx/BlogCard";
+import PropTypes from 'prop-types';
 
 const ResourceList = ({type}) => {
   var cl="";
@@ -16,4 +17,8 @@ const ResourceList = ({type}) => {
   )
 }
 
-export default ResourceList
+ResourceList.propTypes = {
+  type: PropTypes.string.isRequired,
+};
+
+export default ResourceList;
