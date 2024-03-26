@@ -12,6 +12,7 @@ import Error from "./pages/Error";
 import Home from "./pages/Home";
 import Footer from './pages/Footer';
 import Blogs from './pages/Blogs';
+import Careers from './pages/Careers';
 
 import MonthlyBudgetSpreadsheet from "./Resources/MonthlyBudgetSpreadsheet";
 import BillTracker from "./Resources/BillTracker";
@@ -19,8 +20,8 @@ import BillTracker from "./Resources/BillTracker";
 import BudgetRule from './Blogs/BudgetRule/BudgetRule';
 
 import NiftyFMCG from './Stocks/NiftyFMCG';
-
 import ShortTermStocks from './pages/ShortTermStocks';
+
 function App() {
 
 
@@ -36,6 +37,8 @@ function App() {
 
           <Route path='/blogs' element={<Blogs />} />
           <Route path='/blogs/50-30-20-Budget-Rule' element={<BudgetRule />} />
+
+        <Route path='/careers' element={<Careers />} />
 
           <Route path="/stocks/niftyfmcg" element={<NiftyFMCG />} />
 

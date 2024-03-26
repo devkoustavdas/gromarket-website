@@ -14,7 +14,7 @@ const Footer = () => {
           <Link to={"/stocks"} className="hover:text-slate-300 hover:underline hover:underline-offset-2">Analyse Stocks</Link>
         </div>
         <div className="flex flex-col">
-          <Link to={"/contact"} className="hover:text-slate-300 hover:underline hover:underline-offset-2">Contact Us</Link>
+          <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSczcB674V8l7lbIVydSk2PpwaOHbwFreJ_ue6IRhv80MJat-Q/viewform?usp=sf_link" className="hover:text-slate-300 hover:underline hover:underline-offset-2">Contact Us</a>
           <Link to={"/careers"} className="hover:text-slate-300 hover:underline hover:underline-offset-2">Careers</Link>
         </div>
       </div>
