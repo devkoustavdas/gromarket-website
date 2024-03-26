@@ -6,6 +6,8 @@ import Meta from '../components/Html.jsx/Meta';
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import { siteLink } from "../siteLink";
+import Subscribe from "../components/Html.jsx/Subscribe";
+
 
 const BlogTemplate = ({ title, date, tag, link, content }) => {
     return (
@@ -33,7 +35,8 @@ const BlogTemplate = ({ title, date, tag, link, content }) => {
                         </div>
                     </section>
                 </div>
-            </div>
+                <Subscribe />
+            </div>      
             <React.Suspense fallback={<div>Loading...</div>}>
                 <div className="w-full lg:w-2/5">
                     <div className='text-xl font-title text-center mt-3 font-bold text-indigo-400'>Read More Blogs</div>
