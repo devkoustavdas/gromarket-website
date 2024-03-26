@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const BlogList = ({ type }) => {
     var cl = "";
     if (type == "full") {
-        cl = "grid 2xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2"
+        cl = "grid lg:grid-cols-2 sl:grid-cols-1 md:grid-cols-2"
     }
     else if (type == "part") {
         cl = "grid md:grid-cols-1"

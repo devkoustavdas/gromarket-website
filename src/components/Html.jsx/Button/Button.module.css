@@ -15,7 +15,6 @@ button.btn-style-neutral, button.btn-style-success, button.btn-style-danger, but
     box-sizing: border-box;
     line-height: normal;
     text-decoration: none;
-    text-shadow: none;
     white-space: normal;
     font-optical-sizing: auto;
     font-kerning: auto;
@@ -23,7 +22,8 @@ button.btn-style-neutral, button.btn-style-success, button.btn-style-danger, but
     overflow: hidden;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     background-position: center;
-    transition: background 800ms;
+    transition: background 400ms;
+    transition-timing-function: cubic-bezier(0.77, 0.25, 0.17, 1.64);
     border: none;
     outline: none;
     color: #ffffff;
@@ -82,19 +82,20 @@ button.btn-style-warning {
 }
 
 button.btn-style-blank {
-    background-color: transparent;
-    border: solid 1px #ffffff;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    text-shadow: none;
     box-shadow: none;
 }
 
 
 .btn-style-blank:hover {
-  background: #444444  radial-gradient(circle, transparent 1%, #444444 1%) center/15000%;
+  background: #dedede  radial-gradient(circle, transparent 1%, #dedede 1%) center/15000%;
 }
 
 .btn-style-blank:active {
   outline: none;
-  background-color: #919191 ;
+  background-color: #b0b0b0 ;
   background-size: 100%;
   transition: background 0s;
 }

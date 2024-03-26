@@ -1,19 +1,20 @@
-import BlogList from '../Blogs/BlogList';
 import Meta from '../components/Html.jsx/Meta';
+import BlogView from '../Blogs/BlogView';
+
 const Blogs = () => {
     return (
         <section className='min-h-1/2'>
             <Meta
-                title={"Resources from GroMarket"}
+                title={"Blogs from GroMarket"}
                 description={
-                    "Use GroMarket's free resources to easily track your spending and take control of your finances. GroMarket's budget spreadsheet template (available for Excel and Google Sheets) is designed to help organize your finances."
+                    "Read GroMarket's free blogs to easily track your spending and take control of your finances. GroMarket's budget spreadsheet template (available for Excel and Google Sheets) is designed to help organize your finances."
                 }
                 keyword={
                     "finance, budget, budget template, excel budget, budget spreadsheet, savings, money, GroMarket"
                 }
-                link={"/resources"}
+                link={"blogs"}
             />
-            <BlogList />
+            <BlogView />
         </section>
     );
 }

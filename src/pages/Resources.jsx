@@ -1,5 +1,6 @@
-import ResourceList from '../Resources/ResourceList';
 import Meta from '../components/Html.jsx/Meta';
+import ResourceView from '../Resources/ResourceView';
+
 const Resources = () => {
     return (
         <section className='min-h-1/2'>
@@ -11,9 +12,9 @@ const Resources = () => {
                 keyword={
                     "finance, budget, budget template, excel budget, budget spreadsheet, savings, money, GroMarket"
                 }
-                link={"/resources"}
+                link={"resources"}
             />
-            <ResourceList type={"full"} />
+            <ResourceView />
         </section>
     );
 }

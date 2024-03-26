@@ -5,8 +5,8 @@ const BlogCard = ({ head, body, link, tag }) => {
 
     return (
         <Link to={link} className="no-underline">
-            <div className="bg-gradient-to-r from-indigo-500 via-blue-100 to-teal-500 pt-1 my-3 mx-auto w-11/12 rounded-md shadow duration-200 hover:scale-105">
-                <div className="h-full w-full rounded-md overflow-none bg-white py-3 px-4"
+            <div className="bg-gradient-to-r from-indigo-500 to-indigo-100 pt-1 my-3 mx-auto w-11/12 rounded-md shadow duration-200 hover:scale-103">
+                <div className="h-full w-full rounded-md overflow-none bg-slate-800 py-3 px-4"
                     title={`GroMarket: ${head}`}
                     aria-label={`GroMarket: ${head}`}>
                     <h2 className="subHead flex flex-row gap-2">
@@ -19,10 +19,10 @@ const BlogCard = ({ head, body, link, tag }) => {
                         </span>
                     </h2>
                     <div className="hr"></div>
-                    <p className="">{body.length > 200 ? `${body.slice(0, 200)}...` : body}</p>
-                    <div className="mt-2 inline-block whitespace-nowrap">
+                    <h3 className="text-slate-300 break-words text-justify">{body.length > 200 ? `${body.slice(0, 200)}...` : body}</h3>
+                    <div className="mt-2 whitespace-nowrap max-w-fit">
                         {tag.map((tagItem, index) => (
-                            <span key={index} className="bg-gray-200 px-2 py-1 mx-1 rounded-xl">
+                            <span key={index} className="bg-slate-700 text-slate-400 px-2 py-1 mx-1 rounded-xl inline">
                                 {tagItem}
                             </span>
                         ))}
