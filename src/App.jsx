@@ -21,13 +21,12 @@ import BudgetRule from './Blogs/BudgetRule/BudgetRule';
 import NiftyFMCG from './Stocks/NiftyFMCG';
 
 import ShortTermStocks from './pages/ShortTermStocks';
-import Markdown from 'react-markdown';
 function App() {
 
 
   return (
     <Router>
-      <Navbar />
+        <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
 
@@ -38,21 +37,13 @@ function App() {
           <Route path='/blogs' element={<Blogs />} />
           <Route path='/blogs/50-30-20-Budget-Rule' element={<BudgetRule />} />
 
-        <Route path="/stocks/niftyfmcg" element={<NiftyFMCG />} />
+          <Route path="/stocks/niftyfmcg" element={<NiftyFMCG />} />
 
-        <Route path="/stocks/best-stocks-to-buy-for-short-term" element={<ShortTermStocks />} />
+          <Route path="/stocks/best-stocks-to-buy-for-short-term" element={<ShortTermStocks />} />
 
           <Route path='*' element={<Error />} />
         </Routes>
-      <Footer />
-      <Markdown
-        components={{
-          em(props) {
-            const { node, ...rest } = props
-            return <i style={{ color: 'red' }} {...rest} />
-          }
-        }}
-      />
+        <Footer />
     </Router>
   );
 }
