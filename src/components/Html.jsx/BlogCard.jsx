@@ -20,9 +20,9 @@ const BlogCard = ({ head, body, link, tag }) => {
                     </h2>
                     <div className="hr"></div>
                     <h3 className="text-slate-300 break-words text-justify">{body.length > 200 ? `${body.slice(0, 200)}...` : body}</h3>
-                    <div className="mt-2 whitespace-nowrap max-w-fit">
+                    <div className="whitespace-nowrap flex flex-wrap">
                         {tag.map((tagItem, index) => (
-                            <span key={index} className="bg-slate-700 text-slate-400 px-2 py-1 mx-1 rounded-xl inline">
+                            <span key={index} className="bg-slate-700 text-slate-400 px-2 py-1 mx-1 my-1 rounded-xl inline">
                                 {tagItem}
                             </span>
                         ))}

@@ -4,7 +4,7 @@ const Box = ({ id, head, body }) => {
     return (
         <article
             id={`gromarket-${id}`}
-            className="rounded-md w-11/12 mx-auto my-5 shadow-md px-4 py-3 text-lg font-normal leading-8"
+            className="rounded-md my-5 shadow-lg px-5 py-3 text-lg font-normal leading-8 border-2 border-slate-500"
             title={`GroMarket: ${head}`}
             aria-label={`GroMarket: ${head}`}>
             <h2 className='subHead font-sans'><span className='pr-1'>&#x2022;</span>{head}</h2>

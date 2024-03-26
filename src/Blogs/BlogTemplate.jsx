@@ -10,7 +10,7 @@ import { siteLink } from "../siteLink";
 const BlogTemplate = ({ title, date, tag, link, content }) => {
     return (
         <main className="flex flex-col lg:flex-row">
-            <div className="w-full lg:w-3/5 shadow-lg m-3 rounded-lg px-5 py-2 pb-4">
+            <div className="w-full lg:w-3/5 shadow-lg m-3 rounded-lg px-3 md:px-5 py-2 pb-4">
                 <Meta title={title} link={`blogs/${link}`} keyword={tag} />
                 <Heading
                     title={title}
@@ -19,16 +19,16 @@ const BlogTemplate = ({ title, date, tag, link, content }) => {
                 />
                 <div className='lg:flex flex-row'>
                     <section>
-                        <div className='text-sm'>
+                        <div className='text-sm w-11/12'>
                             <span className="hover:bg-slate-700 px-2 py-1 rounded duration-200" title='Go to GroMarket Home'><Link to="/" className="no-underline">Home</Link></span><span className="text-teal-500">/</span>
                             <span className="hover:bg-slate-700 px-2 py-1 rounded duration-200" title='Go to Resources'><Link to="/blogs" className="no-underline">Blogs</Link></span><span className="text-teal-500">/</span>
-                            <span className='bg-slate-800 px-2 py-1 rounded hover:bg-slate-700 duration-200'><Link to={`/blogs/${link}`} className="no-underline">{title}</Link></span>
+                            <span className='bg-slate-800 px-2 py-1 rounded hover:bg-slate-700 duration-200 break-words'><Link to={`/blogs/${link}`} className="no-underline">{title}</Link></span>
                         </div>
                         <Share
                             title={title}
                             link={`${siteLink}/blogs/${link}`}
                         />
-                        <div className='text-justify'>
+                        <div className='text-justify mt-5'>
                             {content}
                         </div>
                     </section>
