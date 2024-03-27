@@ -30,7 +30,7 @@ const BlogTemplate = ({ title, date, tag, link, content }) => {
                             title={title}
                             link={`${siteLink}/blogs/${link}`}
                         />
-                        <div className='text-justify mt-5'>
+                        <div className='text-justify mt-10'>
                             {content}
                         </div>
                     </section>

@@ -14,6 +14,8 @@ import Footer from './pages/Footer';
 import Blogs from './pages/Blogs';
 import Careers from './pages/Careers';
 
+import BackToTop from './components/Html.jsx/BackToTop/BackToTop';
+
 import MonthlyBudgetSpreadsheet from "./Resources/MonthlyBudgetSpreadsheet";
 import BillTracker from "./Resources/BillTracker";
 
@@ -45,7 +47,8 @@ function App() {
           <Route path="/stocks/best-stocks-to-buy-for-short-term" element={<ShortTermStocks />} />
 
           <Route path='*' element={<Error />} />
-        </Routes>
+      </Routes>
+      <BackToTop />
         <Footer />
     </Router>
   );

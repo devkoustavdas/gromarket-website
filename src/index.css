@@ -58,6 +58,10 @@
     word-spacing: 0.2ch;
   }
 
+  .rounded-circle {
+    border-radius: 50%;
+  }
+
   .scale-103 {
     transform: scale(1.03);
   }

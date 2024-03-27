@@ -29,7 +29,7 @@ const ResourceTemplate = ({ title, date, tags, link, content }) => {
                             title={title}
                             link={`${siteLink}/resources/${link}`}
                         />
-                        <div className='text-justify'>
+                        <div className='text-justify mt-10'>
                             {content}
                         </div>
                     </section>
