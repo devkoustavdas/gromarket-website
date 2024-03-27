@@ -24,8 +24,6 @@ import EMAandMACD from './Blogs/Blogs/EMAandMACD';
 import NiftyFMCG from './Stocks/NiftyFMCG';
 import ShortTermStocks from './pages/ShortTermStocks';
 
-import { SpeedInsights } from "@vercel/speed-insights/next"
-
 function App() {
 
 
