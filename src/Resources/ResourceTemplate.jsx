@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import { siteLink } from "../siteLink";
 import Subscribe from "../components/Html.jsx/Subscribe";
+import styles from "../content.module.css";
 
 const ResourceTemplate = ({ title, date, tags, link, content }) => {
     return (

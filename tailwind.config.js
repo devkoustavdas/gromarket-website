@@ -16,13 +16,7 @@ export default {
       'sans': ["'Noto Serif JP', serif"],
       'serif': ['"Barlow", sans-serif'],
       'title': ["'Red Rose Variable', sans-serif"],
-      'condensed': ["'Roboto Condensed', sans-serif"]
     },
-    // colors: {
-    //   "white": "#ffffff",
-    //   "black": "#000000",
-    //   "blue": "#5271FF",
-    // }
   },
   plugins: [],
 }

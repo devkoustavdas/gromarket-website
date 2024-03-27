@@ -12,7 +12,7 @@ const Heading = ({ title, date, tag }) => {
         <span className='px-1'>&#x2022;</span>
         <div className="whitespace-nowrap flex flex-wrap">
           {tag.map((tagItem, index) => (
-            <span key={index} className="bg-teal-600 px-2 mx-1 my-1 py-1 rounded-xl">
+            <span key={index} className="bg-teal-600 px-2 mx-1 my-1 py-1 rounded-xl text-sm">
               {tagItem}
             </span>
           ))}

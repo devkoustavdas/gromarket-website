@@ -1,0 +1,63 @@
+section.content>h2 {
+    color: rgb(129 140 248);
+    font-size: 22px !important;
+    font-family: 'Noto Serif JP', serif;
+    margin: 20px 0px 8px 0px !important;
+}
+
+section.content>h3 {
+    color: rgb(129 140 248);
+    font-size: 18px !important;
+    font-family: 'Noto Serif JP', serif;
+    margin: 15px 0px 8px 0px !important;
+}
+
+section.content>p {
+    text-align: justify;
+    word-break: keep-all;
+} 
+
+section.content h2 section.content strong, 
+section.content h3 section.content strong {
+    color: rgb(20 184 166);
+    font-weight: 800 !important;
+}
+
+section.content h2 section.content em, 
+section.content h3 section.content em {
+    color: rgb(20 184 166);
+    font-style: italic;
+}
+
+section.content strong {
+    font-weight: 600 !important;
+    color: rgb(20 184 166);
+}
+
+section.content em {
+    font-style: italic;
+    color: rgb(20 184 166);
+}
+
+section.content li {
+    margin: 5px 0px;
+    list-style: none;
+}
+
+section.content li::before {
+    content: "→";
+    padding: 0px 5px 2px 5px;
+    border: solid 1px rgb(129 140 248);
+    margin-right: 7px;
+    font-size: inherit;
+    font-weight: 700;
+    color: rgb(129 140 248);
+    text-decoration: none;
+}
+
+section.content blockquote {
+    padding-left: 20px !important;
+    text-align: justify;
+    word-break: keep-all;
+    border-left: solid 2px rgb(129 140 248);
+}

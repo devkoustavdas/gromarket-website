@@ -11,7 +11,16 @@ const BlogList = ({ type }) => {
     }
     return (
         <div className={cl}>
-            <BlogCard link="/blogs/50-30-20-Budget-Rule" head={"50/30/20 Budget Rule"} body={"Download GroMarket's free monthly budget template to easily track your spending and take control of your finances."} tag={["Personal Finance", "Template", "Budget"]} />
+            <BlogCard 
+                link="/blogs/50-30-20-Budget-Rule" 
+                head={"50/30/20 Budget Rule"} 
+                body={"Download GroMarket's free monthly budget template to easily track your spending and take control of your finances."} 
+                tag={["Personal Finance", "Template", "Budget"]} />
+            <BlogCard 
+                head="MACD and EMA - The perfect Free Indicator Combo for your Breakout Trades"
+                tag={["Investment", "Intraday Trading"]}
+                link={"/blogs/ema-and-macd-for-intraday-trading"}
+                body={"Are you on the hunt for that perfect indicator combo to catch breakout trades like a pro?"} />
         </div>
     )
 }

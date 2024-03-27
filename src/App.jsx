@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import '@fontsource/barlow';
 import '@fontsource-variable/red-rose';
-import '@fontsource/roboto-condensed';
 import '@fontsource/noto-serif-jp';
 
 
@@ -20,6 +19,7 @@ import MonthlyBudgetSpreadsheet from "./Resources/MonthlyBudgetSpreadsheet";
 import BillTracker from "./Resources/BillTracker";
 
 import BudgetRule from './Blogs/BudgetRule/BudgetRule';
+import EMAandMACD from './Blogs/Blogs/EMAandMACD';
 
 import NiftyFMCG from './Stocks/NiftyFMCG';
 import ShortTermStocks from './pages/ShortTermStocks';
@@ -38,7 +38,8 @@ function App() {
           <Route path='/resources/free-bill-tracker-template' element={<BillTracker />} />
 
           <Route path='/blogs' element={<Blogs />} />
-          <Route path='/blogs/50-30-20-Budget-Rule' element={<BudgetRule />} />
+        <Route path='/blogs/50-30-20-Budget-Rule' element={<BudgetRule />} />
+        <Route path='/blogs/ema-and-macd-for-intraday-trading' element={<EMAandMACD />} />
 
         <Route path='/careers' element={<Careers />} />
 

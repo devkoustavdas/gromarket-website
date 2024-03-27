@@ -10,7 +10,7 @@
   }
 
   body {
-    @apply normal-nums break-normal antialiased text-base font-serif align-middle w-space-1 bg-slate-900 text-slate-300;
+    @apply normal-nums break-normal antialiased text-base font-serif align-middle w-space-1 bg-slate-900 text-slate-400;
   }
 
   p {
@@ -31,7 +31,7 @@
 
 @layer components {
   .subHead {
-    @apply py-1 text-1.5xl font-semibold text-left font-condensed text-indigo-400;
+    @apply py-1 text-xl font-semibold text-left font-sans text-indigo-400;
   }
 
   .titleHead {

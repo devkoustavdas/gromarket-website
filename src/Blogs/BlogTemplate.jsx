@@ -8,7 +8,6 @@ import PropTypes from 'prop-types';
 import { siteLink } from "../siteLink";
 import Subscribe from "../components/Html.jsx/Subscribe";
 
-
 const BlogTemplate = ({ title, date, tag, link, content }) => {
     return (
         <main className="flex flex-col lg:flex-row">
