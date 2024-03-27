@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom"
 import Logo from "../components/Html.jsx/Logo";
+import {siteLink} from "../siteLink";
 
 const currentYear = new Date().getFullYear();
 
 const Footer = () => {
   return (
     <footer className=" bg-slate-800 py-2 px-3 min-h-fit">
-      <div className="flex flex-col md:flex-row gap-1 md:gap-3 justify-center my-2 w-fit mx-auto"><Logo size={3} /></div>
+      <div className="flex flex-col md:flex-row gap-1 md:gap-3 justify-center my-2 w-fit mx-auto"><a href={siteLink} target="_blank" rel="noopener noreferrer"><Logo size={3} /></a></div>
       <div className='text-gray-400 flex flex-row justify-around text-center'>
         <div className="flex flex-col">
           <Link to={"/resources"} className="hover:text-slate-300 hover:underline hover:underline-offset-2">Resources</Link>
@@ -20,7 +21,7 @@ const Footer = () => {
       </div>
       <hr className="my-2 border-gray-500 sm:mx-auto" />
       <div className="sm:flex sm:items-center sm:justify-between">
-        <span className="text-sm text-slate-500 sm:text-center">GroMarket © 2023 - {currentYear} - All Rights Reserved
+        <span className="text-sm text-slate-500 sm:text-center"><a href={siteLink} target="_blank" rel="noopener noreferrer">GroMarket</a> © 2023 - {currentYear} - All Rights Reserved
         </span>
         <div className="flex gap-2 mt-4 sm:justify-center sm:mt-0">
           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/gromarket-services/" className="text-slate-500 hover:text-slate-300">

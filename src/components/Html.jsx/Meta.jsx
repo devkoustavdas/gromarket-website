@@ -7,7 +7,7 @@ const Meta = ({ title, description, keyword, link }) => {
             <link rel="canonical" href={`${siteLink}/${link}`} />
             <meta name="description" content={description} />
             <meta name="author" content="Koustav Das" />
-            <meta name="keywords" content={`Gromarket, ${keyword}`} />
+            <meta name="keywords" content={`Gromarket, Finance, ${keyword}`} />
             <title>{title}</title>
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
