@@ -19,7 +19,7 @@ const LandingHeader = () => {
         <Link to={"/resources"} onClick={() => handleTabClick("resources")}><Btn type="warning" text="Resources" /></Link>
         <Link to={"/stocks"} onClick={() => handleTabClick("stocks")}><Btn type="blank" text="Stock Insights" /></Link>
       </div>
-      <div className="w-full scale-110 lg:scale-110 mx-auto lg:w-4/5 ">
+      <div className="w-full scale-110 lg:scale-100 mx-auto lg:w-4/5 ">
         <img src={getUrl("gromarket-homepage.svg")} alt="gromarket-homepage" className='select-none' />
       </div>
     </header>

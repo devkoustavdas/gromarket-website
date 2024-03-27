@@ -33,6 +33,7 @@ const EMAandMACD = () => {
                           <li>Impulse Histogram - <strong>red</strong> columns</li>
                           <li>Impulse MACD Signal - <strong>orange</strong> line</li>
                       </ul>
+                      <Img name='Settings for MACD and EMA Indicator.png' describe={"Settings for MACD and EMA Indicator"} width={350} />
                       <h2 id="what-is-a-ema-indicator-and-what-is-the-theory-behind-it-">What is a EMA indicator and what is the theory behind it?</h2>
                       <p>Unlike traditional moving averages, Exponential moving average (EMA) gives more weight to recent price data, making it particularly useful for detecting trend changes swiftly. The exponential moving average is also referred to as the exponentially weighted moving average. </p>
                       <h2 id="which-macd-indicator-to-use-in-tradingview">Which MACD indicator to use in TradingView</h2>
