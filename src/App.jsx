@@ -24,33 +24,37 @@ import EMAandMACD from './Blogs/Blogs/EMAandMACD';
 import NiftyFMCG from './Stocks/NiftyFMCG';
 import ShortTermStocks from './pages/ShortTermStocks';
 
+import AmazonSpendsOnAnthropic from './News/NewsPosts/AmazonSpendsOnAnthropic';
+
 function App() {
 
 
   return (
     <Router>
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<Home />} />
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
 
-          <Route path='/resources' element={<Resources />} />
-          <Route path='/resources/free-monthly-budget-spreadsheet-template' element={<MonthlyBudgetSpreadsheet />} />
-          <Route path='/resources/free-bill-tracker-template' element={<BillTracker />} />
+        <Route path='/resources' element={<Resources />} />
+        <Route path='/resources/free-monthly-budget-spreadsheet-template' element={<MonthlyBudgetSpreadsheet />} />
+        <Route path='/resources/free-bill-tracker-template' element={<BillTracker />} />
 
-          <Route path='/blogs' element={<Blogs />} />
+        <Route path='/blogs' element={<Blogs />} />
         <Route path='/blogs/50-30-20-Budget-Rule' element={<BudgetRule />} />
         <Route path='/blogs/ema-and-macd-for-intraday-trading' element={<EMAandMACD />} />
 
         <Route path='/careers' element={<Careers />} />
 
-          <Route path="/stocks/niftyfmcg" element={<NiftyFMCG />} />
+        <Route path="/stocks/niftyfmcg" element={<NiftyFMCG />} />
 
-          <Route path="/stocks/best-stocks-to-buy-for-short-term" element={<ShortTermStocks />} />
+        <Route path="/stocks/best-stocks-to-buy-for-short-term" element={<ShortTermStocks />} />
 
-          <Route path='*' element={<Error />} />
+        <Route path="/news/amazon-spends-on-startup-anthropic-claude" element={<AmazonSpendsOnAnthropic />} />
+
+        <Route path='*' element={<Error />} />
       </Routes>
       <BackToTop />
-        <Footer />
+      <Footer />
     </Router>
   );
 }

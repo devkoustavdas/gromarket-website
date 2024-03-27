@@ -32,6 +32,9 @@ const Navbar = () => {
                     <Link to={"/blogs"} onClick={() => handleTabClick("blogs")}>
                         <span className={`block py-2 px-3 rounded duration-200 hover:bg-slate-600 hover:text-slate-300 hover:shadow-md active:bg-slate-600 active:text-slate-300 ${whichTabOpen === "blogs"? "bg-slate-600 text-slate-300 shadow-md":""}`}>Blogs</span>
                     </Link>
+                    <Link to={"/news"} onClick={() => handleTabClick("news")}>
+                        <span className={`block py-2 px-3 rounded duration-200 hover:bg-slate-600 hover:text-slate-300 hover:shadow-md active:bg-slate-600 active:text-slate-300 ${whichTabOpen === "news" ? "bg-slate-600 text-slate-300 shadow-md" : ""}`}>Finance News</span>
+                    </Link>
                     <Link to={"/stocks"} onClick={() => handleTabClick("stocks")}>
                         <span className={`block py-2 px-3 rounded duration-200 hover:bg-slate-600 hover:text-slate-300 hover:shadow-md active:bg-slate-600 active:text-slate-300 ${whichTabOpen === "stocks"? "bg-slate-600 text-slate-300 shadow-md":""}`}>Analyse Stocks</span>
                     </Link>
@@ -63,7 +66,8 @@ const Navbar = () => {
                     <div className="md:hidden z-50 absolute top-16 right-4 bg-slate-600 rounded-md p-4 space-y-2 animate__animated animate__backInDown">
                         <Link to={"/"} onClick={() => handleTabClick("home")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "home"? "bg-slate-700 text-slate-300 shadow-md":""}`}>Home</span></Link>
                         <Link to={"/resources"} onClick={() => handleTabClick("resources")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "resources"? "bg-slate-700 text-slate-300 shadow-md":""}`}>Resources</span></Link>
-                        <Link to={"/blogs"} onClick={() => handleTabClick("blogs")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "blogs"? "bg-slate-700 text-slate-300 shadow-md":""}`}>Blogs</span></Link>
+                        <Link to={"/blogs"} onClick={() => handleTabClick("blogs")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "blogs" ? "bg-slate-700 text-slate-300 shadow-md" : ""}`}>Blogs</span></Link>
+                        <Link to={"/news"} onClick={() => handleTabClick("news")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "news" ? "bg-slate-700 text-slate-300 shadow-md" : ""}`}>Finance News</span></Link>
                         <Link to={"/stocks"} onClick={() => handleTabClick("stocks")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "stocks"? "bg-slate-700 text-slate-300 shadow-md":""}`}>Analyse Stocks</span></Link>
                     </div>
                 )}
