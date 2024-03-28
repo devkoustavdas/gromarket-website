@@ -11,7 +11,7 @@ const NewsList = ({ type }) => {
     }
     return (
         <div className={cl}>
-            <BlogCard head="Amazon spends $2.75 billion on AI startup Anthropic in its largest venture investment yet" tag={["Corporate Finance", "Investment"]} body={"Tech giant Amazon spends $2.75 billion on American artificial intelligence (AI) startup Anthropic (developer of Claude) in its largest venture investment yet"} link={"/news/amazon-spends-2point7b-on-startup-anthropic-in-largest-venture-investment"} />
+            <BlogCard head="Amazon spends $2.75 billion on AI startup Anthropic in its largest venture investment yet" tag={["Corporate Finance", "Investment"]} body={"Tech giant Amazon spends $2.75 billion on American artificial intelligence (AI) startup Anthropic (developer of Claude) in its largest venture investment yet"} link={"/news/amazon-spends-on-startup-anthropic-claude"} />
         </div>
     )
 }

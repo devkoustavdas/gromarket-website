@@ -11,6 +11,7 @@ import Error from "./pages/Error";
 import Home from "./pages/Home";
 import Footer from './pages/Footer';
 import Blogs from './pages/Blogs';
+import News from './pages/News';
 import Careers from './pages/Careers';
 
 import BackToTop from './components/Html.jsx/BackToTop/BackToTop';
@@ -46,10 +47,11 @@ function App() {
         <Route path='/careers' element={<Careers />} />
 
         <Route path="/stocks/niftyfmcg" element={<NiftyFMCG />} />
-
         <Route path="/stocks/best-stocks-to-buy-for-short-term" element={<ShortTermStocks />} />
 
+        <Route path="/news" element={<News />} />
         <Route path="/news/amazon-spends-on-startup-anthropic-claude" element={<AmazonSpendsOnAnthropic />} />
+
 
         <Route path='*' element={<Error />} />
       </Routes>

@@ -17,7 +17,8 @@ const LandingHeader = () => {
       <h2 className="text-3xl text-shadow lowercase">FULFILL YOUR SAVINGS DREAMS</h2>
       <div className="font-serif flex flex-row gap-3 justify-center">
         <Link to={"/resources"} onClick={() => handleTabClick("resources")}><Btn type="warning" text="Resources" /></Link>
-        <Link to={"/stocks"} onClick={() => handleTabClick("stocks")}><Btn type="blank" text="Stock Insights" /></Link>
+        <Link to={"/blogs"} onClick={() => handleTabClick("stocks")}><Btn type="neutral" text="Blogs" /></Link>
+        <Link to={"/news"} onClick={() => handleTabClick("news")}><Btn type="blank" text="News" /></Link>
       </div>
       <div className="w-full scale-110 lg:scale-100 mx-auto lg:w-4/5 ">
         <img src={getUrl("gromarket-homepage.svg")} alt="gromarket-homepage" className='select-none' />
