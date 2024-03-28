@@ -11,7 +11,7 @@ const AmazonSpendsOnAnthropic = () => {
           link={"amazon-spends-2point7b-on-startup-anthropic-in-largest-venture-investment"}
           content={
               <section className={styles.content}>
-                  <Img name="Amazon spends $2.75 billion on AI startup Anthropic.png" width={400} describe={"Amazon spends $2.75 billion on AI startup Anthropic (developer of Claude)"} />
+                  <Img name="Amazon spends $2.75 billion on AI startup Anthropic.png" describe={"Amazon spends $2.75 billion on AI startup Anthropic (developer of Claude)"} />
                   <blockquote>
                       <p>Amazon Bets $4 Billion on AI Startup Anthropic</p>
                   </blockquote>
