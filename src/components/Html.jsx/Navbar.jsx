@@ -18,7 +18,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-slate-700 px-4 py-3 z-50 w-full font-heading">
+        <nav className="bg-slate-700 px-4 py-3 z-50 w-full font-title">
             <div className="container mx-auto flex items-center justify-between">
                 <div><Logo size={4.5} /></div>
 

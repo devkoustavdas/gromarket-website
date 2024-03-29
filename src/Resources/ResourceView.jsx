@@ -6,7 +6,7 @@ const ResourceView = () => {
 
     return (
         <section>
-            <h1 className="sr-only">Finance Resources and Finance tools from GroMarket covering Investment, Insurance, Trading, Startups, and others</h1>
+            <h1 className="sr-only">Finance Resources and Finance tools from GroMarket covering Investment, Taxation, Insurance, Trading, Startups, and others</h1>
             <h2 className="titleHead mt-7">Resources and Tools.</h2>
             <h3 className="text-center text-md font-serif text-slate-400 mb-7">All the tools you need to better manage your finances</h3>
             <div className="flex flex-col md:flex-row">

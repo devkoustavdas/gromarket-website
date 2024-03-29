@@ -1,11 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import '@fontsource/barlow';
 import '@fontsource/noto-serif-jp';
-import "./Fonts/helvetica-neue/HelveticaNeueMedium.ttf";
-import "./Fonts/helvetica-neue/HelveticaNeueLight.ttf";
-import "./Fonts/helvetica-neue/HelveticaNeueBold.ttf";
-
+import '@fontsource/poppins';
 
 import Resources from './pages/Resources';
 import Navbar from './components/Html.jsx/Navbar';

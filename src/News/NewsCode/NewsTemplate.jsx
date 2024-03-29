@@ -20,7 +20,7 @@ const NewsTemplate = ({ title, date, tags, link, content }) => {
                 />
                 <div className='lg:flex flex-row'>
                     <section>
-                        <div className='text-sm'>
+                        <div className='text-xs w-11/12'>
                             <span className="hover:bg-slate-700 px-2 py-1 rounded duration-200" title='Go to GroMarket Home Page'><Link to="/" className="no-underline">Home</Link></span><span className="text-teal-500">/</span>
                             <span className="hover:bg-slate-700 px-2 py-1 rounded duration-200" title='Go to Finance News Page'><Link to="/news" className="no-underline">Finance News</Link></span><span className="text-teal-500">/</span>
                             <span className='bg-slate-800 px-2 py-1 rounded hover:bg-slate-700 duration-200'><Link to={`/news/${link}`} className="no-underline">{title}</Link></span>
@@ -38,7 +38,7 @@ const NewsTemplate = ({ title, date, tags, link, content }) => {
             </div>
             <React.Suspense fallback={<div>Loading...</div>}>
                 <div className="w-full lg:w-2/5">
-                    <div className='text-xl font-title text-center mt-3 font-bold text-indigo-500'>Read More News</div>
+                    <div className='text-xl font-sans text-center mt-5 mb-3 font-bold text-teal-500'>Read More News</div>
                     <NewsList type={"part"} />
                 </div>
             </React.Suspense>

@@ -1,46 +1,34 @@
-import Heading from '../components/BlogMarkdown/Heading';
-import Box from '../components/Html.jsx/Box';
-import ResourceList from "../Resources/ResourceList";
+import ResourceTemplate from "./ResourceTemplate";
+import styles from "../content.module.css";
 
 const BillTracker = () => {
   return (
-    <main className="flex flex-col lg:flex-row">
-      <div className="w-full lg:w-3/5 shadow-lg m-3 rounded">
-        <Heading
-          title={"Free Bill Tracker Template (available for Excel & Google Sheets)"}
-          date={"24 December, 2023"}
-          tag={["Personal Finance", "Template", "Budget"]}
-        />
-        <Box
-          id={"free-bill-tracker-template"}
-          head={"Free Bill Tracker Template"}
-          body={
+    <ResourceTemplate
+      title="Free Bill Tracker Template (available for Excel & Google Sheets)"
+      date="24/12/2023"
+      tags={["Personal Finance", "Template", "Budget"]}
+      link="free-bill-tracker-template"
+      content={
+        <section className={styles.content}>
+          <div>
+            <h2>Features of Free Bill Tracker Template</h2>
             <ul>
-              <li>
-                This simple monthly budget template makes budgeting fun and
-                exciting.
-              </li>
-              <li>
-                It comes complete with an easy-to-follow set
-                of instructions so you can get started budgeting in no time.
-              </li>
-              <li>
-                No need to reach for the calculator. The budgeting spreadsheet
-                performs the calculations automatically.
-              </li>
-              <li>
-                Access your budget spreadsheet online from anywhere so you never
-                forget to track an expense.
-              </li>
+              <li>Track bills and payments conveniently</li>
+              <li>Available for Excel & Google Sheets</li>
+              <li>User-friendly interface</li>
+              <li>Customizable categories for bills</li>
+              <li>Automatic calculation of total expenses</li>
+              <li>Color-coded status for pending and paid bills</li>
+              <li>Monthly and yearly summaries</li>
+              <li>Ability to add notes or comments</li>
+              <li>Secure and private data storage</li>
+              <li>Compatible with multiple devices</li>
+              <li>Free to download and use</li>
             </ul>
-          }
-        />
-      </div>
-      <div className="w-full lg:w-2/5">
-        <ResourceList />
-      </div>
-    </main>
-  )
+          </div>
+        </section>
+      }
+    />
+  );
 }
-
 export default BillTracker;

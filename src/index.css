@@ -28,7 +28,7 @@
   }
 
   body {
-    @apply normal-nums break-normal antialiased text-standard font-serif align-middle w-space-1 bg-slate-900 text-slate-400;
+    @apply normal-nums break-normal antialiased text-sm font-title align-middle w-space-1 bg-slate-900 text-slate-400;
   }
 
   p {
@@ -54,11 +54,11 @@
 }
 
   .subHead {
-    @apply py-1 text-1.5xl text-left font-heading text-indigo-400;
+    @apply py-1 text-xl text-left font-title font-semibold text-indigo-400;
   }
 
   .titleHead {
-    @apply text-center text-4xl font-title mt-2 font-medium text-indigo-500;
+    @apply text-center text-3xl font-title mt-2 font-bold text-indigo-500;
   }
 
   .hr {

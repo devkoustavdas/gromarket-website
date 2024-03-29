@@ -10,7 +10,7 @@ const Img = ({ name, describe, link }) => {
       <Link to={link}>
         <img src={getUrl(name)} loading="lazy" alt={describe} className="rounded-xl border-3 border-slate-400 duration-200 hover:opacity-50 ease-in hover:-z-30" />
       </Link>
-      <p className="text-slate-400 text-center text-sm italic bg-transparent">{describe}</p>
+      <p className="text-slate-400 text-center text-sm italic bg-transparent ">{describe}</p>
     </div>
   )
 }

@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 const Heading = ({ title, date, tag }) => {
 
   return (
-    <header className="text-slate-50 onesideroundedbox bg-teal-500 mb-4 drop-shadow-md pl-6 pr-7 pt-5 pb-1" title={`GroMarket: ${title}`} aria-label={`GroMarket: ${title}`}>
-      <h1 className="text-2xl md:text-4xl text-left text-shadow font-heading mb-2">
+    <header className="text-slate-300 onesideroundedbox bg-slate-700 mb-4 pl-6 pr-7 pt-5 pb-1" title={`GroMarket: ${title}`} aria-label={`GroMarket: ${title}`}>
+      <h1 className="w-11/12 text-xl md:text-3xl text-left text-shadow font-title font-bold mb-2">
         {title}
       </h1>
       <div>
@@ -12,7 +12,7 @@ const Heading = ({ title, date, tag }) => {
         <span className='px-1'>&#x2022;</span>
         <div className="whitespace-nowrap flex flex-wrap">
           {tag.map((tagItem, index) => (
-            <span key={index} className="bg-teal-600 px-2 mx-1 my-1 py-1 rounded-xl text-sm">
+            <span key={index} className="bg-teal-600 text-slate-100 px-2 mx-1 my-1 py-1 rounded-xl text-sm">
               {tagItem}
             </span>
           ))}

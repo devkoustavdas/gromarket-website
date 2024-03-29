@@ -13,10 +13,7 @@ export default {
       },
 },
     fontFamily: {
-      'body': ["Helvetica Neue Light"],
-      'heading': ["Helvetica Neue Medium"],
-      'serif': ['"Barlow", sans-serif'],
-      'title': ["Helvetica Neue Bold"],
+      'title': ["'Poppins', sans-serif"],
       'sans': ["'Noto Serif JP', serif"],
     },
   },

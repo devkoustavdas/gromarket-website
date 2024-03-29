@@ -1,18 +1,18 @@
-section.content>h2 {
+section.content h2 {
     color: rgb(129 140 248);
     font-size: 22px !important;
     font-family: 'Noto Serif JP', serif;
     margin: 20px 0px 8px 0px !important;
 }
 
-section.content>h3 {
+section.content h3 {
     color: rgb(129 140 248);
     font-size: 18px !important;
     font-family: 'Noto Serif JP', serif;
     margin: 15px 0px 8px 0px !important;
 }
 
-section.content>p {
+section.content p {
     text-align: justify;
     word-break: keep-all;
 } 
@@ -60,4 +60,15 @@ section.content blockquote {
     text-align: justify;
     word-break: keep-all;
     border-left: solid 2px rgb(129 140 248);
+}
+
+section.content div {
+    border-radius: 0.375rem/* 6px */;
+    margin-top: 1.25rem/* 20px */;
+    margin-bottom: 1.25rem/* 20px */;
+    padding-left: 1.25rem/* 20px */;
+    padding-right: 1.25rem/* 20px */;
+    padding-bottom: 0.75rem/* 12px */;
+    border: solid 2px rgb(100 116 139);
+    border-width: 2px;
 }

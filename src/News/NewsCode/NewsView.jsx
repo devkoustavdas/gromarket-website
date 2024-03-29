@@ -6,7 +6,7 @@ const NewsView = () => {
 
     return (
         <section>
-            <h1 className="sr-only">Finance News from GroMarket covering Investment, Insurance, Trading, Startups, and others</h1>
+            <h1 className="sr-only">Finance News from GroMarket covering Investment, Taxation, Insurance, Trading, Startups, and others</h1>
             <h2 className="titleHead mt-7">Finance News.</h2>
             <h3 className="text-center text-md font-serif text-slate-400 mb-7">Read the news around the market to stay updated</h3>
             <div className="flex flex-col md:flex-row">

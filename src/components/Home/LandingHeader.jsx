@@ -14,8 +14,8 @@ const LandingHeader = () => {
 
   return (
     <header className="bg-slate-800 min-h-1/2 flex flex-col font-sans px-8 py-10 text-center  justify-center">
-      <h2 className="my-5 text-6xl font-title text-shadow">Make smarter financial decisions</h2>
-      <h2 className="text-4xl font-sans lowercase"><Typewriter
+      <h2 className="my-5 text-5xl font-extrabold font-title text-shadow">Make smarter financial decisions</h2>
+      <h2 className="text-3xl font-sans lowercase"><Typewriter
         options={{
           strings: ['#for yourself', '#for your business', "#for your family"],
           autoStart: true,
@@ -23,7 +23,7 @@ const LandingHeader = () => {
         }}
       /></h2>
       
-      <div className="font-heading flex flex-row gap-3 justify-center my-8">
+      <div className="font-title flex flex-row gap-3 justify-center my-8">
         <Link to={"/resources"} onClick={() => handleTabClick("resources")}><Btn type="warning" text="Resources" /></Link>
         <Link to={"/blogs"} onClick={() => handleTabClick("stocks")}><Btn type="neutral" text="Blogs" /></Link>
         <Link to={"/news"} onClick={() => handleTabClick("news")}><Btn type="blank" text="News" /></Link>
