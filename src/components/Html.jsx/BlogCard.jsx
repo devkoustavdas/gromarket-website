@@ -5,7 +5,7 @@ const BlogCard = ({ head, body, link, tag }) => {
 
     return (
         <Link to={link} className="no-underline">
-            <div className="bg-gradient-to-r from-indigo-500 to-indigo-100 pt-1 my-3 mx-auto w-11/12 rounded-md shadow duration-200 hover:scale-103">
+            <div className="bg-gradient-to-r from-indigo-500 to-indigo-100 pt-1 my-3 mx-auto w-19/20 rounded-md shadow duration-200 hover:scale-103">
                 <div className="h-full w-full rounded-md overflow-none bg-slate-800 py-3 px-4"
                     title={`GroMarket: ${head}`}
                     aria-label={`GroMarket: ${head}`}>
