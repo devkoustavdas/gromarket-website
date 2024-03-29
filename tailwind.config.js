@@ -13,9 +13,11 @@ export default {
       },
 },
     fontFamily: {
-      'sans': ["'Noto Serif JP', serif"],
+      'body': ["Helvetica Neue Light"],
+      'heading': ["Helvetica Neue Medium"],
       'serif': ['"Barlow", sans-serif'],
-      'title': ["'Red Rose Variable', sans-serif"],
+      'title': ["Helvetica Neue Bold"],
+      'sans': ["'Noto Serif JP', serif"],
     },
   },
   plugins: [],

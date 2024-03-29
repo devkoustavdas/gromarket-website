@@ -12,6 +12,7 @@ const Footer = () => {
         <div className="flex flex-col">
           <Link to={"/resources"} className="hover:text-slate-300 hover:underline hover:underline-offset-2">Resources</Link>
           <Link to={"/blogs"} className="hover:text-slate-300 hover:underline hover:underline-offset-2">Blogs</Link>
+          <Link to={"/news"} className="hover:text-slate-300 hover:underline hover:underline-offset-2">Finance News</Link>
           <Link to={"/stocks"} className="hover:text-slate-300 hover:underline hover:underline-offset-2">Analyse Stocks</Link>
         </div>
         <div className="flex flex-col">

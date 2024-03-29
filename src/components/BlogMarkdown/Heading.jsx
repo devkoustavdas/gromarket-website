@@ -4,7 +4,7 @@ const Heading = ({ title, date, tag }) => {
 
   return (
     <header className="text-slate-50 onesideroundedbox bg-teal-500 mb-4 drop-shadow-md pl-6 pr-7 pt-5 pb-1" title={`GroMarket: ${title}`} aria-label={`GroMarket: ${title}`}>
-      <h1 className="text-2xl md:text-4xl text-left text-shadow font-sans mb-2">
+      <h1 className="text-2xl md:text-4xl text-left text-shadow font-heading mb-2">
         {title}
       </h1>
       <div>

@@ -2,7 +2,7 @@ import { getUrl } from "../../util";
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 
-const Img = ({ name, describe, width, link }) => {
+const Img = ({ name, describe, link }) => {
   return (
     <div title={describe} aria-label={describe} className="mx-auto my-2 w-4/5 lg:w-3/5 md:w-1/2 select-none">
       <h4 className="hidden">Gromarket - {describe}</h4>

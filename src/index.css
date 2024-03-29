@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+ font-family: "Helvetica Neue Light";
+ src: local("helvetica-neue"),
+  url("./Fonts/helvetica-neue/HelveticaNeueLight.ttf") format("truetype");
+}
+
+@font-face {
+ font-family: "Helvetica Neue Medium";
+ src: local("helvetica-neue"),
+  url("./Fonts/helvetica-neue/HelveticaNeueMedium.ttf") format("truetype");
+}
+
+@font-face {
+ font-family: "Helvetica Neue Bold";
+ src: local("helvetica-neue"),
+  url("./Fonts/helvetica-neue/HelveticaNeueBold.ttf") format("truetype");
+}
+
 @layer base {
   html {
     width: 100%;
@@ -10,7 +28,7 @@
   }
 
   body {
-    @apply normal-nums break-normal antialiased text-base font-serif align-middle w-space-1 bg-slate-900 text-slate-400;
+    @apply normal-nums break-normal antialiased text-standard font-serif align-middle w-space-1 bg-slate-900 text-slate-400;
   }
 
   p {
@@ -30,8 +48,13 @@
 }
 
 @layer components {
+.text-standard{
+  font-size: 15px;
+  line-height: 22px;
+}
+
   .subHead {
-    @apply py-1 text-xl font-semibold text-left font-sans text-indigo-400;
+    @apply py-1 text-1.5xl text-left font-heading text-indigo-400;
   }
 
   .titleHead {

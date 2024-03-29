@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import '@fontsource/barlow';
-import '@fontsource-variable/red-rose';
 import '@fontsource/noto-serif-jp';
+import "./Fonts/helvetica-neue/HelveticaNeueMedium.ttf";
+import "./Fonts/helvetica-neue/HelveticaNeueLight.ttf";
+import "./Fonts/helvetica-neue/HelveticaNeueBold.ttf";
 
 
 import Resources from './pages/Resources';
@@ -26,6 +28,7 @@ import NiftyFMCG from './Stocks/NiftyFMCG';
 import ShortTermStocks from './pages/ShortTermStocks';
 
 import AmazonSpendsOnAnthropic from './News/NewsPosts/AmazonSpendsOnAnthropic';
+
 
 function App() {
 
