@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { lazy, Suspense } from "react";
-import siteLink from "../../siteLink";
+import { siteLink } from '../../siteLink';
 
 import {
     EmailIcon,
@@ -20,7 +20,7 @@ import {
 } from "react-share";
 
 const Share = ({ title, link }) => {
-    const pglink = `${siteLink}/${link}`;
+    const pglink = `${siteLink}${link}`;
     return (
         <React.Suspense fallback={<div>Loading...</div>}>
             <section
