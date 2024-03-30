@@ -6,6 +6,7 @@ const AmazonSpendsOnAnthropic = () => {
   return (
       <NewsTemplate
           title="Amazon spends $2.75 billion on AI startup Anthropic in its largest venture investment yet"
+          description={"Tech giant Amazon spends $2.75 billion on American artificial intelligence (AI) startup Anthropic (developer of Claude) in its largest venture investment yet"}
           date={"27/03/2024"}
           tags={["Corporate Finance", "Investment"]}
           link={"amazon-spends-2point7b-on-startup-anthropic-in-largest-venture-investment"}
@@ -15,7 +16,6 @@ const AmazonSpendsOnAnthropic = () => {
                   <blockquote>
                       <p>Amazon Bets $4 Billion on AI Startup Anthropic</p>
                   </blockquote>
-                  <h3 className="sr-only">Tech giant Amazon spends $2.75 billion on American artificial intelligence (AI) startup Anthropic (developer of Claude) in its largest venture investment yet</h3>
                   <p>In one of the largest corporate venture deals ever, Amazon is doubling down on artificial intelligence with a massive <strong><em>$4 billion investment</em></strong> in <strong><em>Anthropic</em></strong>, a <em>buzzy AI startup</em>. The latest $2.75 billion tranche brings Amazon&#39;s total funding for the San Francisco company to the multi-billion dollar commitment.</p>
                   <p>The deal underscores the hyper-competition around generative AI, an emerging technology that can generate human-like text, images, and other content from training data. Anthropic&#39;s standout product is Claude, a powerful language model competing directly with OpenAI&#39;s vaunted ChatGPT.</p>
                   <p>By the Numbers:</p>

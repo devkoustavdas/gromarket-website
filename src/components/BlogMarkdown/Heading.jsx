@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Heading = ({ title, date, tag }) => {
+const Heading = ({ title, date, tags }) => {
 
   return (
     <header className="text-slate-300 onesideroundedbox bg-slate-700 mb-4 pl-6 pr-7 pt-5 pb-1" title={`GroMarket: ${title}`} aria-label={`GroMarket: ${title}`}>
@@ -11,7 +11,7 @@ const Heading = ({ title, date, tag }) => {
         <span>Tags</span>
         <span className='px-1'>&#x2022;</span>
         <div className="whitespace-nowrap flex flex-wrap">
-          {tag.map((tagItem, index) => (
+          {tags.map((tagItem, index) => (
             <span key={index} className="bg-teal-600 text-slate-100 px-2 mx-1 my-1 py-1 rounded-xl text-sm">
               {tagItem}
             </span>
@@ -30,7 +30,7 @@ const Heading = ({ title, date, tag }) => {
 Heading.propTypes = {
   title: PropTypes.string.isRequired,
   date: PropTypes.string,
-  tag: PropTypes.arrayOf(PropTypes.string).isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Heading;

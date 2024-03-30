@@ -8,19 +8,19 @@ import PropTypes from 'prop-types';
 import { siteLink } from "../../siteLink";
 import Subscribe from "../../components/Html.jsx/Subscribe";
 
-const NewsTemplate = ({ title, date, tags, link, content }) => {
+const NewsTemplate = ({ title, description, date, tags, link, content }) => {
     return (
         <main className="flex flex-col lg:flex-row">
             <div className="w-full lg:w-3/5 shadow-lg m-3 rounded-lg px-3 md:px-5 py-2 pb-4">
-                <Meta title={title} link={`news/${link}`} keyword={tags} />
+                <Meta title={title} link={`news/${link}`} keyword={tags} description={description} />
                 <Heading
                     title={title}
                     date={date}
-                    tag={tags}
+                    tags={tags}
                 />
                 <div className='lg:flex flex-row'>
                     <section>
-                        <div className='text-xs w-11/12'>
+                        <div className='font-title text-sm w-11/12 leading-loose'>
                             <span className="hover:bg-slate-700 px-2 py-1 rounded duration-200" title='Go to GroMarket Home Page'><Link to="/" className="no-underline">Home</Link></span><span className="text-teal-500">/</span>
                             <span className="hover:bg-slate-700 px-2 py-1 rounded duration-200" title='Go to Finance News Page'><Link to="/news" className="no-underline">Finance News</Link></span><span className="text-teal-500">/</span>
                             <span className='bg-slate-800 px-2 py-1 rounded hover:bg-slate-700 duration-200'><Link to={`/news/${link}`} className="no-underline">{title}</Link></span>
@@ -30,6 +30,7 @@ const NewsTemplate = ({ title, date, tags, link, content }) => {
                             link={`${siteLink}/news/${link}`}
                         />
                         <div className='text-justify mt-10'>
+                            <h2 className="sr-only">{description}</h2>
                             {content}
                         </div>
                     </section>
@@ -47,6 +48,7 @@ const NewsTemplate = ({ title, date, tags, link, content }) => {
 }
 NewsTemplate.propTypes = {
     title: PropTypes.string.isRequired,
+    description: PropTypes.string,
     date: PropTypes.string,
     link: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,

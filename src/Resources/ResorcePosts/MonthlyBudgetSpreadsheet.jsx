@@ -1,5 +1,5 @@
-import ResourceTemplate from "./ResourceTemplate";
-import styles from "../content.module.css";
+import ResourceTemplate from "../ResourceTemplate";
+import styles from "../../content.module.css";
 
 const MonthlyBudgetSpreadsheet = () => {
   return (

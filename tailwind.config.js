@@ -15,6 +15,7 @@ export default {
     fontFamily: {
       'title': ["'Poppins', sans-serif"],
       'sans': ["'Noto Serif JP', serif"],
+      'body': ["'Barlow', sans-serif"],
     },
   },
   plugins: [],

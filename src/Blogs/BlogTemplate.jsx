@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 import { siteLink } from "../siteLink";
 import Subscribe from "../components/Html.jsx/Subscribe";
 
-const BlogTemplate = ({ title, date, tag, link, content }) => {
+const BlogTemplate = ({ title, description, date, tag, link, content }) => {
     return (
         <main className="flex flex-col lg:flex-row">
             <div className="w-full lg:w-3/5 shadow-lg m-3 rounded-lg px-3 md:px-5 py-2 pb-4">
@@ -16,11 +16,11 @@ const BlogTemplate = ({ title, date, tag, link, content }) => {
                 <Heading
                     title={title}
                     date={date}
-                    tag={tag}
+                    tags={tag}
                 />
                 <div className='lg:flex flex-row'>
                     <section>
-                        <div className='text-xs w-11/12'>
+                        <div className='font-title text-sm w-11/12 leading-loose'>
                             <span className="hover:bg-slate-700 px-2 py-1 rounded duration-200" title='Go to GroMarket Home'><Link to="/" className="no-underline">Home</Link></span><span className="text-teal-500">/</span>
                             <span className="hover:bg-slate-700 px-2 py-1 rounded duration-200" title='Go to Resources'><Link to="/blogs" className="no-underline">Blogs</Link></span><span className="text-teal-500">/</span>
                             <span className='bg-slate-800 px-2 py-1 rounded hover:bg-slate-700 duration-200 break-words'><Link to={`/blogs/${link}`} className="no-underline">{title}</Link></span>
@@ -30,6 +30,7 @@ const BlogTemplate = ({ title, date, tag, link, content }) => {
                             link={`${siteLink}/blogs/${link}`}
                         />
                         <div className='text-justify mt-10'>
+                            <h2 className="sr-only">{description}</h2>
                             {content}
                         </div>
                     </section>
@@ -47,6 +48,7 @@ const BlogTemplate = ({ title, date, tag, link, content }) => {
 }
 BlogTemplate.propTypes = {
     title: PropTypes.string.isRequired,
+    description: PropTypes.string,
     date: PropTypes.string,
     link: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,

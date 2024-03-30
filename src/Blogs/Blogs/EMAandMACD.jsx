@@ -7,6 +7,7 @@ const EMAandMACD = () => {
     <div>
           <BlogTemplate
               title="MACD and EMA - The perfect Free Indicator Combo for your Breakout Trades"
+              description={"Moving Average Convergence Divergence (MACD) and Exponential Moving Average (EMA) -The perfect Free Indicator Combo on TradingView.com for your Breakout Trades in your Intraday Trading"}
               date={"27/03/2024"}
               tag={["Investment", "Intraday Trading"]}
               link={"ema-and-macd-for-intraday-trading"}
@@ -15,7 +16,6 @@ const EMAandMACD = () => {
                       <Img name='Using MACD and EMA Indicator for Trading.png' describe={"Using MACD and EMA Indicator for Trading"} />
                       <blockquote>Hey there, fellow traders! Are you on the hunt for that perfect indicator combo to catch breakout trades like a pro? Look no further because we&#39;re about to disclose a winning strategy that combines the power of the <em>Moving Average Convergence Divergence (MACD) indicator with the Exponential Moving Average (EMA)</em>. This is the perfect strategy you will need for intraday trading.</blockquote>
                       <h3 id="in-this-article-we-ll-discuss-">In this article we&#39;ll discuss:</h3>
-                      <h2 className="sr-only">Moving Average Convergence Divergence (MACD) and Exponential Moving Average (EMA) -The perfect Free Indicator Combo on TradingView.com for your Breakout Trades in your Intraday Trading</h2>
                       <ul>
                           <li>What <strong>Moving Average Convergence Divergence (MACD)</strong> is</li>
                           <li>Which MACD indicator to use in TradingView</li>

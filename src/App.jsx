@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import '@fontsource/noto-serif-jp';
 import '@fontsource/poppins';
+import '@fontsource/barlow';
 
 import Resources from './pages/Resources';
 import Navbar from './components/Html.jsx/Navbar';
@@ -14,10 +15,10 @@ import Careers from './pages/Careers';
 
 import BackToTop from './components/Html.jsx/BackToTop/BackToTop';
 
-import MonthlyBudgetSpreadsheet from "./Resources/MonthlyBudgetSpreadsheet";
-import BillTracker from "./Resources/BillTracker";
+import MonthlyBudgetSpreadsheet from "./Resources/ResorcePosts/MonthlyBudgetSpreadsheet";
+import BillTracker from "./Resources/ResorcePosts/BillTracker";
 
-import BudgetRule from './Blogs/BudgetRule/BudgetRule';
+import BudgetRule from "./Blogs/Blogs/BudgetRule";
 import EMAandMACD from './Blogs/Blogs/EMAandMACD';
 
 import NiftyFMCG from './Stocks/NiftyFMCG';
