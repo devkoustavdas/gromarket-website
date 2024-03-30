@@ -23,11 +23,10 @@ const Share = ({ title, link }) => {
     const pglink = `${siteLink}${link}`;
     return (
         <React.Suspense fallback={<div>Loading...</div>}>
-            <section
+            <section className='border-l-2 border-teal-500 pb-2'
                 style={{
                     margin: "10px 0px",
                     lineHeight: "30px",
-                    borderLeft: "solid 3px #ffbe45",
                     paddingLeft: "10px",
                     width: "max-content",
                 }}
@@ -41,7 +40,7 @@ const Share = ({ title, link }) => {
                         columnGap: "10px",
                     }}
                 >
-                    <FacebookShareButton url={pglink}>
+                    <FacebookShareButton url={pglink} title={title}>
                         <FacebookIcon size={32} round />
                     </FacebookShareButton>
                     <TwitterShareButton url={pglink} title={title}>
