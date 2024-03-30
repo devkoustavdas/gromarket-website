@@ -21,7 +21,7 @@ const EMAandMACD = () => {
                           <li><a href="#which-macd-indicator-to-use-in-tradingview">Which MACD indicator to use in TradingView</a></li>
                           <li><a href="#what-is-a-ema-indicator-and-what-is-the-theory-behind-it">What <strong>Exponential Moving Average (EMA)</strong> is</a></li>
                           <li><a href="#which-ema-indicator-to-use-in-tradingview">Which EMA indicator to use in TradingView</a> </li>
-                          <li><a href="how-to-use-the-macd-and-ema-to-trade">Using MACD and EMA to build your trading strategy</a></li>
+                          <li><a href="#how-to-use-the-macd-and-ema-to-trade">Using MACD and EMA to build your trading strategy</a></li>
                       </ul>
                       <h2 id="what-is-a-macd-indicator-and-what-is-the-theory-behind-it">What is a <strong><em>MACD indicator</em></strong> and what is the theory behind it?</h2>
                       <p>Moving average convergence/divergence (MACD) is a trend-following momentum indicator that shows the relationship between two exponential moving averages (EMAs) of a security’s price.</p>

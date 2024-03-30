@@ -21,10 +21,8 @@ const AmazonSpendsOnAnthropic = () => {
                   <p>By the Numbers:</p>
                   <ul>
                       <li><strong>$18.4 billion</strong> - Anthropic&#39;s valuation as of this deal</li>
-                      <li><p><strong>$7.3 billion</strong> - Total funding raised by Anthropic over the past year across 5 rounds</p>
-                      </li>
-                      <li><p><strong>$29.1 billion</strong> - Record amount invested in generative AI startups in 2023 so far</p>
-                      </li>
+                      <li><strong>$7.3 billion</strong> - Total funding raised by Anthropic over the past year across 5 rounds</li>
+                      <li><strong>$29.1 billion</strong> - Record amount invested in generative AI startups in 2023 so far</li>
                       <li><strong>700</strong> - Number of generative AI deals in 2023 to date</li>
                       <li><strong>92%</strong> - Percentage of Fortune 500 companies using OpenAI&#39;s ChatGPT</li>
                   </ul>
