@@ -5,7 +5,6 @@ import Share from '../components/Html.jsx/Share';
 import Meta from '../components/Html.jsx/Meta';
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
-import { siteLink } from "../siteLink";
 import Subscribe from "../components/Html.jsx/Subscribe";
 
 const ResourceTemplate = ({ title, description, date, tags, link, content }) => {
@@ -27,7 +26,7 @@ const ResourceTemplate = ({ title, description, date, tags, link, content }) => 
                         </div>
                         <Share
                             title={title}
-                            link={`${siteLink}/resources/${link}`}
+                            link={`/resources/${link}`}
                         />
                         <div className='text-justify mt-10'>
                             <h2 className="sr-only">{description}</h2>
