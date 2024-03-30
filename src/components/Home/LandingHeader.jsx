@@ -23,7 +23,7 @@ const LandingHeader = () => {
         }}
       /></h2>
 
-      <div className="font-title flex flex-row gap-3 justify-center my-8">
+      <div className="font-title text-sm flex flex-row gap-3 justify-center my-8">
         <Link to={"/resources"} onClick={() => handleTabClick("resources")}><Btn type="warning" text="Resources" /></Link>
         <Link to={"/blogs"} onClick={() => handleTabClick("stocks")}><Btn type="neutral" text="Blogs" /></Link>
         <Link to={"/news"} onClick={() => handleTabClick("news")}><Btn type="blank" text="News" /></Link>

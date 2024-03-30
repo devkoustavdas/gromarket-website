@@ -1,5 +1,4 @@
 import styles from "./StockTemplate.module.css";
-import Box from "../../components/Html.jsx/Box";
 import PropTypes from "prop-types";
 
 const formatCurrency = (amount) => {
@@ -66,13 +65,7 @@ const StockTemplate = ({ stock, date }) => {
                 <h1 aria-label={`${stock["name"]} Daily Analysis by GroMarket`} title={`${stock["name"]} Daily Analysis by GroMarket`} className={styles.stockTitle2}>
                     {stock["name"]} Share Price
                 </h1>
-                <Box
-                    id={"inside-monthly-budget"}
-                    head={"What’s Inside The Monthly Budget Template"}
-                    body={stock["trend"]}
-                    bg={"#ffbe45"}
-                    width={"90vw"}
-                />
+
 
             </section>
             <section>
