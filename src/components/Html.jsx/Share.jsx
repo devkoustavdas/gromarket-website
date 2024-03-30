@@ -20,7 +20,7 @@ import {
 } from "react-share";
 
 const Share = ({ title, link }) => {
-    const pglink = `${siteLink}${link}`;
+    const pglink = `${siteLink}/${link}`;
     return (
         <React.Suspense fallback={<div>Loading...</div>}>
             <section className='border-l-2 border-teal-500 pb-2'
