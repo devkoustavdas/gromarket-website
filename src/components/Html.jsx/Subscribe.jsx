@@ -4,7 +4,7 @@ import { getUrl } from "../../util";
 const Subscribe = () => {
   return (
     <div className="flex flex-col md:flex-row gap-2 bg-indigo-500 w-full mx-0 my-5 py-6 px-5 rounded-lg justify-center">
-      <div><img src={getUrl("Gromarket-standalone-Logo.svg")} className="w-12 mx-auto" alt="Gromarket Standalone Logo" /></div>
+      <div><img src={getUrl("GroMarket Logo.png")} className="w-12 mx-auto" alt="Gromarket Standalone Logo" /></div>
       <div className="text-gray-50 font-sans text-md text-center md:leading-tight md:w-1/6 md:text-left">Subscribe To Our Newsletter</div>
       <div className="relative w-full md:w-3/5">
         <label htmlFor="email" className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>

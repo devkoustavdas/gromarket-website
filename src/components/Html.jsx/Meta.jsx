@@ -13,7 +13,7 @@ const Meta = ({ title, description, keyword, link }) => {
             <meta property="og:description" content={description} />
             <meta
                 property="og:url"
-                content={`https://gromarket.vercel.com/${link}`}
+                content={`https://gromarket.vercel.app/${link}`}
             />
         </head>
     );

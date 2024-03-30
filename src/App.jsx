@@ -1,5 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import Favicon from "react-favicon";
+import { getUrl } from './util';
+
 import '@fontsource/noto-serif-jp';
 import '@fontsource/poppins';
 import '@fontsource/barlow';
@@ -32,10 +35,10 @@ function App() {
 
   return (
     <Router>
+      <Favicon url={getUrl("GroMarket Logo.png")} />
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-
         <Route path='/resources' element={<Resources />} />
         <Route path='/resources/free-monthly-budget-spreadsheet-template' element={<MonthlyBudgetSpreadsheet />} />
         <Route path='/resources/free-bill-tracker-template' element={<BillTracker />} />
