@@ -9,7 +9,7 @@ const AmazonSpendsOnAnthropic = () => {
           description={"Tech giant Amazon spends $2.75 billion on American artificial intelligence (AI) startup Anthropic (developer of Claude) in its largest venture investment yet"}
           date={"27/03/2024"}
           tags={["Corporate Finance", "Investment"]}
-          link={"amazon-spends-2point7b-on-startup-anthropic-in-largest-venture-investment"}
+          link={"amazon-spends-on-startup-anthropic-claude"}
           content={
               <section className={styles.content}>
                   <Img name="Amazon-spends-_2.75-billion-on-AI-startup-Anthropic.avif" describe={"Amazon spends $2.75 billion on AI startup Anthropic (developer of Claude)"} />
