@@ -18,6 +18,7 @@ const Footer = () => {
         <div className="flex flex-col">
           <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSczcB674V8l7lbIVydSk2PpwaOHbwFreJ_ue6IRhv80MJat-Q/viewform?usp=sf_link" className="hover:text-slate-300 hover:underline hover:underline-offset-2">Contact Us</a>
           <Link to={"/careers"} className="hover:text-slate-300 hover:underline hover:underline-offset-2">Careers</Link>
+          <Link to={"/disclaimer"} className="hover:text-slate-300 hover:underline hover:underline-offset-2">Disclaimer</Link>
         </div>
       </div>
       <hr className="my-2 border-gray-500 sm:mx-auto mt-5" />

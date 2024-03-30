@@ -15,6 +15,7 @@ import Footer from './pages/Footer';
 import Blogs from './pages/Blogs';
 import News from './pages/News';
 import Careers from './pages/Careers';
+import Disclaimer from './pages/Disclaimer';
 
 import BackToTop from './components/Html.jsx/BackToTop/BackToTop';
 
@@ -39,6 +40,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
+
         <Route path='/resources' element={<Resources />} />
         <Route path='/resources/free-monthly-budget-spreadsheet-template' element={<MonthlyBudgetSpreadsheet />} />
         <Route path='/resources/free-bill-tracker-template' element={<BillTracker />} />
@@ -48,6 +50,7 @@ function App() {
         <Route path='/blogs/ema-and-macd-for-intraday-trading' element={<EMAandMACD />} />
 
         <Route path='/careers' element={<Careers />} />
+        <Route path='/disclaimer' element={<Disclaimer />} />
 
         <Route path="/stocks/niftyfmcg" element={<NiftyFMCG />} />
         <Route path="/stocks/best-stocks-to-buy-for-short-term" element={<ShortTermStocks />} />
