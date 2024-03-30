@@ -9,6 +9,7 @@ import '@fontsource/barlow';
 
 import Resources from './pages/Resources';
 import Navbar from './components/Html.jsx/Navbar';
+import Ticker from './components/Html.jsx/Ticker';
 import Error from "./pages/Error";
 import Home from "./pages/Home";
 import Footer from './pages/Footer';
@@ -24,6 +25,7 @@ import BillTracker from "./Resources/ResorcePosts/BillTracker";
 
 import BudgetRule from "./Blogs/Blogs/BudgetRule";
 import EMAandMACD from './Blogs/Blogs/EMAandMACD';
+import BadInvestmentHabits from './Blogs/Blogs/BadInvestmentHabits';
 
 import NiftyFMCG from './Stocks/NiftyFMCG';
 import ShortTermStocks from './pages/ShortTermStocks';
@@ -37,6 +39,7 @@ function App() {
   return (
     <Router>
       <Favicon url={getUrl("GroMarket Logo.png")} />
+      <Ticker />
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -48,6 +51,7 @@ function App() {
         <Route path='/blogs' element={<Blogs />} />
         <Route path='/blogs/50-30-20-Budget-Rule' element={<BudgetRule />} />
         <Route path='/blogs/ema-and-macd-for-intraday-trading' element={<EMAandMACD />} />
+        <Route path='/blogs/bad-investment-habits-to-stay-away-from' element={<BadInvestmentHabits />} />
 
         <Route path='/careers' element={<Careers />} />
         <Route path='/disclaimer' element={<Disclaimer />} />

@@ -21,6 +21,11 @@ const BlogList = ({ type }) => {
                 tag={["Investment", "Intraday Trading"]}
                 link={"/blogs/ema-and-macd-for-intraday-trading"}
                 body={"Are you on the hunt for that perfect indicator combo to catch breakout trades like a pro?"} />
+            <BlogCard
+                head="Bad Investment Habits to stay away from"
+                tag={["Investment", "Intraday Trading"]}
+                link={"/blogs/bad-investment-habits-to-stay-away-from"}
+                body={"Bad Investment Habits to stay away from"} />
         </div>
     )
 }
