@@ -14,6 +14,7 @@ const BlogTemplate = ({ title, description, date, tag, link, content }) => {
                 <Meta title={title} link={`blogs/${link}`} keyword={tag} description={description} />
                 <Heading
                     title={title}
+                    description={description}
                     date={date}
                     tags={tag}
                 />

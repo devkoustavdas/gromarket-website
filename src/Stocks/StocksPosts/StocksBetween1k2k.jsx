@@ -33,6 +33,13 @@ const StocksBetween1k2k = () => {
           <section className={styles.content}>
             <p>Investing in stocks from among these offers advantages like strong Return on Equity (ROE) and Return on Capital Employed (ROCE), indicating efficient use of capital. Additionally, low debt-to-equity ratios signify financial stability. With consistent sales growth and attractive valuations, these stocks present potential for capital appreciation.</p>
             <p>However, it's essential to conduct thorough research and analysis before making investment decisions. Market conditions and company-specific factors can influence stock performance, and diversification remains key to managing risk effectively.</p>
+            <h2>Know about some company terms before investing</h2>
+            <h3>ROCE (Return on Capital Employed)</h3>
+            <p>ROCE (Return on Capital Employed) measures a company's efficiency in generating profits from its capital investments, providing insights into its operational effectiveness and potential for long-term growth.</p>
+            <h3>ROE (Return on Equity)</h3>
+            <p>ROE (Return on Equity) reflects a company's ability to generate profits from shareholder equity, indicating its efficiency in utilizing investors' funds to generate earnings, essential for evaluating management's performance and shareholder returns.</p>
+            <h3>One-year Returns</h3>
+            <p>One-year Returns offer insights into a stock's short-term performance, reflecting its ability to generate profits and outperform the market over a specific period, aiding investors in identifying stocks with momentum and growth potential.</p>
           </section>
         </main>
       }

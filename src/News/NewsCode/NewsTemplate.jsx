@@ -14,6 +14,7 @@ const NewsTemplate = ({ title, description, date, tags, link, content }) => {
                 <Meta title={title} link={`news/${link}`} keyword={tags} description={description} />
                 <Heading
                     title={title}
+                    description={description}
                     date={date}
                     tags={tags}
                 />
