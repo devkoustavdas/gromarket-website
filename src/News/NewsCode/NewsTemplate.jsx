@@ -37,7 +37,7 @@ const NewsTemplate = ({ title, description, date, tags, link, content }) => {
                 <Subscribe />
             </div>
             <React.Suspense fallback={<div>Loading...</div>}>
-                <div className="w-full lg:w-2/5">
+                <div className="w-19/20 mx-auto lg:w-2/5">
                     <div className='text-xl font-sans text-center mt-5 mb-3 font-bold text-teal-500'>Read More News</div>
                     <NewsList type={"part"} />
                 </div>

@@ -14,6 +14,7 @@ import Error from "./pages/Error";
 import Home from "./pages/Home";
 import Footer from './pages/Footer';
 import Blogs from './pages/Blogs';
+import Stocks from './pages/Stocks';
 import News from './pages/News';
 import Careers from './pages/Careers';
 import Disclaimer from './pages/Disclaimer';
@@ -56,6 +57,7 @@ function App() {
         <Route path='/careers' element={<Careers />} />
         <Route path='/disclaimer' element={<Disclaimer />} />
 
+        <Route path="/stocks" element={<Stocks />} />
         <Route path="/stocks/niftyfmcg" element={<NiftyFMCG />} />
         <Route path="/stocks/best-stocks-to-buy-for-short-term" element={<ShortTermStocks />} />
 

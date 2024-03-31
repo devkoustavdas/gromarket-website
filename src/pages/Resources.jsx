@@ -5,9 +5,9 @@ const Resources = () => {
     return (
         <section className='min-h-1/2'>
             <Meta
-                title={"Resources from GroMarket"}
+                title={"Financial Tools and Resources from GroMarket"}
                 description={
-                    "Use GroMarket's free resources to easily track your spending and take control of your finances. GroMarket's budget spreadsheet template (available for Excel and Google Sheets) is designed to help organize your finances."
+                    "Use GroMarket's free Financial Tools and Resources to easily track your spending, expenses, bills and take control of your finances. GroMArket provides tax calculators, currency conversions and others."
                 }
                 keyword={
                     "finance, budget, budget template, excel budget, budget spreadsheet, savings, money, GroMarket"
