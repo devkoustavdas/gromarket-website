@@ -29,7 +29,8 @@ import EMAandMACD from './Blogs/Blogs/EMAandMACD';
 import BadInvestmentHabits from './Blogs/Blogs/BadInvestmentHabits';
 
 import NiftyFMCG from './Stocks/NiftyFMCG';
-import ShortTermStocks from './pages/ShortTermStocks';
+import ShortTermStocks from './Stocks/StocksPosts/ShortTermStocks';
+import StocksBetween1k2k from './Stocks/StocksPosts/StocksBetween1k2k';
 
 import AmazonSpendsOnAnthropic from './News/NewsPosts/AmazonSpendsOnAnthropic';
 
@@ -59,6 +60,7 @@ function App() {
 
         <Route path="/stocks" element={<Stocks />} />
         <Route path="/stocks/niftyfmcg" element={<NiftyFMCG />} />
+        <Route path="/stocks/stocks-between-rs-1000-to-2000-with-growth-potential" element={<StocksBetween1k2k />} />
         <Route path="/stocks/best-stocks-to-buy-for-short-term" element={<ShortTermStocks />} />
 
         <Route path="/news" element={<News />} />

@@ -12,6 +12,11 @@ const StocksList = ({ type }) => {
     return (
         <div className={cl}>
             <BlogCard
+                link="/stocks/stocks-between-rs-1000-to-2000-with-growth-potential"
+                head={"Top Stocks in the Rs 1000 to Rs 2000 Price Range with potential growth (with great ROCE, ROE, Returns)"}
+                body={"Discover top stocks like ICICI Bank, Venus Pipes, etc priced between Rs 1000-2000, boasting RoE & RoCE > 5% and one-year returns > 5%, ideal for balanced growth investing"}
+                tag={["Investments", "Stocks"]} />
+            <BlogCard
                 link="/stocks/best-stocks-to-buy-for-short-term"
                 head={"Best Stocks To Buy For Short Term Investments"}
                 body={"Best Stocks To Buy For Short Term Investments"}

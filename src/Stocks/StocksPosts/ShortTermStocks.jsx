@@ -1,10 +1,10 @@
-import StockBox from "../components/Html.jsx/StockBox";
+import StockBox from "../../components/Html.jsx/StocksTable";
 
 const ShortTermStocks = () => {
   return (
     <main>
       <div className="mx-4">
-        <div className="w-full max-w-4xl mx-auto bg-white shadow-md rounded-md border border-gray-200 px-5 py-4">
+        <div className="w-full max-w-4xl mx-auto bg-slate-700 shadow-md rounded-md border  px-5 py-4">
           <h2 className="text-3xl font-title mb-2 text-indigo-500">Best Short Term Stocks to Buy Now</h2>
           <h3 className="text-justify">We have selected the best short term stocks based on 12 most impotant deciding factors. These stocks are priced below their long-term average, have high returns on investment, have moderate price-to-earnings ratios, generate positive cash flow, manage debt well, show healthy sales growth and profits, and have no pledged shares. These stocks are expected to show proper growth in the next 6 months to a year.</h3>
           <p className="text-xs bg-indigo-500 text-white max-w-fit px-4 py-1 rounded-md mt-2">23-02-2024</p>
@@ -25,7 +25,7 @@ const ShortTermStocks = () => {
       <StockBox stock={['Automotive Axles', 1907.9, 2169.17, 2882.84, 30.81, -17.45, 16.68, 0.03, 120.86]} />
       <StockBox stock={['Kingfa Science', 2018.65, 2072.09, 2444.68, 24.72, 15.7, 19.47, 0.05, 1545.93]} />
       <StockBox stock={['Craftsman Auto', 4430.35, 4455.92, 9360.58, 20.58, 50.82, 29.27, 0.99, 43.06]} />
-      <StockBox stock={['P & G Health Ltd', 5015.0, 5041.17, 8324.9, 45.47, 0.0, 36.73, 0.01, 47.47]} /> 
+      <StockBox stock={['P & G Health Ltd', 5015.0, 5041.17, 8324.9, 45.47, 0.0, 36.73, 0.01, 47.47]} />
     </main>
   )
 }

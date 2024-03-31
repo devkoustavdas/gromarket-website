@@ -1,22 +1,25 @@
 import PropTypes from 'prop-types';
 
-const Heading = ({ title, date, tags }) => {
+const Heading = ({ title, description, date, tags }) => {
 
   return (
     <header className="text-slate-300 onesideroundedbox bg-slate-700 mb-4 pl-6 pr-7 pt-5 pb-1" title={`GroMarket: ${title}`} aria-label={`GroMarket: ${title}`}>
       <h1 className="w-11/12 text-xl md:text-3xl text-left text-shadow font-title font-bold mb-2">
         {title}
       </h1>
+      <h2 className='font-body text-md mb-4 justify'>
+        {description}
+      </h2>
       <div>
         <span>Tags</span>
         <span className='px-1'>&#x2022;</span>
-        <div className="whitespace-nowrap flex flex-wrap">
+        <span className="whitespace-nowrap inline-flex flex-wrap">
           {tags.map((tagItem, index) => (
             <span key={index} className="bg-teal-600 text-slate-100 px-2 mx-1 my-1 py-1 rounded-xl text-sm">
               {tagItem}
             </span>
           ))}
-        </div>
+        </span>
       </div>
       {date && (
         <div className="font-serif text-base font-normal text-left pt-3 pb-4">
@@ -29,6 +32,7 @@ const Heading = ({ title, date, tags }) => {
 
 Heading.propTypes = {
   title: PropTypes.string.isRequired,
+  description: PropTypes.string,
   date: PropTypes.string,
   tags: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

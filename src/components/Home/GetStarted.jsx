@@ -1,6 +1,7 @@
 import ResourceView from "../../Resources/ResourceView";
 import BlogView from "../../Blogs/BlogView";
 import NewsView from "../../News/NewsCode/NewsView";
+import StocksView from "../../Stocks/StocksCode/StocksView";
 import Subscribe from "../Html.jsx/Subscribe";
 
 const GetStarted = () => {
@@ -15,6 +16,8 @@ const GetStarted = () => {
 
       <NewsView />
 
+      <StocksView />
+      
     </section>
   )
 }

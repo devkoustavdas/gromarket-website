@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 const Ticker = () => {
     const items = [
         ["MACD and EMA - The perfect Free Indicator Combo for your Breakout Trades", "/blogs/ema-and-macd-for-intraday-trading"],
+        ["Top Stocks in the Rs 1000 to Rs 2000 Price Range with potential growth (with great ROCE, ROE, Returns)", "/stocks/stocks-between-rs-1000-to-2000-with-growth-potential"],
         ["Amazon spends $2.75 billion on AI startup Anthropic in its largest venture investment yet", "/news/amazon-spends-on-startup-anthropic-claude"],
         ["Master Your Finances: Free Bill Tracker Template (available for Excel & Google Sheets)", "/resources/free-bill-tracker-template"],
         ["Free Monthly Budget Spreadsheet Template (available for Excel & Google Sheets)", "/resources/free-monthly-budget-spreadsheet-template"],
         ["Mastering the Art of Spending: How the 50/30/20 Budget Rule Can Help You Achieve Financial Freedom and Still Enjoy Your Life","/blogs/50-30-20-Budget-Rule"],
-        ["Avoid These Bad Investment Habits to Secure Your Financial Future", "/blogs/bad-investment-habits-to-stay-away-from"]
+        ["Avoid These Bad Investment Habits to Secure Your Financial Future", "/blogs/bad-investment-habits-to-stay-away-from"],
     ]
     const [showTicker, setShowTicker] = useState(false);
     const [i, setI] = useState(0);
