@@ -22,10 +22,10 @@ const BlogList = ({ type }) => {
                 link={"/blogs/ema-and-macd-for-intraday-trading"}
                 body={"Are you on the hunt for that perfect indicator combo to catch breakout trades like a pro?"} />
             <BlogCard
-                head="Bad Investment Habits to stay away from"
+                head="Avoid These Bad Investment Habits to Secure Your Financial Future"
                 tag={["Investment", "Intraday Trading"]}
                 link={"/blogs/bad-investment-habits-to-stay-away-from"}
-                body={"Bad Investment Habits to stay away from"} />
+                body={"Secure your financial future by avoiding bad investment habits: shun impatience, chase trends, be aware of fees, stay consistent, and diversify wisely."} />
         </div>
     )
 }

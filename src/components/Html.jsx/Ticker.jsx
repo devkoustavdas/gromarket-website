@@ -33,7 +33,7 @@ const Ticker = () => {
         if (showTicker) {
             const interval = setInterval(() => {
                 setI(prevIndex => (prevIndex + 1) % items.length);
-            }, 2000);
+            }, 3000);
 
             return () => clearInterval(interval);
         }
@@ -42,7 +42,7 @@ const Ticker = () => {
     return (
         <React.Fragment>
             {showTicker && (
-                <section className="fixed bg-slate-700 text-slate-300 py-2 w-full pl-4 z-50">
+                <section className="fixed top-0 text-shadow bg-slate-700 text-slate-300 py-2 w-full px-4 z-50">
                     <Link to={items[i][1]}>
                         <span className="font-title">Trending 🔥</span> {items[i][0]}
                     </Link>

@@ -3,32 +3,32 @@
 @tailwind utilities;
 
 @font-face {
- font-family: "Helvetica Neue Light";
- src: local("helvetica-neue"),
-  url("./Fonts/helvetica-neue/HelveticaNeueLight.ttf") format("truetype");
+  font-family: "Helvetica Neue Light";
+  src: local("helvetica-neue"),
+    url("./Fonts/helvetica-neue/HelveticaNeueLight.ttf") format("truetype");
 }
 
 @font-face {
- font-family: "Helvetica Neue Medium";
- src: local("helvetica-neue"),
-  url("./Fonts/helvetica-neue/HelveticaNeueMedium.ttf") format("truetype");
+  font-family: "Helvetica Neue Medium";
+  src: local("helvetica-neue"),
+    url("./Fonts/helvetica-neue/HelveticaNeueMedium.ttf") format("truetype");
 }
 
 @font-face {
- font-family: "Helvetica Neue Bold";
- src: local("helvetica-neue"),
-  url("./Fonts/helvetica-neue/HelveticaNeueBold.ttf") format("truetype");
+  font-family: "Helvetica Neue Bold";
+  src: local("helvetica-neue"),
+    url("./Fonts/helvetica-neue/HelveticaNeueBold.ttf") format("truetype");
 }
 
 @layer base {
   html {
     width: 100%;
     height: 100%;
-    @apply scroll-smooth scroll-pt-6 not-sr-only;
+    @apply scroll-smooth scroll-mt-10;
   }
 
   body {
-    @apply normal-nums break-normal antialiased text-base font-body align-middle w-space-1 bg-slate-900 text-slate-400;
+    @apply normal-nums break-normal antialiased text-base font-body align-middle w-space-1 bg-slate-900 text-slate-400 scroll-x-none;
   }
 
   p {
@@ -48,10 +48,10 @@
 }
 
 @layer components {
-.text-standard{
-  font-size: 15px;
-  line-height: 22px;
-}
+  .text-standard {
+    font-size: 15px;
+    line-height: 22px;
+  }
 
   .subHead {
     @apply py-1 text-xl text-left font-title font-semibold text-indigo-400;
@@ -73,16 +73,11 @@
 }
 
 @layer utilities {
-
   .w-19\/20 {
     width: 95%;
-} 
-.w-39\/40 {
+  }
+  .w-39\/40 {
     width: 97.5%;
-} 
-
-  .w-space-0 {
-    word-spacing: normal;
   }
 
   .w-space-1 {
@@ -109,14 +104,14 @@
     text-shadow: 2px 2px 5px rgba(17, 10, 10, 0.51);
   }
 
-  .font-superbold {
-    font-weight: 900;
-  }
-
   .text-1\.5xl {
     font-size: 1.375rem;
     /* 22px */
     line-height: 1.875rem;
     /* 30px */
+  }
+
+  .scroll-x-none {
+    overflow-x: hidden;
   }
 }
