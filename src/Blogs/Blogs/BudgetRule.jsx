@@ -29,22 +29,28 @@ const BudgetRule = () => {
           <ul>
             <li>Mortgage or Rent Payments</li>
             <li>Groceries</li>
-            <li>Utilities, such as water, electricity, cooking gas, and sewer service</li>
-            <li>Insurance Premium Payments</li>
+            <li>Utilities, such as water, electricity, cooking gas, sewer service, phone, and Internet</li>
+            <li>Health & Life Insurance Premium Payments</li>
             <li>Medical Expenses</li>
+            <li>Education and Personal Development</li>
+            <li>Public Transportation</li>
           </ul>
           <p><strong><em>Half of your post-tax income</em></strong> should be all that you need to meet your needs and obligations. If you are spending more than that on your needs, you will have to reduce your wants or try to adjust your lifestyle, perhaps to a smaller home or a more modest car. A solution might be to travel together in a car, use public transportation, or cook more frequently at home.</p>
           <h2 id="30-wants">30% — Wants</h2>
           <p>Wants are all the things you spend money on because <em>you like them</em>. They are not essential. If you boil it down, everything in the “wants” category is optional. These include:</p>
           <ul>
             <li>Hobbies</li>
+            <li>Charitable Donations</li>
             <li>Electronic Gadgets</li>
+            <li>Home decor and furniture</li>
             <li>Vacations</li>
+            <li>Gifts</li>
             <li>Dining Out</li>
-            <li>Purchasing Clothes</li>
-            <li>Digital and streaming services like Netflix
-              This category also includes the choices you make when upgrading, such as choosing an expensive steak over a cheaper hamburger or purchasing a Mercedes over a more economical Honda. Wants are all the little extras you spend money on that make life smoother, enjoyable, and entertaining.</li>
+            <li>Purchasing Clothes, and personal care products</li>
+            <li>Streaming services and other subscriptions and memberships</li>
+            <li>Movie, Sports, and concert tickets</li>
           </ul>
+          This category also includes the choices you make when upgrading, such as choosing an expensive steak over a cheaper hamburger or purchasing a Mercedes over a more economical Honda. Wants are all the little extras you spend money on that make life smoother, enjoyable, and entertaining.
           <h2 id="20-savings-and-investments">20% — Savings and Investments</h2>
           <p>Lastly, try to allocate <strong><em>20% of your post-tax income to savings and investments</em></strong>. These savings, with time, will help you fulfil your financial goals like buying a car, capital for a start-up, buying a house, etc. This includes:</p>
           <ul>
@@ -52,6 +58,7 @@ const BudgetRule = () => {
             <li>Retirement contributions</li>
             <li>Debt Repayment</li>
             <li>Emergency fund</li>
+            <li>Short-term shavings goals</li>
           </ul>
           <h2 id="practical-examples-of-the-50-30-20-budget-rule">Practical Examples of the 50/30/20 Budget Rule</h2>
           <p>Most individuals spend more than they save, often without even realizing it. The 50/30/20 rule of thumb can help you become more conscious of your spending patterns (financial habits) and prevent under- and overspending. You can increase your savings for the things that are important to you by spending less on the things that don’t really matter. This is how it goes:</p>
