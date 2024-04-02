@@ -22,7 +22,7 @@ const Navbar = () => {
             <div className="container mx-auto flex items-center justify-between">
                 <div><Logo size={4.5} /></div>
 
-                <div className="hidden md:flex space-x-4 text-slate-400">
+                <div className="hidden md:flex space-x-4 text-slate-400 text-center">
                     <Link to={"/"} onClick={() => handleTabClick("home")}>
                         <span className={`block py-2 px-3 rounded duration-200 hover:bg-slate-600 hover:text-slate-300 hover:shadow-md active:bg-slate-600 active:text-slate-300 ${whichTabOpen === "home"? "bg-slate-600 text-slate-300 shadow-md":""}`}>Home</span>
                     </Link>

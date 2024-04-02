@@ -78,3 +78,23 @@ section.content div {
     border: solid 2px rgb(100 116 139);
     border-width: 2px;
 }
+
+section.content li h2, section.content li h3, section.content li h4, section.content li h5 {
+    display: inline;
+}
+
+section.content input {
+    width: 100%;
+    background-color: #334155;
+    color: #e2e8f0;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-family: 'Barlow', sans-serif;
+    margin: 10px 0px;
+    border: solid 2px #64748b;
+}
+
+section.content input:active, section.content input:focus {
+    border: solid 2px #94a3b8;
+    outline: none;
+}

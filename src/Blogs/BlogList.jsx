@@ -13,7 +13,7 @@ const BlogList = ({ type }) => {
         <div className={cl}>
             <BlogCard 
                 link="/blogs/50-30-20-Budget-Rule" 
-                head={"50/30/20 Budget Rule"} 
+                head={"How the 50/30/20 Budget Rule Can Help You Achieve Financial Freedom and Still Enjoy Your Life"} 
                 body={"Download GroMarket's free monthly budget template to easily track your spending and take control of your finances."} 
                 tag={["Personal Finance", "Template", "Budget"]} />
             <BlogCard 
