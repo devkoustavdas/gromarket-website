@@ -22,6 +22,7 @@ const Blogs = () => {
                     "Tax planning, Debt management, Trading strategies, Investing tips, Savings advice, Budget planning, Financial insights"
                 }
                 link={"blogs"}
+                type={"website"}
             />
             <BlogView />
         </section>

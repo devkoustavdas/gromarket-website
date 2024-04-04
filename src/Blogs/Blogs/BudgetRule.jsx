@@ -16,6 +16,7 @@ const BudgetRule = () => {
       date={"01/11/2024"}
       tag={["Personal Finance", "Template", "Budget"]}
       link={"50-30-20-Budget-Rule"}
+      image={"503020-Budget-Rule.avif"}
       content={
         <section className={styles.content}>
           <Img name="503020-Budget-Rule.avif" describe="50/30/20 Budget Rule" link={"/blogs/50-30-20-Budget-Rule"} />

@@ -13,15 +13,16 @@ const Stocks = () => {
     return (
         <section className='min-h-1/2'>
             <Meta
-                title={"Stocks Analysis from GroMarket"}
+                title={"Stocks Analysis - GroMarket"}
                 description={
-                    "Read GroMarket's Stocks Analysis to easily track your spending and take control of your finances. GroMarket's budget spreadsheet template (available for Excel and Google Sheets) is designed to help organize your finances."
+                    "Get comprehensive stocks analysis, top stock picks, and market insights on Gromarket. Stay updated with the latest trends and make informed investment decisions"
                 }
                 image={getUrl("GroMarket-Stocks-Page.png")}
                 keyword={
-                    "finance, stocks, budget, budget template, excel budget, budget spreadsheet, savings, money, GroMarket"
+                    "stocks analysis, stock picks, market insights, investment decisions, stock market, trading"
                 }
                 link={"stocks"}
+                type={"website"}
             />
             <StocksView />
         </section>

@@ -1,6 +1,13 @@
 import Subscribe from "../components/Html.jsx/Subscribe"
+import { useEffect } from "react";
 
 const Careers = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, []);
   return (
     <main className='min-h-screen my-5 w-fit mx-auto text-center'>
       No Openings currently.

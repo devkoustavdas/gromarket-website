@@ -11,6 +11,7 @@ const EMAandMACD = () => {
               date={"27/03/2024"}
               tag={["Investment", "Intraday Trading"]}
               link={"ema-and-macd-for-intraday-trading"}
+              image={"Using-MACD-and-EMA-Indicator-for-Trading.avif"}
               content={
                   <section className={styles.content}>
                       <Img name='Using-MACD-and-EMA-Indicator-for-Trading.avif' describe={"Using MACD and EMA Indicator for Trading"} />

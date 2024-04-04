@@ -1,7 +1,14 @@
 import styles from "../content.module.css";
 import Subscribe from "../components/Html.jsx/Subscribe";
+import { useEffect } from "react";
 
 const Disclaimer = () => {
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, []);
     return (
         <main className="p-6">
             <section className={styles.content}>

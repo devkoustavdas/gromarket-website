@@ -16,15 +16,14 @@ const StocksTable = ({ stock }) => {
 
                 <div className="w-full max-w-4xl mx-auto bg-slate-800 shadow-lg rounded-md border border-slate-600">
                     <div className="px-5 py-4 border-b border-slate-600 text-slate-300">
-                        <div className="float-right font-body">{convertToIndianCurrency(stock[1])}</div>
-                        <h2 className="font-sans text-lg">{stock[0]}</h2>
+                        <div className="float-right font-body" title='Current Stock Price'>{convertToIndianCurrency(stock[1])}</div>
+                        <h4 className="font-sans text-lg">{stock[0]} <span className='sr-only'>Stock Details</span></h4>
                     </div>
                     <div className="p-3">
                         <div className="overflow-x-auto">
                             <table className="table-auto w-full">
                                 <thead className="text-sm font-medium bg-slate-700 text-slate-400">
                                     <tr className="font-title text-left">
-
                                         <th className="p-2 whitespace-nowrap" title="200-Day Moving Average">200 DMA</th>
                                         <th className="p-2 whitespace-nowrap" title="Return On Equity">ROE</th>
                                         <th className="p-2 whitespace-nowrap" title="Market Capitalisation">Mar Cap</th>

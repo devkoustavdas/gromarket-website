@@ -10,6 +10,7 @@ const AmazonSpendsOnAnthropic = () => {
           date={"27/03/2024"}
           tags={["Corporate Finance", "Investment"]}
           link={"amazon-spends-on-startup-anthropic-claude"}
+          image={"Amazon-spends-_2.75-billion-on-AI-startup-Anthropic.avif"}
           content={
               <section className={styles.content}>
                   <Img name="Amazon-spends-_2.75-billion-on-AI-startup-Anthropic.avif" describe={"Amazon spends $2.75 billion on AI startup Anthropic (developer of Claude)"} />

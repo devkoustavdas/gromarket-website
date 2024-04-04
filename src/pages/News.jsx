@@ -22,6 +22,7 @@ const News = () => {
                 }
                 link={"news"}
                 image={getUrl("GroMarket-News-Page.png")}
+                type={"website"}
             />
             <NewsView />
         </section>

@@ -22,6 +22,7 @@ const Resources = () => {
                     "financial tools, resources, track spending, expenses and bills, control finances, tax calculators, currency conversions"
                 }
                 link={"resources"}
+                type={"website"}
             />
             <ResourceView />
         </section>

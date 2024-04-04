@@ -18,7 +18,7 @@ const BlogTemplate = ({ title, description, image, date, tag, link, content }) =
     return (
         <main className="flex flex-col lg:flex-row">
             <div className="w-full lg:w-3/5 shadow-lg m-3 rounded-lg px-3 md:px-5 py-2 pb-4">
-                <Meta title={title} link={`blogs/${link}`} keyword={tag} description={description} image={image} />
+                <Meta title={title} link={`blogs/${link}`} keyword={tag} description={description} image={image} type={"article"} />
                 <Heading
                     title={title}
                     description={description}

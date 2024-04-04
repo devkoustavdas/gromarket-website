@@ -1,8 +1,15 @@
+import { useEffect } from "react";
 import LandingHeader from "../components/Home/LandingHeader";
 import GetStarted from "../components/Home/GetStarted";
 import Meta from '../components/Html.jsx/Meta';
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, []);
   return (
     <main>
       <Meta
@@ -14,6 +21,7 @@ const Home = () => {
           "Tax planning, Debt management, Trading and Investment strategies, Finance Blogs, Personal Finance Tips, Budget planning tools, Stock Analysis, Finance News"
         }
         link={"blogs"}
+        type={"website"}
       />
       <LandingHeader />
       <GetStarted />

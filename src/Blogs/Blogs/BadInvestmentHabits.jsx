@@ -10,6 +10,7 @@ const BadInvestmentHabits = () => {
           date={"30/03/2024"}
           tag={["Investment", "Intraday Trading"]}
           link={"bad-investment-habits-to-stay-away-from"}
+          image={"Bad-Investment-Habits-to-stay-away-from.avif"}
           content={
               <section className={styles.content}>
                   <Img name='Bad-Investment-Habits-to-stay-away-from.avif' describe={"Avoid These Bad Investment Habits to Secure Your Financial Future"} />
