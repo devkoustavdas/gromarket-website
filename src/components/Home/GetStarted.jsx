@@ -6,18 +6,18 @@ import Subscribe from "../Html.jsx/Subscribe";
 
 const GetStarted = () => {
   return (
-    <section className="min-h-1/2 justify-center px-6 py-4">
-    
-      <ResourceView />
+    <section className="min-h-1/2 justify-center px-6 py-4"> 
+
+      <BlogView />
 
       <Subscribe />
-      
-      <BlogView />
+
+      <StocksView />
+
+      <ResourceView />
 
       <NewsView />
 
-      <StocksView />
-      
     </section>
   )
 }

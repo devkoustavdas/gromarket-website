@@ -17,7 +17,7 @@ const StocksView = () => {
                         loop: true,
                     }} /></h3>
             <div className="w-19/20 mx-auto md:w-full flex flex-col md:flex-row">
-                <div className="w-4/5 lg:w-3/4 xl:w-3/5 mx-auto"><Link to={"/stocks"}><img className="w-3/5 md:w-4/5 xl:w-3/5 mx-auto select-none" src={getUrl("GroMarket-Stocks-Page.png")} alt="GroMarket Stocks Analysis" /></Link></div>
+                <div className="mx-auto"><Link to={"/stocks"}><img className="w-3/5 md:w-30vw xl:w-25vw mx-auto select-none p-2" src={getUrl("GroMarket-Stocks-Page.png")} alt="GroMarket Stocks Analysis" /></Link></div>
                 <StocksList type={"full"} />
             </div>
         </section>

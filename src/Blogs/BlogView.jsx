@@ -17,7 +17,7 @@ const BlogView = () => {
                     loop: true,
                 }} /></h3>
             <div className="w-19/20 mx-auto md:w-full flex flex-col md:flex-row">
-                <div><Link to={"/blogs"}><img className="w-3/5 md:w-3/4 mx-auto select-none" src={getUrl("GroMarket-Blogs-Page.png")} alt="GroMarket Blogs" /></Link></div>
+                <div className="mx-auto"><Link to={"/blogs"}><img className="w-3/5 md:w-30vw xl:w-25vw mx-auto select-none p-2" src={getUrl("GroMarket-Blogs-Page.png")} alt="GroMarket Blogs" /></Link></div>
                 <BlogList type={"full"} />
             </div>
         </section>

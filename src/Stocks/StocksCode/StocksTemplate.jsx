@@ -1,4 +1,5 @@
 import React, { lazy, Suspense } from "react";
+import { useEffect } from 'react';
 import Heading from "../../components/BlogMarkdown/Heading";
 import StocksList from "./StocksList";
 import Share from '../../components/Html.jsx/Share';
@@ -7,11 +8,11 @@ import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import Subscribe from "../../components/Html.jsx/Subscribe";
 
-const StocksTemplate = ({ title, description, date, tags, link, content }) => {
+const StocksTemplate = ({ title, description, image, date, tags, link, content }) => {
     return (
         <main className="flex flex-col lg:flex-row">
             <div className="w-full lg:w-3/5 shadow-lg m-3 rounded-lg px-3 md:px-5 py-2 pb-4">
-                <Meta title={title} link={`stocks/${link}`} keyword={tags} description={description} />
+                <Meta title={title} link={`stocks/${link}`} keyword={tags} description={description} image={image} />
                 <Heading
                     title={title}
                     description={description}
@@ -49,6 +50,7 @@ const StocksTemplate = ({ title, description, date, tags, link, content }) => {
 StocksTemplate.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string,
+    image: PropTypes.string,
     date: PropTypes.string,
     link: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,

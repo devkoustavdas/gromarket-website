@@ -1,18 +1,27 @@
+import { useEffect } from 'react'; 
 import Meta from '../components/Html.jsx/Meta';
 import NewsView from '../News/NewsCode/NewsView';
+import { getUrl } from '../util';
 
 const News = () => {
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, []);
     return (
         <section className='min-h-1/2'>
             <Meta
-                title={"Finance News from GroMarket"}
+                title={"Finance News - GroMarket"}
                 description={
-                    "Read GroMarket's free Finance News to easily track your spending and take control of your finances. GroMarket's budget spreadsheet template (available for Excel and Google Sheets) is designed to help organize your finances."
+                    "Stay updated with the latest news in the finance world, including stock market indices, startup updates, fundings, economic trends, and other financial news on Gromarket"
                 }
                 keyword={
-                    "finance, budget, budget template, excel budget, budget spreadsheet, savings, money, GroMarket"
+                    "finance news, stock market, index market, startups, investment, economic trends, financial updates, market analysis, business news"
                 }
                 link={"news"}
+                image={getUrl("GroMarket-News-Page.png")}
             />
             <NewsView />
         </section>

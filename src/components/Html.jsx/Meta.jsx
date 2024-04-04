@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import {siteLink} from "../../siteLink";
 
-const Meta = ({ title, description, keyword, link }) => {
+const Meta = ({ title, description, image, keyword, link }) => {
     return (
         <head>
             <link rel="canonical" href={`${siteLink}/${link}`} />
@@ -15,12 +15,17 @@ const Meta = ({ title, description, keyword, link }) => {
                 property="og:url"
                 content={`https://gromarket.vercel.app/${link}`}
             />
+            <meta
+                property="og:image"
+                content={image}
+            />
         </head>
     );
 };
 Meta.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string,
+    image: PropTypes.string,
     link: PropTypes.string.isRequired,
     keyword: PropTypes.string,
 };

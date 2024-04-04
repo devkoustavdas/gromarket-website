@@ -1,4 +1,5 @@
 import React, { lazy, Suspense } from "react";
+import { useEffect } from 'react';
 import Heading from '../components/BlogMarkdown/Heading';
 import BlogList from "./BlogList";
 import Share from '../components/Html.jsx/Share';
@@ -7,11 +8,17 @@ import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import Subscribe from "../components/Html.jsx/Subscribe";
 
-const BlogTemplate = ({ title, description, date, tag, link, content }) => {
+const BlogTemplate = ({ title, description, image, date, tag, link, content }) => {
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, []);
     return (
         <main className="flex flex-col lg:flex-row">
             <div className="w-full lg:w-3/5 shadow-lg m-3 rounded-lg px-3 md:px-5 py-2 pb-4">
-                <Meta title={title} link={`blogs/${link}`} keyword={tag} description={description} />
+                <Meta title={title} link={`blogs/${link}`} keyword={tag} description={description} image={image} />
                 <Heading
                     title={title}
                     description={description}
@@ -49,6 +56,7 @@ const BlogTemplate = ({ title, description, date, tag, link, content }) => {
 BlogTemplate.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string,
+    image: PropTypes.string,
     date: PropTypes.string,
     link: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,

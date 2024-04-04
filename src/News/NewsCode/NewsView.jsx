@@ -17,7 +17,7 @@ const NewsView = () => {
                         loop: true,
                     }} /></h3>
             <div className="w-19/20 mx-auto md:w-full flex flex-col md:flex-row">
-                <div><Link to={"/news"}><img className="scale-120 w-3/5 md:w-3/4 mx-auto select-none" src={getUrl("GroMarket-News-Page.png")} alt="GroMarket Finance News" /></Link></div>
+                <div className="mx-auto"><Link to={"/news"}><img className="w-3/5 md:w-30vw xl:w-25vw mx-auto select-none p-2" src={getUrl("GroMarket-News-Page.png")} alt="GroMarket Finance News" /></Link></div>
                 <NewsList type={"full"} />
             </div>
         </section>
