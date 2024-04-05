@@ -9,7 +9,7 @@ const BlogCard = ({ head, body, link, tag }) => {
                 <div className="h-full w-full rounded-md overflow-none bg-slate-800 py-3 px-4"
                     title={`GroMarket: ${head}`}
                     aria-label={`GroMarket: ${head}`}>
-                    <h2 className="subHead flex flex-row gap-2">
+                    <h3 className="subHead flex flex-row gap-2">
                         {head}
                         <span className="pt-1.5">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
@@ -17,9 +17,9 @@ const BlogCard = ({ head, body, link, tag }) => {
                                 <path fillRule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
                             </svg>
                         </span>
-                    </h2>
+                    </h3>
                     <div className="hr"></div>
-                    <h3 className="text-slate-300 break-words text-left">{body.length > 200 ? `${body.slice(0, 200)}...` : body}</h3>
+                    <p className="text-slate-300 break-words text-left">{body.length > 200 ? `${body.slice(0, 200)}...` : body}</p>
                     <div className="whitespace-nowrap flex flex-wrap">
                         {tag.map((tagItem, index) => (
                             <span key={index} className="bg-slate-700 text-slate-400 px-2 py-1 mx-1 my-1 rounded-xl inline text-sm">

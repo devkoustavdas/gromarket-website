@@ -45,7 +45,7 @@ const Ticker = () => {
             {showTicker && (
                 <section className="fixed top-0 text-shadow bg-slate-700 text-slate-300 py-2 w-full px-4 z-50">
                     <Link to={items[i][1]}>
-                        <span className="font-title">Trending 🔥</span> {items[i][0]}
+                        <span className="font-title">Trending 🔥</span> <p>{items[i][0]}</p>
                     </Link>
                 </section>
             )}

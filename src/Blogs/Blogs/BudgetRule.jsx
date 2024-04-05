@@ -2,6 +2,7 @@ import BlogTemplate from '../BlogTemplate';
 import Img from '../../components/Html.jsx/Img';
 import styles from "../../content.module.css";
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const BudgetRule = () => {
   const [income, setIncome] = useState();
@@ -45,6 +46,10 @@ const BudgetRule = () => {
             </ul>
             <p>Now plan your budget around these numbers.</p>
           </div>
+          <aside>
+            <Link to={"/resources/free-monthly-budget-spreadsheet-template"}>Free Monthly Budget Spreadsheet Template (available for Excel & Google Sheets) by GroMarket for making your budget</Link>
+          </aside>
+
           <h2 id="50-needs">50% — Needs</h2>
           <p>The expenses you should absolutely pay and the items you need to survive are considered Needs. These include:</p>
           <ul>
@@ -99,6 +104,9 @@ const BudgetRule = () => {
           <h3 id="50-30-20-budget-rule-allows-for-discretionary-spending">50/30/20 Budget Rule Allows for discretionary spending</h3>
           <p>The 30% allocated for discretionary spending gives you some flexibility to enjoy life and spend money on things you enjoy or things that make your life smoother. This can include things like entertainment, hobbies, or travel. This flexibility can help you avoid feeling like you’re constantly depriving yourself, which can lead to overspending or burnout.</p>
           <h3 id="50-30-20-budget-rule-prioritises-savings-and-debt-repayment">50/30/20 Budget Rule prioritises savings and debt repayment</h3>
+          <aside>
+            <Link to={"/resources/free-bill-tracker-template"}>Free Bill Tracker Template (available for Excel & Google Sheets) by GroMarket for making your bills more organised</Link>
+          </aside>
           <p>The 20% allocated for savings and debt repayment ensures that you’re <em>working towardsc long-term financial stability</em>. By saving and paying off debt, you can better prepare for emergencies and future expenses.</p>
           <h3 id="50-30-20-budget-rule-is-highly-customizable">50/30/20 Budget Rule is highly customizable</h3>
           <p>While the 50/30/20 rule provides a useful starting point, it’s also flexible enough to be adapted to your individual circumstances. For example, you may need to allocate more than 50% of your income to necessities, or you may need to adjust the percentages based on your income level or financial goals.</p>

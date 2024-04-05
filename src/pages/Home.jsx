@@ -20,7 +20,7 @@ const Home = () => {
         keyword={
           "Tax planning, Debt management, Trading and Investment strategies, Finance Blogs, Personal Finance Tips, Budget planning tools, Stock Analysis, Finance News"
         }
-        link={"blogs"}
+        link={""}
         type={"website"}
       />
       <LandingHeader />
