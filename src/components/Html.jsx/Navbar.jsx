@@ -77,7 +77,7 @@ const Navbar = () => {
                             
                             <div className='pt-8 pl-4'><Logo size={3} /></div>
                         </div>
-                        <div className='top-0 left-0 min-w-full min-h-screen fixed bg-slate-900 z-40 bg-opacity-70'></div>
+                        <div onClick={toggleMobileMenu} className='top-0 left-0 min-w-full min-h-screen fixed bg-slate-900 z-40 bg-opacity-70'></div>
                     </div>
                 )}
             </div>
