@@ -29,9 +29,9 @@ const LandingHeader = () => {
         <Link to={"/blogs"} onClick={() => handleTabClick("stocks")}><Btn type="neutral" text="Blogs" /></Link>
         <Link to={"/stocks"} onClick={() => handleTabClick("stocks")}><Btn type="blank" text="Stocks" /></Link>
       </div>
-      <div className="w-full scale-110 md:scale-100 mx-auto lg:w-4/5 ">
+      <div className="bg-slate-700 rounded-circle w-fit mx-auto m-3 border-2 border-slate-500">
       <label htmlFor="hero-img" className='hidden'>Finance, Tax, Debt, Savings, Investment</label>
-        <img id='hero-img' src={getUrl("gromarket-homepage.svg")} alt="gromarket-homepage" className='select-none' />
+        <img id='hero-img' src={getUrl("GroMarket-Home-Page-Maskot.svg")} alt="GroMarket-maskot-homepage" className='select-none w-80 mx-auto' />
       </div>
     </header>
   )

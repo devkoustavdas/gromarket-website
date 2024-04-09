@@ -22,6 +22,7 @@ const Home = () => {
         }
         link={""}
         type={"website"}
+        image={"GroMarket-Home-Page-Maskot.svg"}
       />
       <LandingHeader />
       <GetStarted />
