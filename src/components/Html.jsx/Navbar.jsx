@@ -69,6 +69,7 @@ const Navbar = () => {
                                 <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
                             </svg></div>
                             
+                            <div className='pt-8'></div>
                             <Link to={"/"} onClick={() => handleTabClick("home")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "home" ? "bg-slate-700 text-slate-300 shadow-md" : ""}`}>Home</span></Link>
                             <Link to={"/resources"} onClick={() => handleTabClick("resources")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "resources" ? "bg-slate-700 text-slate-300 shadow-md" : ""}`}>Resources</span></Link>
                             <Link to={"/blogs"} onClick={() => handleTabClick("blogs")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "blogs" ? "bg-slate-700 text-slate-300 shadow-md" : ""}`}>Blogs</span></Link>
