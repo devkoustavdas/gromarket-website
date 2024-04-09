@@ -63,12 +63,21 @@ const Navbar = () => {
                 </div>
 
                 {isMobileMenuOpen && (
-                    <div className="md:hidden z-50 absolute top-16 right-4 bg-slate-600 rounded-md p-4 space-y-2 animate__animated animate__backInDown">
-                        <Link to={"/"} onClick={() => handleTabClick("home")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "home"? "bg-slate-700 text-slate-300 shadow-md":""}`}>Home</span></Link>
-                        <Link to={"/resources"} onClick={() => handleTabClick("resources")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "resources"? "bg-slate-700 text-slate-300 shadow-md":""}`}>Resources</span></Link>
-                        <Link to={"/blogs"} onClick={() => handleTabClick("blogs")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "blogs" ? "bg-slate-700 text-slate-300 shadow-md" : ""}`}>Blogs</span></Link>
-                        <Link to={"/news"} onClick={() => handleTabClick("news")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "news" ? "bg-slate-700 text-slate-300 shadow-md" : ""}`}>Finance News</span></Link>
-                        <Link to={"/stocks"} onClick={() => handleTabClick("stocks")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "stocks"? "bg-slate-700 text-slate-300 shadow-md":""}`}>Analyse Stocks</span></Link>
+                    <div>
+                        <div className="md:hidden z-50 fixed top-0 right-0 w-3/5 max-w-sm bg-slate-800 border-l-4 border-slate-500 rounded-md p-4 space-y-2 animate__animated animate__bounceInRight">
+                            <div onClick={toggleMobileMenu} className='bg-slate-700 border-2 z-50 border-red-500 rounded-circle w-fit p-2 float-right text-red-500 '><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                            </svg></div>
+                            
+                            <Link to={"/"} onClick={() => handleTabClick("home")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "home" ? "bg-slate-700 text-slate-300 shadow-md" : ""}`}>Home</span></Link>
+                            <Link to={"/resources"} onClick={() => handleTabClick("resources")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "resources" ? "bg-slate-700 text-slate-300 shadow-md" : ""}`}>Resources</span></Link>
+                            <Link to={"/blogs"} onClick={() => handleTabClick("blogs")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "blogs" ? "bg-slate-700 text-slate-300 shadow-md" : ""}`}>Blogs</span></Link>
+                            <Link to={"/news"} onClick={() => handleTabClick("news")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "news" ? "bg-slate-700 text-slate-300 shadow-md" : ""}`}>Finance News</span></Link>
+                            <Link to={"/stocks"} onClick={() => handleTabClick("stocks")}><span className={`text-slate-400 hover:text-slate-300 block py-2 px-3 rounded duration-200 my-1 hover:bg-slate-700 hover:shadow ${whichTabOpen === "stocks" ? "bg-slate-700 text-slate-300 shadow-md" : ""}`}>Analyse Stocks</span></Link>
+                            
+                            <div className='pt-8 pl-4'><Logo size={3} /></div>
+                        </div>
+                        <div className='top-0 left-0 min-w-full min-h-screen fixed bg-slate-900 z-40 bg-opacity-70'></div>
                     </div>
                 )}
             </div>
