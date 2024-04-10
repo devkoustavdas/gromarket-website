@@ -7,6 +7,7 @@ import Meta from '../components/Html.jsx/Meta';
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import Subscribe from "../components/Html.jsx/Subscribe";
+import 'animate.css';
 
 const BlogTemplate = ({ title, description, image, date, tag, link, content }) => {
     useEffect(() => {
@@ -16,7 +17,7 @@ const BlogTemplate = ({ title, description, image, date, tag, link, content }) =
         });
     }, []);
     return (
-        <main className="flex flex-col lg:flex-row">
+        <main className="flex flex-col lg:flex-row animate__animated animate__bounceInRight">
             <div className="w-full lg:w-3/5 shadow-lg m-3 rounded-lg px-3 md:px-5 py-2 pb-4">
                 <Meta title={title} link={`blogs/${link}`} keyword={tag} description={description} image={image} type={"article"} />
                 <Heading
@@ -36,10 +37,10 @@ const BlogTemplate = ({ title, description, image, date, tag, link, content }) =
                             title={title}
                             link={`blogs/${link}`}
                         />
-                        <div className='text-justify mt-10'>
+                        <article className='text-justify mt-10'>
                             <h2 className="sr-only">{description}</h2>
                             {content}
-                        </div>
+                        </article>
                     </section>
                 </div>
                 <Subscribe />

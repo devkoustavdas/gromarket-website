@@ -3,6 +3,7 @@ import Btn from "../../components/Html.jsx/Button/Button";
 import { Link } from "react-router-dom";
 import { getUrl } from "../../util";
 import Typewriter from 'typewriter-effect';
+import 'animate.css';
 
 const LandingHeader = () => {
   const [whichTabOpen, setWhichTabOpen] = useState(localStorage.getItem("tab"));
@@ -29,7 +30,7 @@ const LandingHeader = () => {
         <Link to={"/blogs"} onClick={() => handleTabClick("stocks")}><Btn type="neutral" text="Blogs" /></Link>
         <Link to={"/stocks"} onClick={() => handleTabClick("stocks")}><Btn type="blank" text="Stocks" /></Link>
       </div>
-      <div className="bg-slate-700 rounded-circle w-fit mx-auto m-3 border-2 border-slate-500">
+      <div className="bg-slate-700 rounded-circle w-fit mx-auto m-3 border-2 border-slate-500 animate__animated animate__rubberBand">
       <label htmlFor="hero-img" className='hidden'>Finance, Tax, Debt, Savings, Investment</label>
         <img id='hero-img' src={getUrl("GroMarket-Home-Page-Maskot.svg")} alt="GroMarket-maskot-homepage" className='select-none w-80 mx-auto' />
       </div>
