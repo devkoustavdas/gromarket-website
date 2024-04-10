@@ -7,7 +7,6 @@ import Meta from '../../components/Html.jsx/Meta';
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import Subscribe from "../../components/Html.jsx/Subscribe";
-import 'animate.css';
 
 const NewsTemplate = ({ title, description, image, date, tags, link, content }) => {
     useEffect(() => {
@@ -17,7 +16,7 @@ const NewsTemplate = ({ title, description, image, date, tags, link, content }) 
         });
     }, []);
     return (
-        <main className="flex flex-col lg:flex-row animate__animated animate__bounceInRight">
+        <main className="flex flex-col lg:flex-row">
             <div className="w-full lg:w-3/5 shadow-lg m-3 rounded-lg px-3 md:px-5 py-2 pb-4">
                 <Meta title={title} link={`news/${link}`} keyword={tags} description={description} image={image} type={"article"} />
                 <Heading
