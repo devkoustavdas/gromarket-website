@@ -88,6 +88,10 @@
     width: 97.5%;
   }
 
+  /* .min-w-80 {
+    min-width: 32rem;
+  } */
+
   .w-space-1 {
     word-spacing: 0.2ch;
   }
@@ -121,5 +125,16 @@
 
   .scroll-x-none {
     overflow-x: hidden;
+  }
+
+  .display:hover::after {
+    content: attr(aria-description);
+    position: absolute;
+    background: #334155;
+    padding: 3px 10px;
+    line-break: loose;
+    margin: 10px;
+    border-radius: 4px;
+    z-index: 25;
   }
 }

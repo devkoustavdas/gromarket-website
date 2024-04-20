@@ -1,27 +1,59 @@
-import Share from '../components/Html.jsx/Share';
 import StockTemplate from './StockTemplate/StockTemplate';
+import { niftyfmcg } from '../importStocks';
+import React, { useEffect, useState } from 'react';
 
 const NiftyFMCG = () => {
-    const date = "15 December, 2023 - 4:14 p.m IST";
+
+    const [niftyFMCG, setNiftyFMCG] = useState(null);
+
+    useEffect(() => {
+        niftyfmcg()
+            .then(data => {
+                setNiftyFMCG(data);
+            })
+            .catch(error => {
+                console.error('Error fetching Nifty FMCG data:', error);
+            });
+    }, []);
+    
+    const date = niftyFMCG[0];
     const stock = {
         name: "Nifty FMCG",
-        price: 54186.2,
-        change: -175.25,
-        high: 54585.75,
-        low: 53963.25,
-        open: 54542.05,
-        return: -0.32,
-        divident: 1.84,
-        pe: 44.13,
-        pb: 11.71
+        nse: "NIFTYFMCG",
+        price: niftyFMCG[25],
+        change: niftyFMCG[4],
+        return: niftyFMCG[26],
+        open: niftyFMCG[1],
+        high: niftyFMCG[2],
+        low: niftyFMCG[3],
+        monthchange: niftyFMCG[5],
+        threemonthchange: niftyFMCG[6],
+        sma5: niftyFMCG[7],
+        sma20: niftyFMCG[8],
+        sma200: niftyFMCG[9],
+        ema5: niftyFMCG[10],
+        ema50: niftyFMCG[11],
+        ema200: niftyFMCG[12],
+        divident: niftyFMCG[13],
+        pe: niftyFMCG[14],
+        pb: niftyFMCG[15],
+        mcap: niftyFMCG[16],
+        cagr1yr: niftyFMCG[17],
+        cagr5yr: niftyFMCG[18],
+        macd: niftyFMCG[27],
+        r1: niftyFMCG[19],
+        r2: niftyFMCG[20],
+        r3: niftyFMCG[21],
+        s1: niftyFMCG[22],
+        s2: niftyFMCG[23],
+        s3: niftyFMCG[24],
     };
+    const link = "niftyfmcg";
+    const content = niftyFMCG[28];
+
     return (
         <main>
-            <Share
-                title={`Today's (${date}) Nifty FMCG Full Analysis`}
-                link={"niftyfmcg"}
-            />
-            <StockTemplate date={date} stock={stock} />
+            <StockTemplate date={date} stock={stock} link={link} content={content} />
         </main>
     );
 }
