@@ -1,9 +1,8 @@
 import StockTemplate from './StockTemplate/StockTemplate';
 import { niftyfmcg } from '../importStocks';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const NiftyFMCG = () => {
-
     const [niftyFMCG, setNiftyFMCG] = useState(null);
 
     useEffect(() => {
@@ -15,10 +14,11 @@ const NiftyFMCG = () => {
                 console.error('Error fetching Nifty FMCG data:', error);
             });
     }, []);
-    
-    const date = niftyFMCG[0];
-    const stock = {
-        name: "Nifty FMCG",
+
+    // Check if niftyFMCG is not null before accessing its properties
+    const date = niftyFMCG ? niftyFMCG[0] : null;
+    const stock = niftyFMCG
+        ? {name: "Nifty FMCG",
         nse: "NIFTYFMCG",
         price: niftyFMCG[25],
         change: niftyFMCG[4],
@@ -47,13 +47,16 @@ const NiftyFMCG = () => {
         s1: niftyFMCG[22],
         s2: niftyFMCG[23],
         s3: niftyFMCG[24],
-    };
+        }
+        : null;
     const link = "niftyfmcg";
-    const content = niftyFMCG[28];
+    const content = niftyFMCG ? niftyFMCG[28] : null;
 
     return (
         <main>
-            <StockTemplate date={date} stock={stock} link={link} content={content} />
+            {niftyFMCG && (
+                <StockTemplate date={date} stock={stock} link={link} content={content} />
+            )}
         </main>
     );
 }
