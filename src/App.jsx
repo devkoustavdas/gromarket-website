@@ -28,7 +28,9 @@ import BudgetRule from "./Blogs/Blogs/BudgetRule";
 import EMAandMACD from './Blogs/Blogs/EMAandMACD';
 import BadInvestmentHabits from './Blogs/Blogs/BadInvestmentHabits';
 
-import NiftyFMCG from './Stocks/NiftyFMCG';
+import BankNifty from './Stocks/StocksPosts/BankNifty';
+import NiftyFMCG from './Stocks/StocksPosts/NiftyFMCG';
+import Nifty50 from './Stocks/StocksPosts/Nifty50';
 import ShortTermStocks from './Stocks/StocksPosts/ShortTermStocks';
 import StocksBetween1k2k from './Stocks/StocksPosts/StocksBetween1k2k';
 
@@ -59,7 +61,9 @@ function App() {
         <Route path='/disclaimer' element={<Disclaimer />} />
 
         <Route path="/stocks" element={<Stocks />} />
-        <Route path="/stocks/niftyfmcg" element={<NiftyFMCG />} />
+        <Route path="/stocks/niftyfmcg-analysis" element={<NiftyFMCG />} />
+        <Route path="/stocks/nifty50-analysis" element={<Nifty50 />} />
+        <Route path="/stocks/banknifty-analysis" element={<BankNifty />} />
         <Route path="/stocks/stocks-between-rs-1000-to-2000-with-growth-potential" element={<StocksBetween1k2k />} />
         <Route path="/stocks/best-stocks-to-buy-for-short-term" element={<ShortTermStocks />} />
 

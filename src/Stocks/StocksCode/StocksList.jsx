@@ -12,9 +12,19 @@ const StocksList = ({ type }) => {
     return (
         <div className={cl}>
             <BlogCard
-                link="/stocks/niftyfmcg"
-                head={"Nifty FMCG (NSE: NIFTYFMCG)"}
-                body={"Nifty FMCG Performance: Nifty FMCG Index Today (15 April, 2024), Week, Month, Year Change, Support and Resistant levels, and all other technicals"}
+                link="/stocks/nifty50-analysis"
+                head={"Nifty 50 (NSE: NIFTY) Analysis"}
+                body={"Nifty 50 Performance: Nifty 50 Index Today, Week, Month, Year Change, Support and Resistant levels, and all other technicals"}
+                tag={["Investments", "Stocks"]} />
+            <BlogCard
+                link="/stocks/banknifty-analysis"
+                head={"Nifty Bank (NSE: BANKNIFTY) Analysis"}
+                body={"Nifty Bank Performance: Nifty Bank Index Today, Week, Month, Year Change, Support and Resistant levels, and all other technicals"}
+                tag={["Investments", "Stocks"]} />
+            <BlogCard
+                link="/stocks/niftyfmcg-analysis"
+                head={"Nifty FMCG (NSE: CNXFMCG) Analysis"}
+                body={"Nifty FMCG Performance: Nifty FMCG Index Today, Week, Month, Year Change, Support and Resistant levels, and all other technicals"}
                 tag={["Investments", "Stocks"]} />
             <BlogCard
                 link="/stocks/stocks-between-rs-1000-to-2000-with-growth-potential"
