@@ -8,7 +8,7 @@ import Subscribe from "../../components/Html.jsx/Subscribe";
 import StocksList from "../StocksCode/StocksList";
 import globalstyles from "../../content.module.css";
 import { getUrl } from "../../util";
-
+import StockBG from "../../assets/GroMarket-Stock-Chart-Background.avif"
 const indicator = [
     [ "Whipsaw", "Choppy Market. Too many cross overs. Avoid this indicator"],
     [ "Strong Bearish", "Price Trending Down , Moving Average Trending Down and a Strong Downtrend, Strong Sell" ],
@@ -76,28 +76,30 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                     link={`stocks/${link}`} />
                 <React.Suspense fallback={<div>Loading...</div>}>
                     <section className="mt-6">
-                        <object id="GroMarket-Analysis" className="mx-auto border-2 border-slate-400 my-3 select-none w-80 h-80 md:w-100 md:h-100">
-                            <img loading="lazy" src={getUrl("GroMarket-Stock-Chart-Background.avif")} alt={`Daily Price & Performance Analysis of ${stock["name"]} of ${date}`} />
-                            <div className="-bottom-10 md:-bottom-0.5 ml-2 absolute z-10">
-                                <h2 className="text-indigo-300 text-shadow font-sans italic font-semibold text-lg mb-4 ml-2 md:ml-3 w-72 md:w-92">Daily Price & Performance Analysis of {stock["name"]} of {date}</h2>
-                                <div className="ml-2 md:ml-3 w-72 md:w-80 bg-slate-800 py-2 md:py-4 px-5 rounded-md bg-opacity-75">
-                                    <h3 className="text-slate-300 font-title font-semibold text-lg md:text-2xl">
-                                        {stock["name"]} <span className="select-none text-sm md:text-base text-indigo-300 font-normal">NSE: {stock["nse"]}</span>
+                        <object id="GroMarket-Analysis" className="mx-auto border-2 border-slate-400 my-3 select-none w-80 h-80 md:w-100 md:h-100" style={{
+                            backgroundImage: 'url("https://dev-to-uploads.s3.amazonaws.com/uploads/articles/i1ajlwuov7wa6gm4cy5g.png")',
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover"
+                        }}>
+                            <div className="px-4 text-shadow text-left align-middle">
+                                <h2 className="text-indigo-300 font-sans italic font-semibold text-lg my-3">Daily Price & Performance Analysis of {stock["name"]} of {date}</h2>
+                                <div className="bg-slate-800 py-2 md:py-4 px-5 rounded-md bg-opacity-75">
+                                    <h3 className="text-slate-300 font-title font-semibold text-base md:text-2xl">
+                                        {stock["name"]} <span className="text-sm md:text-base text-indigo-300 font-normal">NSE: {stock["nse"]}</span>
                                     </h3>
-
-                                    <div className="align-middle">
-                                        <span className="text-xl md:text-3xl font-body font-semibold text-slate-400 mr-6">
+                                    <div>
+                                        <span className="text-lg md:text-3xl font-body font-semibold text-slate-400 mr-3">
                                             {formatCurrency(stock["price"])}
                                         </span>
-                                        <span style={{
+                                        <span className="text-sm md:text-base" style={{
                                             color: stock["change"] > 0 ? "#34D399" : "#F87171",
                                         }}>
                                             {stock["change"] > 0 ? (<span>&#8593;</span>) : (<span>&#8595;</span>)}
 
                                             <span className="pl-2">{formatCurrency(stock["change"])} ({stock["return"]}%)</span>
-                                        </span><span className="rounded-circle text-xs border ml-3 font-sans px-1.5 text-slate-300">i</span>
+                                        </span><span className="rounded-circle text-xs border ml-2 md:ml-3 font-sans px-1.5 text-slate-300">i</span>
                                     </div>
-                                    <div className="md:text-sm text-xs">
+                                    <div className="md:text-sm text-xs md:mt-3">
                                         MACD Signal - <span style={{
                                             color: stock["macd"] > 0 ? "#34D399" : "#F87171",
                                         }}
@@ -107,37 +109,39 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                                         High/Low - <span className="text-green-400">{formatCurrency(stock["high"])}</span>/<span className="text-red-400">{formatCurrency(stock["low"])}</span>
                                     </div> 
                                 </div>
-                                <div className="ml-2 md:ml-3 w-72 md:w-92 mt-3 md:text-base text-sm">
+                                <div className="mt-3 md:text-base text-sm">
                                     1. Get EMA & SMA (Moving Averages) of the next day and indicator analysis <br />
                                     2. Get Resistances AND Supports of the next day <br />
                                 </div>
                             </div>
                         </object>
-                        <h1 className="text-center w-11/12 mb-2 text-slate-300">
-                            {stock["name"]} Technical Analysis (All Data for {date})
-                        </h1>
+                        <div className="mx-2 my-6 w-full">
+                            <h2 className="text-center text-teal-400 font-sans italic font-semibold text-xl">{stock["name"]} Technical Analysis</h2>
+                            <p className="text-center">(All Data for {date})</p>
+                            <hr />
+                        </div>
 
                         <div className="flex flex-col text-slate-300">
-                            <div className="flex md:flex-row flex-col">
+                            <div className="flex md:flex-row flex-col mx-auto">
                                 <div>
                                     <h2 className="text-indigo-300 font-title text-center mt-2">{stock["name"]} PRICE ANALYSIS</h2>
                                     <div className="flex flex-col">
                                         <div className="flex flex-row mx-auto">
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">Day Open</div>
                                                 <div className="font-body text-lg">{formatCurrency(stock["open"])}</div>
                                             </div>
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">Day High</div>
                                                 <div className="font-body text-lg">{formatCurrency(stock["high"])}</div>
                                             </div>
                                         </div>
                                         <div className="flex flex-row mx-auto">
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">Day Low</div>
                                                 <div className="font-body text-lg">{formatCurrency(stock["low"])}</div>
                                             </div>
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">Day Change</div>
                                                 <div className="font-body text-lg" style={{
                                                     color: stock["change"] > 0 ? "#34D399" : "#F87171",
@@ -147,13 +151,13 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                                             </div>
                                         </div>
                                         <div className="flex flex-row mx-auto">
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">1 Month Change</div>
                                                 <div className="font-body text-lg" style={{
                                                     color: stock["monthchange"] > 0 ? "#34D399" : "#F87171",
                                                 }}>{stock["monthchange"] > 0 ? (<span>&#8593;</span>) : (<span>&#8595;</span>)}&nbsp;{formatCurrency(stock["monthchange"])}</div>
                                             </div>
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">3 Month Change</div>
                                                 <div className="font-body text-lg" style={{
                                                     color: stock["threemonthchange"] > 0 ? "#34D399" : "#F87171",
@@ -166,13 +170,13 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                                     <h2 className="text-indigo-300 font-title text-center">{stock["name"]} EMA & SMA (Moving Averages)</h2>
                                     <div className="flex flex-col">
                                         <div className="flex flex-row mx-auto">
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">SMA 5 day</div>
                                                 <div className="font-body text-lg" style={{
                                                     color: stock["sma5"][0] < stock["price"] ? "#34D399" : "#F87171",
                                                 }}>{formatCurrency(stock["sma5"][0])}</div>
                                             </div>
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">SMA 20 day</div>
                                                 <div className="font-body text-lg" style={{
                                                     color: stock["sma20"][0] < stock["price"] ? "#34D399" : "#F87171",
@@ -180,13 +184,13 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                                             </div>
                                         </div>
                                         <div className="flex flex-row mx-auto">
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">SMA 200 day</div>
                                                 <div className="font-body text-lg" style={{
                                                     color: stock["sma200"][0] < stock["price"] ? "#34D399" : "#F87171",
                                                 }}>{formatCurrency(stock["sma200"][0])}</div>
                                             </div>
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">EMA 5 day</div>
                                                 <div className="font-body text-lg" style={{
                                                     color: stock["ema5"][0] < stock["price"] ? "#34D399" : "#F87171",
@@ -194,13 +198,13 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                                             </div>
                                         </div>
                                         <div className="flex flex-row mx-auto">
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">EMA 50 day</div>
                                                 <div className="font-body text-lg" style={{
                                                     color: stock["ema50"][0] < stock["price"] ? "#34D399" : "#F87171",
                                                 }}>{formatCurrency(stock["ema50"][0])}</div>
                                             </div>
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">EMA 200 day</div>
                                                 <div className="font-body text-lg" style={{
                                                     color: stock["ema200"][0] < stock["price"] ? "#34D399" : "#F87171",
@@ -210,38 +214,38 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex md:flex-row flex-col">
+                            <div className="flex md:flex-row flex-col mx-auto">
                                 <div className="">
                                     <h2 className="text-indigo-300 font-title text-center mt-2">{stock["name"]} PERFORMANCE ANALYSIS</h2>
                                     <div className="flex flex-col">
                                         <div className="flex flex-row mx-auto">
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">Divident Yield</div>
                                                 <div className="font-body text-lg">{`${stock["divident"]}%`}</div>
                                             </div>
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">P/E Ratio</div>
                                                 <div className="font-body text-lg">{stock["pe"]}</div>
                                             </div>
                                         </div>
                                         <div className="flex flex-row mx-auto">
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">Price to Book value</div>
                                                 <div className="font-body text-lg">{formatCurrency(stock["pb"])}</div>
                                             </div>
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">Market Cap</div>
                                                 <div className="font-body text-lg">{`${formatCurrency(stock["mcap"])} Cr.`}</div>
                                             </div>
                                         </div>
                                         <div className="flex flex-row mx-auto">
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">CAGR 1Yr</div>
                                                 <div className="font-body text-lg" style={{
                                                     color: stock["cagr1yr"] > 0 ? "#34D399" : "#F87171",
                                                 }}>{`${stock["cagr1yr"]}%`}</div>
                                             </div>
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">CAGR 5Yr</div>
                                                 <div className="font-body text-lg" style={{
                                                     color: stock["cagr5yr"] > 0 ? "#34D399" : "#F87171",
@@ -254,31 +258,31 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                                     <h2 className="text-indigo-300 font-title text-center">{stock["name"]} RESISTANCE AND SUPPORT</h2>
                                     <div className="flex flex-col">
                                         <div className="flex flex-row mx-auto">
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">First Resistance</div>
                                                 <div className="font-body text-lg text-red-400">{formatCurrency(stock["r1"])}</div>
                                             </div>
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">Second Resistance</div>
                                                 <div className="font-body text-lg text-red-400">{formatCurrency(stock["r2"])}</div>
                                             </div>
                                         </div>
                                         <div className="flex flex-row mx-auto">
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">Third Resistance</div>
                                                 <div className="font-body text-lg text-red-400">{formatCurrency(stock["r3"])}</div>
                                             </div>
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">First Support</div>
                                                 <div className="font-body text-lg text-green-400">{formatCurrency(stock["s1"])}</div>
                                             </div>
                                         </div>
                                         <div className="flex flex-row mx-auto">
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">Second Support</div>
                                                 <div className="font-body text-lg text-green-400">{formatCurrency(stock["s2"])}</div>
                                             </div>
-                                            <div className="min-w-44 max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">Third Support</div>
                                                 <div className="font-body text-lg text-green-400">{formatCurrency(stock["s3"])}</div>
                                             </div>
