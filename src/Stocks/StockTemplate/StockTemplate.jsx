@@ -40,7 +40,7 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
     return (
         <main className="flex flex-col lg:flex-row">
             <div className="w-full lg:w-3/5 shadow-lg m-3 rounded-lg px-3 md:px-5 py-4">
-                <Meta title={`Today's (${date}) ${stock["name"]} Full Analysis`} link={`stocks/${link}`} description={description} />
+                <Meta title={`Today's (${date}) ${stock["name"]} Full Analysis`} type={"article"} link={`stocks/${link}`} description={description} image={"GroMarket-Stock-Chart-Background.avif"} />
                 <header className="bg-slate-800 py-4 px-5 w-fit rounded-md">
                     <h1 title={`${stock["name"]} Daily Analysis by GroMarket`} className="text-slate-300 font-title font-semibold text-2xl">
                         {stock["name"]} <span className="select-none text-base text-indigo-300 font-normal">NSE: {stock["nse"]}</span> <span className="sr-only">Daily Analysis of {date}</span>
