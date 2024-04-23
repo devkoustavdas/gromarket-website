@@ -1,7 +1,7 @@
 import StockTemplate from '../StockTemplate/StockTemplate';
 const Nifty50 = () => {
 
-    const date = "23nd April, 2024";
+    const date = "23rd April, 2024";
     const stock = {
         name: "Nifty 50",
         nse: "NIFTY",
@@ -44,6 +44,8 @@ const Nifty50 = () => {
         </li>
         <li>Reliance Industries reported fourth-quarter profit above analysts&#39; estimates on Monday and a gain was expected but initially Reliance Industries showed a high of ₹3,025 but then dropped finally settling at ₹2,919 (-1.39%). The YoY Quaterly Profit Growth for the company is -1.34%.
         </li>
+        <li>Infosys Ltd. has an upcoming dividend of ₹20.00 per share due on 31 May 2024. Infosys Ltd. showed a gain of ₹9.65 (0.67%) for the day.</li>
+        <li>The next board meeting for Hindustan Unilever Ltd. is on 24 Apr 2024 for the purpose of Audited Results & Final Dividend. So for the next day this Hindustan Unilever Ltd. might show a gain based on the meeting report.</li>
         <li>For Short Term Investors, the market is Very Bearish. For Medium Term Investors the market is Neutral. For Long Term Investors the market is Bullish. Price is Near 52W High - a growth of 26.9% over 1 Year.
         </li>
     </ul>;
