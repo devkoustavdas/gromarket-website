@@ -34,7 +34,15 @@ const BankNifty = () => {
         s3: 47135.6,
     };
     const link = "banknifty-analysis";
-    const content = "Bandhan Bank Ltd. showed a 4.2% day high, followed by Punjab National Bank with a 3.8% Day High and Axis Bank Ltd. with a 2.4% Day High. ICICI Bank Ltd. showed a change of 1.94%(BSE) and 1.82%(NSE) for the day, followed by Kotak Mahindra Bank Ltd with a 0.93% change(BSE) and 0.97% change(NSE). HDFC Bank Ltd showed change of -1.24%(BSE) and -1.25%(NSE). For Short Term Investors the market is Very Bullish. For Medium Term Investors the market is Very Bullish. For Long Term Investors the market is Bearish. Price is Near 52W High - a growth of 13.8% over 1 Year.";
+    const content = <ul>
+        <li>Bandhan Bank Ltd. showed a 4.2% gain, followed by Punjab National Bank with a 3.8% gain and Axis Bank Ltd. with a 2.4% Day High. ICICI Bank Ltd. showed a change of 1.94%(BSE) and 1.82%(NSE) for the day, followed by Kotak Mahindra Bank Ltd with a 0.93% change(BSE) and 0.97% change(NSE).
+        </li>
+        <li>HDFC Bank was expected to rise but showed a drop of -1.25% since the opening of the market pulling the NIFTY 50 heavily down.
+        </li>
+        <li>For Short Term Investors the market is Very Bullish. For Medium Term Investors the market is Very Bullish. For Long Term Investors the market is Bearish. Price is Near 52W High - a growth of 13.8% over 1 Year.
+        </li>
+    </ul>
+;
 
     return (
         <main>

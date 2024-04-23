@@ -35,15 +35,15 @@ const Nifty50 = () => {
     };
     const link = "nifty50-analysis";
     const content = <ul>
-        <li><>Bharat Petroleum Corporation Ltd. was a strong performer of the day showing a 3.01% gain, followed by Tata Consumer Products Ltd. with a 2.89% gain. Infosys Ltd. showed a gain of 1.48% for the day and ICICI Bank Ltd. with a 1.94% gain. </p>
+        <li>Bharat Petroleum Corporation Ltd. was a strong performer of the day showing a 3.01% gain, followed by Tata Consumer Products Ltd. with a 2.89% gain. Infosys Ltd. showed a gain of 1.48% for the day and ICICI Bank Ltd. with a 1.94% gain. 
         </li>
-        <li><>HDFC Bank was expected to rise but showed a drop of -1.25% since the opening of the market pulling the NIFTY 50 heavily down. </>
+        <li>HDFC Bank was expected to rise but showed a drop of -1.25% since the opening of the market pulling the NIFTY 50 heavily down. 
         </li>
-        <li><>The day&#39;s high near the closing price suggests a potential &quot;Buyers Zone,&quot; indicating increased buying interest.</p>
+        <li>The day&#39;s high near the closing price suggests a potential &quot;Buyers Zone,&quot; indicating increased buying interest.
         </li>
-        <li><>India&#39;s Reliance Industries reported fourth-quarter profit above analysts&#39; estimates on Monday, boosted by strength in its mainstay oil to chemicals (O2C) segment. There is an expected uptrend momentum for Reliance Industries Ltd. </p>
+        <li>India&#39;s Reliance Industries reported fourth-quarter profit above analysts&#39; estimates on Monday, boosted by strength in its mainstay oil to chemicals (O2C) segment. There is an expected uptrend momentum for Reliance Industries Ltd. 
         </li>
-        <li><>For Short Term Investors, the market is Very Bearish. For Medium Term Investors the market is Neutral. For Long Term Investors the market is Bullish. Price is Near 52W High - a growth of 26.7% over 1 Year.</>
+        <li>For Short Term Investors, the market is Very Bearish. For Medium Term Investors the market is Neutral. For Long Term Investors the market is Bullish. Price is Near 52W High - a growth of 26.7% over 1 Year.
         </li>
     </ul>;
 
