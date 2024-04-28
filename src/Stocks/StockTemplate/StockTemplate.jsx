@@ -7,6 +7,7 @@ import Meta from "../../components/Html.jsx/Meta";
 import Subscribe from "../../components/Html.jsx/Subscribe";
 import StocksList from "../StocksCode/StocksList";
 import globalstyles from "../../content.module.css";
+import { getUrl } from "../../util";
 
 const indicator = [
     [ "Whipsaw", "Choppy Market. Too many cross overs. Avoid this indicator"],
@@ -75,13 +76,15 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                     link={`stocks/${link}`} />
                 <React.Suspense fallback={<div>Loading...</div>}>
                     <section className="mt-6">
+
                         <object id="GroMarket-Analysis" className="mx-auto border-2 border-slate-400 my-3 select-none w-80 h-80 md:w-100 md:h-100" style={{
                             backgroundImage: 'url("https://dev-to-uploads.s3.amazonaws.com/uploads/articles/i1ajlwuov7wa6gm4cy5g.png")',
                             backgroundRepeat: "no-repeat",
                             backgroundSize: "cover"
                         }}>
                             <div className="px-4 text-shadow text-left align-middle">
-                                <h2 className="text-indigo-300 font-sans italic font-semibold text-lg my-3">Daily Price & Performance Analysis of {stock["name"]} of {date}</h2>
+                                <div className="float-right w-6"><img src={getUrl("GroMarket Logo.png")} alt="" /></div>
+                                <h2 className="my-3"><span className="text-xl text-slate-200 font-title not-italic font-normal">{stock["name"]}</span><span className="text-lg text-indigo-300 font-sans italic font-semibold"> - Daily Price & Performance Analysis</span></h2>
                                 <div className="bg-slate-800 py-2 md:py-4 px-5 rounded-md bg-opacity-75">
                                     <h3 className="text-slate-300 font-title font-semibold text-base md:text-2xl">
                                         {stock["name"]} <span className="text-sm md:text-base text-indigo-300 font-normal">NSE: {stock["nse"]}</span>
@@ -91,7 +94,7 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                                             {formatCurrency(stock["price"])}
                                         </span>
                                         <span className="text-sm md:text-base" style={{
-                                            color: stock["change"] > 0 ? "#34D399" : "#F87171",
+                                            color: stock["change"] > 0 ? "rgb(134 239 172)" : "rgb(252 165 165)",
                                         }}>
                                             {stock["change"] > 0 ? (<span>&#8593;</span>) : (<span>&#8595;</span>)}
 
@@ -100,7 +103,7 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                                     </div>
                                     <div className="md:text-sm text-xs md:mt-3">
                                         MACD Signal - <span style={{
-                                            color: stock["macd"] > 0 ? "#34D399" : "#F87171",
+                                            color: stock["macd"] > 0 ? "rgb(134 239 172)" : "rgb(252 165 165)",
                                         }}
                                         >{stock["macd"]}</span>
                                     </div>
@@ -108,9 +111,42 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                                         High/Low - <span className="text-green-300">{formatCurrency(stock["high"])}</span>/<span className="text-red-300">{formatCurrency(stock["low"])}</span>
                                     </div> 
                                 </div>
-                                <div className="mt-3 md:text-base text-sm">
-                                    1. Get EMA & SMA (Moving Averages) of the next day and indicator analysis <br />
-                                    2. Get Resistances AND Supports of the next day <br />
+                                <div className="my-1">
+                                    <table className="w-full text-left text-sm whitespace-nowrap">
+                                        <tr>
+                                            <th scope="row" className="py-1">
+                                                R1
+                                            </th>
+                                            <td className="text-red-300">{formatCurrency(stock.r1)}</td>
+                                            <th scope="row" className="py-1">
+                                                S1
+                                            </th>
+                                            <td className="text-green-300">{formatCurrency(stock.s1)}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" className="py-1">
+                                                R2
+                                            </th>
+                                            <td className="text-red-300">{formatCurrency(stock.r2)}</td>
+                                            <th scope="row" className="py-1">
+                                                S2
+                                            </th>
+                                            <td className="text-green-300">{formatCurrency(stock.s2)}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" className="py-1">
+                                                R3
+                                            </th>
+                                            <td className="text-red-300">{formatCurrency(stock.r3)}</td>
+                                            <th scope="row" className="py-1">
+                                                S3
+                                            </th>
+                                            <td className="text-green-300">{formatCurrency(stock.s3)}</td>
+                                        </tr>
+                                   </table>
+                                </div>
+                                <div className="bg-slate-700 w-fit py-1 px-3 rounded text-slate-200 text-sm font-title">
+                                    {date}
                                 </div>
                             </div>
                         </object>

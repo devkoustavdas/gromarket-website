@@ -14,6 +14,7 @@ const LandingHeader = () => {
 
   return (
     <header className="bg-slate-800 min-h-1/2 flex flex-col font-sans px-8 py-10 text-center  justify-center">
+      <div><img src={getUrl("GroMarket Logo.png")} className="w-20 mx-auto" alt="Gromarket Standalone Logo" /></div>
       <h1 className="sr-only">GroMarket Financial Services - Finance Blogs, Resources, News and Stocks Analysis</h1>
       <h2 className="my-5 text-4xl md:text-5xl font-extrabold font-title text-shadow">Make smarter financial decisions</h2>
       <h2 className="text-2xl md:text-3xl font-sans lowercase"><Typewriter
