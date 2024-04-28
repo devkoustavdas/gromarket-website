@@ -6,7 +6,13 @@ const currentYear = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <footer className=" bg-slate-800 py-2 px-3 min-h-fit">
+    <footer className="bg-slate-800 py-6 px-3 min-h-fit">
+      <div className="flex flex-row justify-around">
+        <Link className="hover:text-slate-300 hover:underline hover:underline-offset-2" to={'/stocks/nifty50-analysis'}>Nifty 50 Analysis</Link>
+        <Link className="hover:text-slate-300 hover:underline hover:underline-offset-2" to={'/stocks/niftyfmcg-analysis'}>Nifty FMCG Analysis</Link>
+        <Link className="hover:text-slate-300 hover:underline hover:underline-offset-2" to={'/stocks/banknifty-analysis'}>Nifty Bank Analysis</Link>
+      </div>
+      <hr />
       <div className="flex flex-col md:flex-row gap-1 md:gap-3 justify-center my-2 w-fit mx-auto"><a href={siteLink} target="_blank" rel="noopener noreferrer"><Logo size={3} /></a></div>
       <div className='text-gray-400 flex flex-row justify-around text-center'>
         <div className="flex flex-col">
@@ -21,7 +27,7 @@ const Footer = () => {
           <Link to={"/disclaimer"} className="hover:text-slate-300 hover:underline hover:underline-offset-2">Disclaimer</Link>
         </div>
       </div>
-      <hr className="my-2 border-gray-500 sm:mx-auto mt-5" />
+      <hr />
       <div className="sm:flex sm:items-center sm:justify-around mt-5">
         <span className="text-sm text-slate-500 sm:text-center"><a href={siteLink} target="_blank" rel="noopener noreferrer">GroMarket</a> © 2023 - {currentYear} - All Rights Reserved
         </span>

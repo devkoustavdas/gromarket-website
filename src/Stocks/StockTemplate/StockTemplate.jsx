@@ -298,24 +298,27 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                                                 <div className="font-body text-lg text-red-400">{formatCurrency(stock["r1"])}</div>
                                             </div>
                                             <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                                <div className="font-sans text-indigo-300 italic">First Support</div>
+                                                <div className="font-body text-lg text-green-400">{formatCurrency(stock["s1"])}</div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div className="flex flex-row mx-auto">
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">Second Resistance</div>
                                                 <div className="font-body text-lg text-red-400">{formatCurrency(stock["r2"])}</div>
                                             </div>
+                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                                <div className="font-sans text-indigo-300 italic">Second Support</div>
+                                                <div className="font-body text-lg text-green-400">{formatCurrency(stock["s2"])}</div>
+                                            </div>
+                                            
+                                            
                                         </div>
                                         <div className="flex flex-row mx-auto">
                                             <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">Third Resistance</div>
                                                 <div className="font-body text-lg text-red-400">{formatCurrency(stock["r3"])}</div>
-                                            </div>
-                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
-                                                <div className="font-sans text-indigo-300 italic">First Support</div>
-                                                <div className="font-body text-lg text-green-400">{formatCurrency(stock["s1"])}</div>
-                                            </div>
-                                        </div>
-                                        <div className="flex flex-row mx-auto">
-                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
-                                                <div className="font-sans text-indigo-300 italic">Second Support</div>
-                                                <div className="font-body text-lg text-green-400">{formatCurrency(stock["s2"])}</div>
                                             </div>
                                             <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
                                                 <div className="font-sans text-indigo-300 italic">Third Support</div>

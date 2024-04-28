@@ -1,12 +1,13 @@
 import Btn from "../components/Html.jsx/Button/Button";
+import Subscribe from "../components/Html.jsx/Subscribe"
 
 const Error = () => {
   return (
-      <main className="mt-24">
+      <main className="my-24">
           <div className="w-fit mx-auto">
-              <div className="text-2xl font-title">Oops!</div>
+              <div className="text-4xl text-indigo-300 font-title">Oops!</div>
               <p>Sorry, an unexpected error has occurred.</p>
-              <p>
+              <p className="mt-3">
                   <b>Error Status:</b>{" "}
                   <i>
                       <Btn
@@ -28,7 +29,9 @@ const Error = () => {
                       />
                   </i>
               </p>
+              <Subscribe />
           </div>
+          
       </main>
   )
 }
