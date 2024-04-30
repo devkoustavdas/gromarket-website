@@ -8,6 +8,7 @@ import Subscribe from "../../components/Html.jsx/Subscribe";
 import StocksList from "../StocksCode/StocksList";
 import globalstyles from "../../content.module.css";
 import { getUrl } from "../../util";
+import Comments from "../../components/Html.jsx/Comments";
 
 const indicator = [
     [ "Whipsaw", "Choppy Market. Too many cross overs. Avoid this indicator"],
@@ -364,6 +365,7 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                     </section>
                     <Subscribe />
                 </React.Suspense>
+                <Comments id={link} />
             </div>
             <React.Suspense fallback={<div>Loading...</div>}>
                 <div className="w-19/20 mx-auto lg:w-2/5">

@@ -7,7 +7,7 @@ import Meta from '../components/Html.jsx/Meta';
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import Subscribe from "../components/Html.jsx/Subscribe";
-
+import Comments from "../components/Html.jsx/Comments";
 
 const BlogTemplate = ({ title, description, image, date, tag, link, content }) => {
     useEffect(() => {
@@ -44,6 +44,7 @@ const BlogTemplate = ({ title, description, image, date, tag, link, content }) =
                     </section>
                 </div>
                 <Subscribe />
+                <Comments id={link} />
             </div>
             <React.Suspense fallback={<div>Loading...</div>}>
                 <div className="w-19/20 mx-auto lg:w-2/5">

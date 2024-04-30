@@ -7,7 +7,7 @@ const Error = () => {
           <div className="w-fit mx-auto">
               <div className="text-4xl text-indigo-300 font-title">Oops!</div>
               <p>Sorry, an unexpected error has occurred.</p>
-              <p className="mt-3">
+              <p className="mt-6">
                   <b>Error Status:</b>{" "}
                   <i>
                       <Btn
