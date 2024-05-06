@@ -36,6 +36,7 @@ const BlogTemplate = ({ title, description, image, date, tag, link, content }) =
                         <Share
                             title={title}
                             link={`blogs/${link}`}
+                            description={description}
                         />
                         <article className='text-justify mt-10'>
                             <h2 className="sr-only">{description}</h2>

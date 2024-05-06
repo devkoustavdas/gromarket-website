@@ -19,8 +19,10 @@ import {
     XIcon,
 } from "react-share";
 
-const Share = ({ title, link }) => {
+const Share = ({ title, link, description }) => {
     const pglink = `${siteLink}/${link}`;
+    const text = `${title} - ${description}`;
+    const wptext = `*${title}* - _${description}_`;
     return (
         <React.Suspense fallback={<div>Loading...</div>}>
             <section className='border-l-2 border-teal-500 pb-2'
@@ -40,22 +42,22 @@ const Share = ({ title, link }) => {
                         columnGap: "10px",
                     }}
                 >
-                    <FacebookShareButton url={pglink} title={title}>
+                    <FacebookShareButton url={pglink} title={text}>
                         <FacebookIcon size={32} round />
                     </FacebookShareButton>
-                    <TwitterShareButton url={pglink} title={title}>
+                    <TwitterShareButton url={pglink} title={text}>
                         <XIcon size={32} round />
                     </TwitterShareButton>
-                    <TelegramShareButton url={pglink} title={title}>
+                    <TelegramShareButton url={pglink} title={text}>
                         <TelegramIcon size={32} round />
                     </TelegramShareButton>
-                    <WhatsappShareButton url={pglink} title={title} separator=":: ">
+                    <WhatsappShareButton url={pglink} title={wptext} separator=": ">
                         <WhatsappIcon size={32} round />
                     </WhatsappShareButton>
                     <LinkedinShareButton
                         url={pglink}
                         source="GroMarket"
-                        summary={`Check out ${title} at GroMarket`}
+                        summary={text}
                     >
                         <LinkedinIcon size={32} round />
                     </LinkedinShareButton>
@@ -64,8 +66,8 @@ const Share = ({ title, link }) => {
                     </PinterestShareButton>
                     <EmailShareButton
                         url={pglink}
-                        subject={title}
-                        body={`Check out ${title} at GroMarket`}
+                        subject={text}
+                        body={description}
                     >
                         <EmailIcon size={32} round />
                     </EmailShareButton>
@@ -77,5 +79,6 @@ const Share = ({ title, link }) => {
 Share.propTypes = {
     title: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
+    description: PropTypes.string
 };
 export default Share;

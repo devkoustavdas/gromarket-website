@@ -74,7 +74,8 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                 </div>
                 <Share
                     title={`Today's (${date}) ${stock["name"]} Full Analysis`}
-                    link={`stocks/${link}`} />
+                    link={`stocks/${link}`}
+                    description={description} />
                 <React.Suspense fallback={<div>Loading...</div>}>
                     <section className="mt-6">
 

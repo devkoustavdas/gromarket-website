@@ -36,6 +36,7 @@ const NewsTemplate = ({ title, description, image, date, tags, link, content }) 
                         <Share
                             title={title}
                             link={`news/${link}`}
+                            description={description}
                         />
                         <article className='text-justify mt-10'>
                             <h2 className="sr-only">{description}</h2>

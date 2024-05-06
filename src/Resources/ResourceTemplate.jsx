@@ -36,6 +36,7 @@ const ResourceTemplate = ({ title, description, image, date, tags, link, content
                         <Share
                             title={title}
                             link={`resources/${link}`}
+                            description={description}
                         />
                         <article className='text-justify mt-10'>
                             <h2 className="sr-only">{description}</h2>
