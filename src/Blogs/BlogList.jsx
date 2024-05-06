@@ -11,10 +11,15 @@ const BlogList = ({ type }) => {
     }
     return (
         <div className={cl}>
-            <BlogCard 
-                link="/blogs/50-30-20-Budget-Rule" 
-                head={"How the 50/30/20 Budget Rule Can Help You Achieve Financial Freedom and Still Enjoy Your Life"} 
-                body={"Download GroMarket's free monthly budget template to easily track your spending and take control of your finances."} 
+            <BlogCard
+                link="/blogs/claim-deduction-under-section-80gg-for-rent-paid"
+                head={"Saving Tax on Rent: A Guide to Section 80GG"}
+                body={"Are you a renter paying out of pocket? Don't miss out on tax savings! This guide explains Section 80GG deductions for rent paid in India. Learn eligibility, requirements, how much you can deduct, and how to claim it."}
+                tag={["Tax", "Personal Finance"]} />
+            <BlogCard
+                link="/blogs/50-30-20-Budget-Rule"
+                head={"How the 50/30/20 Budget Rule Can Help You Achieve Financial Freedom and Still Enjoy Your Life"}
+                body={"Download GroMarket's free monthly budget template to easily track your spending and take control of your finances."}
                 tag={["Personal Finance", "Template", "Budget"]} />
             <BlogCard 
                 head="MACD and EMA - The perfect Free Indicator Combo for your Breakout Trades"

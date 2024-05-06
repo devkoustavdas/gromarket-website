@@ -163,21 +163,21 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                                     <h2 className="text-indigo-300 font-title text-center mt-2">{stock["name"]} PRICE ANALYSIS</h2>
                                     <div className="flex flex-col">
                                         <div className="flex flex-row mx-auto">
-                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="cell">
                                                 <div className="font-sans text-indigo-300 italic">Day Open</div>
                                                 <div className="font-body text-lg">{formatCurrency(stock["open"])}</div>
                                             </div>
-                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="cell">
                                                 <div className="font-sans text-indigo-300 italic">Day High</div>
                                                 <div className="font-body text-lg">{formatCurrency(stock["high"])}</div>
                                             </div>
                                         </div>
                                         <div className="flex flex-row mx-auto">
-                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="cell">
                                                 <div className="font-sans text-indigo-300 italic">Day Low</div>
                                                 <div className="font-body text-lg">{formatCurrency(stock["low"])}</div>
                                             </div>
-                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="cell">
                                                 <div className="font-sans text-indigo-300 italic">Day Change</div>
                                                 <div className="font-body text-lg" style={{
                                                     color: stock["change"] > 0 ? "#34D399" : "#F87171",
@@ -187,17 +187,17 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                                             </div>
                                         </div>
                                         <div className="flex flex-row mx-auto">
-                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="cell">
                                                 <div className="font-sans text-indigo-300 italic">1 Month Change</div>
                                                 <div className="font-body text-lg" style={{
                                                     color: stock["monthchange"] > 0 ? "#34D399" : "#F87171",
-                                                }}>{stock["monthchange"] > 0 ? (<span>&#8593;</span>) : (<span>&#8595;</span>)}&nbsp;{stock["monthchange"]}</div>
+                                                }}>{stock["monthchange"] > 0 ? (<span>&#8593;</span>) : (<span>&#8595;</span>)}&nbsp;{`${stock["monthchange"]}%`}</div>
                                             </div>
-                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="cell">
                                                 <div className="font-sans text-indigo-300 italic">3 Month Change</div>
                                                 <div className="font-body text-lg" style={{
                                                     color: stock["threemonthchange"] > 0 ? "#34D399" : "#F87171",
-                                                }}>{stock["threemonthchange"] > 0 ? (<span>&#8593;</span>) : (<span>&#8595;</span>)}&nbsp;{stock["threemonthchange"]}</div>
+                                                }}>{stock["threemonthchange"] > 0 ? (<span>&#8593;</span>) : (<span>&#8595;</span>)}&nbsp;{`${stock["threemonthchange"]}%`}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -206,7 +206,7 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                                     <h2 className="text-indigo-300 font-title text-center">{stock["name"]} EMA & SMA (Moving Averages)</h2>
                                     <div className="flex flex-col">
                                         <div className="flex flex-row mx-auto">
-                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="cell">
                                                 <div className="font-sans text-indigo-300 italic">SMA 5 day</div>
                                                 <div className="font-body text-lg" style={{
                                                     color: stock["sma5"][0] < stock["price"] ? "#34D399" : "#F87171",
@@ -220,7 +220,7 @@ const StockTemplate = ({ stock, date, link, stockstable, content }) => {
                                             </div>
                                         </div>
                                         <div className="flex flex-row mx-auto">
-                                            <div className="min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal">
+                                            <div className="cell">
                                                 <div className="font-sans text-indigo-300 italic">SMA 200 day</div>
                                                 <div className="font-body text-lg" style={{
                                                     color: stock["sma200"][0] < stock["price"] ? "#34D399" : "#F87171",

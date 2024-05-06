@@ -27,6 +27,7 @@ import BillTracker from "./Resources/ResorcePosts/BillTracker";
 import BudgetRule from "./Blogs/Blogs/BudgetRule";
 import EMAandMACD from './Blogs/Blogs/EMAandMACD';
 import BadInvestmentHabits from './Blogs/Blogs/BadInvestmentHabits';
+import Section80GG from './Blogs/Blogs/Section80GG';
 
 import BankNifty from './Stocks/StocksPosts/BankNifty';
 import NiftyFMCG from './Stocks/StocksPosts/NiftyFMCG';
@@ -38,8 +39,7 @@ import AmazonSpendsOnAnthropic from './News/NewsPosts/AmazonSpendsOnAnthropic';
 
 
 function App() {
-
-
+  
   return (
     <Router>
       <Favicon url={getUrl("GroMarket Logo.png")} />
@@ -48,30 +48,38 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
 
-        <Route path='/resources' element={<Resources />} />
-        <Route path='/resources/free-monthly-budget-spreadsheet-template' element={<MonthlyBudgetSpreadsheet />} />
-        <Route path='/resources/free-bill-tracker-template' element={<BillTracker />} />
+        <Route path='resources'>
+          <Route index element={<Resources />} />
+          <Route path='free-monthly-budget-spreadsheet-template' element={<MonthlyBudgetSpreadsheet />} />
+          <Route path='free-bill-tracker-template' element={<BillTracker />} />
+        </Route>
 
-        <Route path='/blogs' element={<Blogs />} />
-        <Route path='/blogs/50-30-20-Budget-Rule' element={<BudgetRule />} />
-        <Route path='/blogs/ema-and-macd-for-intraday-trading' element={<EMAandMACD />} />
-        <Route path='/blogs/bad-investment-habits-to-stay-away-from' element={<BadInvestmentHabits />} />
+        <Route path='blogs'>
+          <Route index element={<Blogs />} />
+          <Route path='50-30-20-Budget-Rule' element={<BudgetRule />} />
+          <Route path='claim-deduction-under-section-80gg-for-rent-paid' element={<Section80GG />} />
+          <Route path='ema-and-macd-for-intraday-trading' element={<EMAandMACD />} />
+          <Route path='bad-investment-habits-to-stay-away-from' element={<BadInvestmentHabits />} />
+        </Route>
 
-        <Route path='/careers' element={<Careers />} />
-        <Route path='/disclaimer' element={<Disclaimer />} />
+        <Route path="stocks">
+          <Route index element={<Stocks />} />
+          <Route path="niftyfmcg-analysis" element={<NiftyFMCG />} />
+          <Route path="nifty50-analysis" element={<Nifty50 />} />
+          <Route path="banknifty-analysis" element={<BankNifty />} />
+          <Route path="stocks-between-rs-1000-to-2000-with-growth-potential" element={<StocksBetween1k2k />} />
+          <Route path="best-stocks-to-buy-for-short-term" element={<ShortTermStocks />} />
+        </Route>
 
-        <Route path="/stocks" element={<Stocks />} />
-        <Route path="/stocks/niftyfmcg-analysis" element={<NiftyFMCG />} />
-        <Route path="/stocks/nifty50-analysis" element={<Nifty50 />} />
-        <Route path="/stocks/banknifty-analysis" element={<BankNifty />} />
-        <Route path="/stocks/stocks-between-rs-1000-to-2000-with-growth-potential" element={<StocksBetween1k2k />} />
-        <Route path="/stocks/best-stocks-to-buy-for-short-term" element={<ShortTermStocks />} />
+        <Route path="news">
+          <Route index element={<News />} />
+          <Route path="amazon-spends-on-startup-anthropic-claude" element={<AmazonSpendsOnAnthropic />} />
+        </Route>
 
-        <Route path="/news" element={<News />} />
-        <Route path="/news/amazon-spends-on-startup-anthropic-claude" element={<AmazonSpendsOnAnthropic />} />
-
-
+        <Route path='careers' element={<Careers />} />
+        <Route path='disclaimer' element={<Disclaimer />} />
         <Route path='*' element={<Error />} />
+        
       </Routes>
       <BackToTop />
       <Footer />

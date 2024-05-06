@@ -73,6 +73,15 @@
 }
 
 @layer utilities {
+  
+  .bg-gradient {
+    background: linear-gradient(150deg, #1e293bc7, #28315cbb, rgba(49, 46, 129, 0.787));
+  }
+
+  .cell {
+    @apply min-w-40 max-w-40 md:min-w-44 md:max-w-44 flex flex-col text-center justify-center bg-slate-800 hover:bg-slate-700 m-2 border-0 py-3 rounded-md font-normal;
+  }
+
   .w-25vw {
     min-width: 25vw;
     max-width: 25vw;
@@ -90,6 +99,11 @@
   .w-92{
     width: 23rem;
     max-width: 23rem;
+  }
+
+  .h-92{
+    height: 23rem;
+    max-height: 23rem;
   }
 
   .w-100{

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
-import logo from "../../assets/GroMarket-Web-Logo.svg"
+import logo from "../../assets/GroMarket Full Logo.svg"
 
 const Logo = ({ size }) => {
 
