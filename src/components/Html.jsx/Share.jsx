@@ -67,8 +67,7 @@ const Share = ({ title, link, description }) => {
                     <EmailShareButton
                         url={pglink}
                         subject={text}
-                        body={description}
-                    >
+                        body={description}>
                         <EmailIcon size={32} round />
                     </EmailShareButton>
                 </div>

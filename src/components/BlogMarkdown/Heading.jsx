@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
+import styles from "../../content.module.css";
 
 const Heading = ({ title, description, date, tags }) => {
 
   return (
-    <header className="text-slate-300 onesideroundedbox bg-slate-700 mb-4 pl-6 pr-7 pt-5 pb-1" title={`GroMarket: ${title}`} aria-label={`GroMarket: ${title}`}>
-      <h1 className="w-11/12 text-xl md:text-3xl text-left text-shadow font-title font-bold mb-2">
+    <header className={`text-slate-100 onesideroundedbox bg-slate-700 mb-4 pl-6 pr-7 pt-5 pb-1 text-shadow ${styles.articleheader}`}  title={`GroMarket: ${title}`} aria-label={`GroMarket: ${title}`}>
+      <h1 className="w-11/12 text-xl md:text-3xl text-left font-title font-bold mb-2">
         {title}
       </h1>
-      <h2 className='font-body text-md mb-4 justify'>
+      <h2 className='font-body text-md mb-4 justify text-lg italic'>
         {description}
       </h2>
       <div>
@@ -15,7 +16,7 @@ const Heading = ({ title, description, date, tags }) => {
         <span className='px-1'>&#x2022;</span>
         <span className="whitespace-nowrap inline-flex flex-wrap">
           {tags.map((tagItem, index) => (
-            <span key={index} className="bg-teal-600 text-slate-100 px-2 mx-1 my-1 py-1 rounded-xl text-sm">
+            <span key={index} className="bg-teal-600 text-slate-100 px-2 mx-1 my-1 py-1 rounded-xl text-sm shadow-md">
               {tagItem}
             </span>
           ))}
