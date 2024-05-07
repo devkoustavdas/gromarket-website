@@ -56,9 +56,9 @@ function App() {
 
         <Route path='blogs'>
           <Route index element={<Blogs />} />
-          <Route path='50-30-20-Budget-Rule' element={<BudgetRule />} />
+          <Route path='50-30-20-budget-rule-in-personal-finance-with-template' element={<BudgetRule />} />
           <Route path='claim-deduction-under-section-80gg-for-rent-paid' element={<Section80GG />} />
-          <Route path='ema-and-macd-for-intraday-trading' element={<EMAandMACD />} />
+          <Route path='ema-and-macd-strategy-for-successful-intraday-trading' element={<EMAandMACD />} />
           <Route path='bad-investment-habits-to-stay-away-from' element={<BadInvestmentHabits />} />
         </Route>
 

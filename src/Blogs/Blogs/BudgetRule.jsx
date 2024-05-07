@@ -16,7 +16,7 @@ const BudgetRule = () => {
       title="How the 50/30/20 Budget Rule Can Help You Achieve Financial Freedom and Still Enjoy Your Life | The budget planning Calculator you actually need"
       date={"01/11/2024"}
       tag={["Personal Finance", "Template", "Budget"]}
-      link={"50-30-20-Budget-Rule"}
+      link={"50-30-20-budget-rule-in-personal-finance-with-template"}
       image={"503020-Budget-Rule.avif"}
       content={
         <section className={styles.content}>

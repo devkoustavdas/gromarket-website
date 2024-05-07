@@ -17,14 +17,14 @@ const BlogList = ({ type }) => {
                 body={"Are you a renter paying out of pocket? Don't miss out on tax savings! This guide explains Section 80GG deductions for rent paid in India. Learn eligibility, requirements, how much you can deduct, and how to claim it."}
                 tag={["Tax", "Personal Finance"]} />
             <BlogCard
-                link="/blogs/50-30-20-Budget-Rule"
+                link="/blogs/50-30-20-budget-rule-in-personal-finance-with-template"
                 head={"How the 50/30/20 Budget Rule Can Help You Achieve Financial Freedom and Still Enjoy Your Life"}
                 body={"Download GroMarket's free monthly budget template to easily track your spending and take control of your finances."}
                 tag={["Personal Finance", "Template", "Budget"]} />
             <BlogCard 
                 head="MACD and EMA - The perfect Free Indicator Combo for your Breakout Trades"
                 tag={["Investment", "Intraday Trading"]}
-                link={"/blogs/ema-and-macd-for-intraday-trading"}
+                link={"/blogs/ema-and-macd-strategy-for-successful-intraday-trading"}
                 body={"Are you on the hunt for that perfect indicator combo to catch breakout trades like a pro?"} />
             <BlogCard
                 head="Avoid These Bad Investment Habits to Secure Your Financial Future"
