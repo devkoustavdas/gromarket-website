@@ -9,7 +9,7 @@ const BadInvestmentHabits = () => {
           title="Avoid These Bad Investment Habits to Secure Your Financial Future"
           description={"Secure your financial future by avoiding bad investment habits: shun impatience, chase trends, be aware of fees, stay consistent, and diversify wisely."}
           date={"30/03/2024"}
-          tag={["Investment", "Intraday Trading"]}
+          tags={["Investment", "Intraday Trading"]}
           link={"bad-investment-habits-to-stay-away-from"}
           image={"Bad-Investment-Habits-to-stay-away-from.avif"}
           content={

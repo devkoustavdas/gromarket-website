@@ -8,7 +8,7 @@ const Section80GG = () => {
             title="Saving Tax on Rent: A Guide to Section 80GG"
             description={"Are you a renter paying out of pocket? Don't miss out on tax savings! This guide explains Section 80GG deductions for rent paid in India. Learn eligibility, requirements, how much you can deduct, and how to claim it."}
             date={"06/05/2024"}
-            tag={["Tax", "Personal Finance"]}
+            tags={["Tax", "Personal Finance"]}
             link={"claim-deduction-under-section-80gg-for-rent-paid"}
             image={"Section80GG-2.avif"}
             

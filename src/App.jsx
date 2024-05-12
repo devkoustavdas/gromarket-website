@@ -6,6 +6,7 @@ import { getUrl } from './util';
 import '@fontsource/noto-serif-jp';
 import '@fontsource/poppins';
 import '@fontsource/barlow';
+import '@fontsource-variable/source-code-pro';
 
 import Resources from './pages/Resources';
 import Navbar from './components/Html.jsx/Navbar';
@@ -28,6 +29,8 @@ import BudgetRule from "./Blogs/Blogs/BudgetRule";
 import EMAandMACD from './Blogs/Blogs/EMAandMACD';
 import BadInvestmentHabits from './Blogs/Blogs/BadInvestmentHabits';
 import Section80GG from './Blogs/Blogs/Section80GG';
+import BullMarketHowCanYouBenefit from './Blogs/Blogs/BullMarketHowCanYouBenefit';
+
 
 import BankNifty from './Stocks/StocksPosts/BankNifty';
 import NiftyFMCG from './Stocks/StocksPosts/NiftyFMCG';
@@ -37,6 +40,7 @@ import StocksBetween1k2k from './Stocks/StocksPosts/StocksBetween1k2k';
 
 import AmazonSpendsOnAnthropic from './News/NewsPosts/AmazonSpendsOnAnthropic';
 
+import Content from './pages/Content';
 
 function App() {
   
@@ -60,6 +64,7 @@ function App() {
           <Route path='claim-deduction-under-section-80gg-for-rent-paid' element={<Section80GG />} />
           <Route path='ema-and-macd-strategy-for-successful-intraday-trading' element={<EMAandMACD />} />
           <Route path='bad-investment-habits-to-stay-away-from' element={<BadInvestmentHabits />} />
+          <Route path='bull-market-how-can-you-benefit-from-bull-market' element={<BullMarketHowCanYouBenefit />} />
         </Route>
 
         <Route path="stocks">
@@ -75,11 +80,13 @@ function App() {
           <Route index element={<News />} />
           <Route path="amazon-spends-on-startup-anthropic-claude" element={<AmazonSpendsOnAnthropic />} />
         </Route>
+        
+        <Route path='pyq/xyzcontent' element={<Content />} />
 
         <Route path='careers' element={<Careers />} />
         <Route path='disclaimer' element={<Disclaimer />} />
         <Route path='*' element={<Error />} />
-        
+
       </Routes>
       <BackToTop />
       <Footer />

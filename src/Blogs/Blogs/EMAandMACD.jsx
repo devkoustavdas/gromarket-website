@@ -9,7 +9,7 @@ const EMAandMACD = () => {
               title="MACD and EMA - The perfect Free Indicator Combo for your Breakout Trades"
               description={"Moving Average Convergence Divergence (MACD) and Exponential Moving Average (EMA) -The perfect Free Indicator Combo on TradingView.com for your Breakout Trades in your Intraday Trading"}
               date={"27/03/2024"}
-              tag={["Investment", "Intraday Trading"]}
+              tags={["Investment", "Intraday Trading"]}
               link={"ema-and-macd-strategy-for-successful-intraday-trading"}
               image={"Using-MACD-and-EMA-Indicator-for-Trading.avif"}
               content={

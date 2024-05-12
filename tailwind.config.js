@@ -16,6 +16,7 @@ export default {
       'title': ["'Poppins', sans-serif"],
       'sans': ["'Noto Serif JP', serif"],
       'body': ["'Barlow', sans-serif"],
+      'code': ["'Source Code Pro Variable', monospace"],
     },
   },
   plugins: [],
