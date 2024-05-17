@@ -21,18 +21,22 @@ section.content h3 {
 section.content p {
     text-align: justify;
     word-break: keep-all;    
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
 } 
 
 section.content h2 section.content strong, 
-section.content h3 section.content strong {
+section.content h3 section.content strong,
+section.content h2 section.content b, 
+section.content h3 section.content b {
     color: rgb(20 184 166);
     font-weight: 800 !important;
 }
 
 section.content h2 section.content em, 
-section.content h3 section.content em {
+section.content h3 section.content em,
+section.content h2 section.content i, 
+section.content h3 section.content i  {
     color: rgb(20 184 166);
     font-style: italic;
 }

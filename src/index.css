@@ -28,7 +28,7 @@
   }
 
   body {
-    @apply normal-nums break-normal antialiased text-base font-body align-middle w-space-1 bg-slate-900 text-slate-400 scroll-x-none;
+    @apply normal-nums break-normal antialiased text-base font-body align-middle w-space-1 bg-slate-900 text-slate-300 scroll-x-none;
   }
 
   p {
