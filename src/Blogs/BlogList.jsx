@@ -17,6 +17,11 @@ const BlogList = ({ type }) => {
                 body={"Are you a renter paying out of pocket? Don't miss out on tax savings! This guide explains Section 80GG deductions for rent paid in India. Learn eligibility, requirements, how much you can deduct, and how to claim it."}
                 tag={["Tax", "Personal Finance"]} />
             <BlogCard
+                link="/blogs/itr-1-filing-steps-and-eligibility"
+                head={"What is ITR(Income Tax Returns)-1 (Sahaj) and how to File ITR-1 | ITR Filing FY 2023-24"}
+                body={"ITR-1, also known as Sahaj Form, is for a person with an income of up to Rs.50 lakh. Read more about eligibility and steps to file ITR-1"}
+                tag={["Tax", "Personal Finance"]} />
+            <BlogCard
                 link="/blogs/50-30-20-budget-rule-in-personal-finance-with-template"
                 head={"How the 50/30/20 Budget Rule Can Help You Achieve Financial Freedom and Still Enjoy Your Life"}
                 body={"Download GroMarket's free monthly budget template to easily track your spending and take control of your finances."}

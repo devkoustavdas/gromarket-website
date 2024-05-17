@@ -30,7 +30,7 @@ import EMAandMACD from './Blogs/Blogs/EMAandMACD';
 import BadInvestmentHabits from './Blogs/Blogs/BadInvestmentHabits';
 import Section80GG from './Blogs/Blogs/Section80GG';
 import BullMarketHowCanYouBenefit from './Blogs/Blogs/BullMarketHowCanYouBenefit';
-
+import ITR1Filing from './Blogs/Blogs/ITR1Filing';
 
 import BankNifty from './Stocks/StocksPosts/BankNifty';
 import NiftyFMCG from './Stocks/StocksPosts/NiftyFMCG';
@@ -62,6 +62,7 @@ function App() {
           <Route index element={<Blogs />} />
           <Route path='50-30-20-budget-rule-in-personal-finance-with-template' element={<BudgetRule />} />
           <Route path='claim-deduction-under-section-80gg-for-rent-paid' element={<Section80GG />} />
+          <Route path='itr-1-filing-steps-and-eligibility' element={<ITR1Filing />} />
           <Route path='ema-and-macd-strategy-for-successful-intraday-trading' element={<EMAandMACD />} />
           <Route path='bad-investment-habits-to-stay-away-from' element={<BadInvestmentHabits />} />
           <Route path='bull-market-how-can-you-benefit-from-bull-market' element={<BullMarketHowCanYouBenefit />} />
