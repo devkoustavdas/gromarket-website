@@ -1,19 +1,21 @@
 section.content h2 {
-    text-align: left;
+    text-align: start;
+    letter-spacing: normal;
     line-height: 1.3;
     color: rgb(129 140 248);
-    font-size: 20px !important;
-    font-style: italic;
+    font-size: 24px !important;
     font-weight: 600;
     font-family: 'Noto Serif JP', serif;
-    margin: 20px 0px 8px 0px !important;
+    margin: 24px 0px 8px 0px !important;
 }
 
 section.content h3 {
-    text-align: left;
+    text-align: start;
+    letter-spacing: normal;
     line-height: 1.3;
     color: rgb(129 140 248);
-    font-size: 18px !important;
+    font-size: 19px !important;
+    font-weight: 600;
     font-family: 'Noto Serif JP', serif;
     margin: 15px 0px 8px 0px !important;
 }
@@ -51,6 +53,13 @@ section.content em {
     color: rgb(20 184 166);
 }
 
+section.content a {
+    text-decoration: underline;
+    text-decoration-color: #5271ff;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 2px;
+}
+
 section.content li {
     margin: 5px 0px;
     list-style: none;
@@ -68,10 +77,10 @@ section.content li::before {
 }
 
 section.content blockquote {
-    padding-left: 20px !important;
+    padding-left: 15px !important;
     text-align: justify;
     word-break: keep-all;
-    border-left: solid 2px rgb(129 140 248);
+    border-left: solid 3px rgb(129 140 248);
 }
 
 section.content div {

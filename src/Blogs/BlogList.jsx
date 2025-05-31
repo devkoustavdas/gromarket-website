@@ -12,6 +12,21 @@ const BlogList = ({ type }) => {
     return (
         <div className={cl}>
             <BlogCard
+                head="Stock Market Strategies for Employed Individuals to Build Passive Income"
+                tag={["Investment", "Personal Finance"]}
+                link={"/blogs/stock-market-strategies-for-employed-passive-income"}
+                body={"Discover smart stock market strategies tailored for salaried professionals to generate passive income, with real-life examples and long-term growth insights."} />
+            <BlogCard
+                link="/blogs/stock-market-investing-tips-noone-tells-you"
+                head={"Stock Market Investing Tips No One Will Tell You (But You’ll Wish You Knew Earlier)"}
+                body={"Discover rare but crucial stock market investing tips that most investors overlook. Learn about the power of patience, lesser-known metrics, and mental discipline in long-term investing."}
+                tag={["Investment", "Personal Finance"]} />
+            <BlogCard
+                head="Avoid These Bad Investment Habits to Secure Your Financial Future"
+                tag={["Investment", "Personal Finance"]}
+                link={"/blogs/bad-investment-habits-to-stay-away-from"}
+                body={"Secure your financial future by avoiding bad investment habits: shun impatience, chase trends, be aware of fees, stay consistent, and diversify wisely."} />
+            <BlogCard
                 link="/blogs/claim-deduction-under-section-80gg-for-rent-paid"
                 head={"Saving Tax on Rent: A Guide to Section 80GG"}
                 body={"Are you a renter paying out of pocket? Don't miss out on tax savings! This guide explains Section 80GG deductions for rent paid in India. Learn eligibility, requirements, how much you can deduct, and how to claim it."}
@@ -31,11 +46,7 @@ const BlogList = ({ type }) => {
                 tag={["Investment", "Intraday Trading"]}
                 link={"/blogs/ema-and-macd-strategy-for-successful-intraday-trading"}
                 body={"Are you on the hunt for that perfect indicator combo to catch breakout trades like a pro?"} />
-            <BlogCard
-                head="Avoid These Bad Investment Habits to Secure Your Financial Future"
-                tag={["Investment", "Intraday Trading"]}
-                link={"/blogs/bad-investment-habits-to-stay-away-from"}
-                body={"Secure your financial future by avoiding bad investment habits: shun impatience, chase trends, be aware of fees, stay consistent, and diversify wisely."} />
+            
         </div>
     )
 }

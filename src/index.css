@@ -28,7 +28,7 @@
   }
 
   body {
-    @apply normal-nums break-normal antialiased text-base font-body align-middle w-space-1 bg-slate-900 text-slate-300 scroll-x-none;
+    @apply normal-nums break-normal antialiased font-body text-body align-middle w-space-1 bg-slate-900 text-slate-300 scroll-x-none;
   }
 
   p {
@@ -70,9 +70,98 @@
     -moz-border-radius: 0px 132px 0px 0px;
     border-radius: 0px 132px 0px 0px;
   }
+
+  section.content h2 {
+    text-align: start;
+    line-height: 1.3;
+    color: rgb(129 140 248);
+    font-size: 24px !important;
+    font-style: italic;
+    font-weight: 600;
+    font-family: 'Noto Serif JP', serif;
+    margin: 20px 0px 8px 0px !important;
+}
+
+section.content h3 {
+    text-align: left;
+    line-height: 1.3;
+    color: rgb(129 140 248);
+    font-size: 18px !important;
+    font-family: 'Noto Serif JP', serif;
+    margin: 15px 0px 8px 0px !important;
+}
+
+section.content p {
+    text-align: justify;
+    word-break: keep-all;    
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+} 
+
+section.content h2 section.content strong, 
+section.content h3 section.content strong,
+section.content h2 section.content b, 
+section.content h3 section.content b {
+    color: rgb(20 184 166);
+    font-weight: 800 !important;
+}
+
+section.content h2 section.content em, 
+section.content h3 section.content em,
+section.content h2 section.content i, 
+section.content h3 section.content i  {
+    color: rgb(20 184 166);
+    font-style: italic;
+}
+
+section.content strong {
+    font-weight: 600 !important;
+    color: rgb(20 184 166);
+}
+
+section.content em {
+    font-style: italic;
+    color: rgb(20 184 166);
+}
+
+section.content a {
+    text-decoration: underline;
+    text-decoration-color: #5271ff;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 2px;
+}
+
+section.content li {
+    margin: 5px 0px;
+    list-style: none;
+}
+
+section.content li::before {
+    content: "→";
+    padding: 0px 5px 2px 5px;
+    border: solid 1px rgb(129 140 248);
+    margin-right: 7px;
+    font-size: inherit;
+    font-weight: 700;
+    color: rgb(129 140 248);
+    text-decoration: none;
+}
+
+section.content blockquote {
+    padding-left: 20px !important;
+    text-align: justify;
+    word-break: keep-all;
+    border-left: solid 2px rgb(129 140 248);
+}
 }
 
 @layer utilities {
+  .text-body {
+    font-size: 17px;
+    line-height: 30px;
+    text-align: start;
+    letter-spacing: normal;
+  }
   
   .bg-gradient {
     background: linear-gradient(150deg, #1e293bc7, #28315cbb, rgba(49, 46, 129, 0.787));

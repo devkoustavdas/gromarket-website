@@ -30,7 +30,10 @@ import EMAandMACD from './Blogs/Blogs/EMAandMACD';
 import BadInvestmentHabits from './Blogs/Blogs/BadInvestmentHabits';
 import Section80GG from './Blogs/Blogs/Section80GG';
 import BullMarketHowCanYouBenefit from './Blogs/Blogs/BullMarketHowCanYouBenefit';
+import StockMarketSecrets from './Blogs/Blogs/StockMarketSecrets';
 import ITR1Filing from './Blogs/Blogs/ITR1Filing';
+import ITR2Filing from './Blogs/Blogs/ITR2Filing';
+import StockMarketPassiveIncome from './Blogs/Blogs/StockMarketPassiveIncome';
 
 import BankNifty from './Stocks/StocksPosts/BankNifty';
 import NiftyFMCG from './Stocks/StocksPosts/NiftyFMCG';
@@ -41,6 +44,11 @@ import StocksBetween1k2k from './Stocks/StocksPosts/StocksBetween1k2k';
 import AmazonSpendsOnAnthropic from './News/NewsPosts/AmazonSpendsOnAnthropic';
 
 import Content from './pages/Content';
+
+import ShortBlog from "./pages/ShortBlog";
+import SavingTaxesLegally from './ShortBlog/SavingTaxesLegally';
+
+import SWPCalculator from './Tools/SWP';
 
 function App() {
   
@@ -63,9 +71,12 @@ function App() {
           <Route path='50-30-20-budget-rule-in-personal-finance-with-template' element={<BudgetRule />} />
           <Route path='claim-deduction-under-section-80gg-for-rent-paid' element={<Section80GG />} />
           <Route path='itr-1-filing-steps-and-eligibility' element={<ITR1Filing />} />
+          <Route path='itr-2-filing-steps-and-eligibility' element={<ITR2Filing />} />
           <Route path='ema-and-macd-strategy-for-successful-intraday-trading' element={<EMAandMACD />} />
           <Route path='bad-investment-habits-to-stay-away-from' element={<BadInvestmentHabits />} />
           <Route path='bull-market-how-can-you-benefit-from-bull-market' element={<BullMarketHowCanYouBenefit />} />
+          <Route path='stock-market-investing-tips-noone-tells-you' element={<StockMarketSecrets />} />
+          <Route path='stock-market-strategies-for-employed-passive-income' element={<StockMarketPassiveIncome />} />
         </Route>
 
         <Route path="stocks">
@@ -80,6 +91,15 @@ function App() {
         <Route path="news">
           <Route index element={<News />} />
           <Route path="amazon-spends-on-startup-anthropic-claude" element={<AmazonSpendsOnAnthropic />} />
+        </Route>
+
+        <Route path="tools">
+          <Route path="swp-calculator" element={<SWPCalculator />} />
+        </Route>
+
+        <Route path="short-blog">
+          <Route index element={<ShortBlog />} />
+          <Route path="saving-taxes-legally" element={<SavingTaxesLegally />} />
         </Route>
         
         <Route path='pyq/xyzcontent' element={<Content />} />
