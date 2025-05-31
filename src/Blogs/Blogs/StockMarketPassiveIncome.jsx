@@ -6,12 +6,11 @@ import { Link } from 'react-router-dom';
 const StockMarketPassiveIncome = () => {
     return (
         <BlogTemplate
-            title="Stock Market Strategies for Employed Individuals to Build Passive Income"
+            title={"Stock Market Strategies for Employed Individuals to Build Passive Income"}
             description={"Discover smart stock market strategies tailored for salaried professionals to generate passive income, with real-life examples and long-term growth insights."}
             date={"31/05/2025"}
             tags={["Stock Market", "Passive Income", "Investing"]}
             link={"stock-market-strategies-for-employed-passive-income"}
-            image={"Stock-Market-Strategies-For-Employed-People.avif"}
             content={
                 <section className={styles.content}>
                     <Img name='Stock-Market-Strategies-For-Employed-People.avif' describe={"Stock Market Strategies for Employed People to Build Passive Income"} />

@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 const StockMarketSecrets = () => {
     return (
         <BlogTemplate
-            title="Stock Market Investing Tips No One Will Tell You (But You’ll Wish You Knew Earlier)"
-            description="Discover rare but crucial stock market investing tips that most investors overlook. Learn about the power of patience, lesser-known metrics, and mental discipline in long-term investing."
+            title={"Stock Market Investing Tips No One Will Tell You (But You’ll Wish You Knew Earlier)"}
+            description={"Discover rare but crucial stock market investing tips that most investors overlook. Learn about the power of patience, lesser-known metrics, and mental discipline in long-term investing."}
             date={"31/05/2025"}
             tags={["Stock Market", "Investment Tips", "Trading", "Wealth Building"]}
             link={"stock-market-investing-tips-noone-tells-you"}
@@ -17,7 +17,7 @@ const StockMarketSecrets = () => {
                     <p>The stock market can be both thrilling and intimidating. While there's no shortage of advice online, some of the most powerful tips rarely make it to mainstream conversations. These insights aren't about timing the market but understanding it better — and yourself too.</p>
 
                     <h2>1. Most Returns Come From Just a Few Days in the Market</h2>
-                    <p>Many try to "time the market" — buying low, selling high. But did you know that missing just 10 of the best-performing days in the market can drastically reduce your returns?</p>
+                    <p>Many try to <strong>"time the market"</strong> — buying low, selling high. But did you know that missing just 10 of the best-performing days in the market can drastically reduce your returns?</p>
                     <p>According to a Fidelity study, an investor who remained invested in the SENSEX for 15 years earned far more than one who missed just the 10 best days. Instead of timing the market, time *in* the market matters more.</p>
 
                     <h2>2. Learn to Read Between the Lines – Look Beyond P/E Ratio</h2>
