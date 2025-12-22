@@ -25,15 +25,15 @@ import BackToTop from './components/Html.jsx/BackToTop/BackToTop';
 import MonthlyBudgetSpreadsheet from "./Resources/ResorcePosts/MonthlyBudgetSpreadsheet";
 import BillTracker from "./Resources/ResorcePosts/BillTracker";
 
-import BudgetRule from "./Blogs/Blogs/BudgetRule";
-import EMAandMACD from './Blogs/Blogs/EMAandMACD';
-import BadInvestmentHabits from './Blogs/Blogs/BadInvestmentHabits';
-import Section80GG from './Blogs/Blogs/Section80GG';
-import BullMarketHowCanYouBenefit from './Blogs/Blogs/BullMarketHowCanYouBenefit';
-import StockMarketSecrets from './Blogs/Blogs/StockMarketSecrets';
-import ITR1Filing from './Blogs/Blogs/ITR1Filing';
-import ITR2Filing from './Blogs/Blogs/ITR2Filing';
-import StockMarketPassiveIncome from './Blogs/Blogs/StockMarketPassiveIncome';
+// import BudgetRule from "./Blogs/Blogs/BudgetRule";
+// import EMAandMACD from './Blogs/Blogs/EMAandMACD';
+// import BadInvestmentHabits from './Blogs/Blogs/BadInvestmentHabits';
+// import Section80GG from './Blogs/Blogs/Section80GG';
+// import BullMarketHowCanYouBenefit from './Blogs/Blogs/BullMarketHowCanYouBenefit';
+// import StockMarketSecrets from './Blogs/Blogs/StockMarketSecrets';
+// import ITR1Filing from './Blogs/Blogs/ITR1Filing';
+// import ITR2Filing from './Blogs/Blogs/ITR2Filing';
+// import StockMarketPassiveIncome from './Blogs/Blogs/StockMarketPassiveIncome';
 
 import BankNifty from './Stocks/StocksPosts/BankNifty';
 import NiftyFMCG from './Stocks/StocksPosts/NiftyFMCG';
@@ -41,7 +41,11 @@ import Nifty50 from './Stocks/StocksPosts/Nifty50';
 import ShortTermStocks from './Stocks/StocksPosts/ShortTermStocks';
 import StocksBetween1k2k from './Stocks/StocksPosts/StocksBetween1k2k';
 
-import AmazonSpendsOnAnthropic from './News/NewsPosts/AmazonSpendsOnAnthropic';
+import { getAllBlogs } from './Blogs/getAllBlogs';
+import BlogTemplate from './Blogs/BlogTemplate';
+
+import { getAllNews } from "./News/NewsCode/getAllNews";
+import NewsTemplate from "./News/NewsCode/NewsTemplate"; 
 
 import Content from './pages/Content';
 
@@ -49,8 +53,11 @@ import ShortBlog from "./pages/ShortBlog";
 import SavingTaxesLegally from './ShortBlog/SavingTaxesLegally';
 
 import SWPCalculator from './Tools/SWP';
+import TargetWealthSIP from './Tools/ToolsCode/TargetWealthSIP';
 
 function App() {
+  const newsPosts = getAllNews();
+  const blogPosts = getAllBlogs();
   
   return (
     <Router>
@@ -66,7 +73,7 @@ function App() {
           <Route path='free-bill-tracker-template' element={<BillTracker />} />
         </Route>
 
-        <Route path='blogs'>
+{/*     <Route path='blogs'>
           <Route index element={<Blogs />} />
           <Route path='50-30-20-budget-rule-in-personal-finance-with-template' element={<BudgetRule />} />
           <Route path='claim-deduction-under-section-80gg-for-rent-paid' element={<Section80GG />} />
@@ -77,7 +84,7 @@ function App() {
           <Route path='bull-market-how-can-you-benefit-from-bull-market' element={<BullMarketHowCanYouBenefit />} />
           <Route path='stock-market-investing-tips-noone-tells-you' element={<StockMarketSecrets />} />
           <Route path='stock-market-strategies-for-employed-passive-income' element={<StockMarketPassiveIncome />} />
-        </Route>
+        </Route> */}
 
         <Route path="stocks">
           <Route index element={<Stocks />} />
@@ -88,12 +95,52 @@ function App() {
           <Route path="best-stocks-to-buy-for-short-term" element={<ShortTermStocks />} />
         </Route>
 
+        <Route path="blogs">
+          <Route index element={<Blogs />} />
+
+          {blogPosts.map(post => (
+            <Route
+              key={post.slug}
+              path={post.slug}
+              element={
+                <BlogTemplate
+                  title={post.title}
+                  description={post.description}
+                  date={post.date}
+                  tags={post.tags}
+                  image={post.image}
+                  link={post.slug}
+                  content={<post.Component />}
+                />
+              }
+            />
+          ))}
+        </Route>
+
         <Route path="news">
           <Route index element={<News />} />
-          <Route path="amazon-spends-on-startup-anthropic-claude" element={<AmazonSpendsOnAnthropic />} />
+
+          {newsPosts.map(post => (
+            <Route
+              key={post.slug}
+              path={post.slug}
+              element={
+                <NewsTemplate
+                  title={post.title}
+                  description={post.description}
+                  date={post.date}
+                  tags={post.tags}
+                  image={post.image}
+                  link={post.slug}
+                  content={<post.Component />}
+                />
+              }
+            />
+          ))}
         </Route>
 
         <Route path="tools">
+          <Route path="target-wealth-sip-calculator" element={<TargetWealthSIP />} />
           <Route path="swp-calculator" element={<SWPCalculator />} />
         </Route>
 

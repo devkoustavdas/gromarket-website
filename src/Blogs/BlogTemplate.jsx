@@ -1,13 +1,14 @@
 import React, { lazy, Suspense } from "react";
 import { useEffect } from 'react';
-import Heading from '../components/BlogMarkdown/Heading';
-import BlogList from "./BlogList";
-import Share from '../components/Html.jsx/Share';
-import Meta from '../components/Html.jsx/Meta';
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
+import Heading from '../components/BlogMarkdown/Heading';
+import Share from '../components/Html.jsx/Share';
+import Meta from '../components/Html.jsx/Meta';
 import Subscribe from "../components/Html.jsx/Subscribe";
 import Comments from "../components/Html.jsx/Comments";
+import BlogList from "./BlogList";
+import styles from "../content.module.css";
 
 const BlogTemplate = ({ title, description, image, date, tags, link, content }) => {
     useEffect(() => {
@@ -38,7 +39,7 @@ const BlogTemplate = ({ title, description, image, date, tags, link, content }) 
                             link={`blogs/${link}`}
                             description={description}
                         />
-                        <article className='text-justify mt-10'>
+                        <article className={`text-justify mt-10 ${styles.content}`}>
                             <h2 className="sr-only">{description}</h2>
                             {content}
                         </article>
@@ -61,8 +62,9 @@ BlogTemplate.propTypes = {
     description: PropTypes.string,
     image: PropTypes.string,
     date: PropTypes.string,
-    link: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired,
-    tag: PropTypes.arrayOf(PropTypes.string),
+    link: PropTypes.string.isRequired, 
+    content: PropTypes.node.isRequired,
+    tags: PropTypes.arrayOf(PropTypes.string),
 };
+
 export default BlogTemplate;

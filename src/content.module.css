@@ -1,4 +1,4 @@
-section.content h2 {
+.content h2 {
     text-align: start;
     letter-spacing: normal;
     line-height: 1.3;
@@ -9,7 +9,7 @@ section.content h2 {
     margin: 24px 0px 8px 0px !important;
 }
 
-section.content h3 {
+.content h3 {
     text-align: start;
     letter-spacing: normal;
     line-height: 1.3;
@@ -20,52 +20,52 @@ section.content h3 {
     margin: 15px 0px 8px 0px !important;
 }
 
-section.content p {
+.content p {
     text-align: justify;
     word-break: keep-all;    
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
 } 
 
-section.content h2 section.content strong, 
-section.content h3 section.content strong,
-section.content h2 section.content b, 
-section.content h3 section.content b {
+.content h2 .content strong, 
+.content h3 .content strong,
+.content h2 .content b, 
+.content h3 .content b {
     color: rgb(20 184 166);
     font-weight: 800 !important;
 }
 
-section.content h2 section.content em, 
-section.content h3 section.content em,
-section.content h2 section.content i, 
-section.content h3 section.content i  {
+.content h2 .content em, 
+.content h3 .content em,
+.content h2 .content i, 
+.content h3 .content i  {
     color: rgb(20 184 166);
     font-style: italic;
 }
 
-section.content strong {
+.content strong {
     font-weight: 600 !important;
     color: rgb(20 184 166);
 }
 
-section.content em {
+.content em {
     font-style: italic;
     color: rgb(20 184 166);
 }
 
-section.content a {
+.content a {
     text-decoration: underline;
     text-decoration-color: #5271ff;
     text-decoration-thickness: 1.5px;
     text-underline-offset: 2px;
 }
 
-section.content li {
+.content li {
     margin: 5px 0px;
     list-style: none;
 }
 
-section.content li::before {
+.content li::before {
     content: "→";
     padding: 0px 5px 2px 5px;
     border: solid 1px rgb(129 140 248);
@@ -76,14 +76,14 @@ section.content li::before {
     text-decoration: none;
 }
 
-section.content blockquote {
+.content blockquote {
     padding-left: 15px !important;
     text-align: justify;
     word-break: keep-all;
     border-left: solid 3px rgb(129 140 248);
 }
 
-section.content div {
+.content div {
     border-radius: 0.375rem/* 6px */;
     margin-top: 1.25rem/* 20px */;
     margin-bottom: 1.25rem/* 20px */;
@@ -94,11 +94,11 @@ section.content div {
     border-width: 2px;
 }
 
-section.content li h2, section.content li h3, section.content li h4, section.content li h5 {
+.content li h2, .content li h3, .content li h4, .content li h5 {
     display: inline;
 }
 
-section.content input {
+.content input {
     width: 100%;
     background-color: #334155;
     color: #e2e8f0;
@@ -109,12 +109,12 @@ section.content input {
     border: solid 2px #64748b;
 }
 
-section.content input:active, section.content input:focus {
+.content input:active, .content input:focus {
     border: solid 2px #94a3b8;
     outline: none;
 }
 
-section.content aside {
+.content aside {
     border-radius: 0.375rem;
     margin: 1.25rem 0rem;
     padding: 0.75rem 1.25rem;
@@ -126,7 +126,7 @@ section.content aside {
     text-underline-offset: 2px;
     text-decoration-color: #4f46e5;
 }
-section.content aside::before {
+.content aside::before {
     background-color: #4f46e5;
     color: #c7d2fe;
     content: "You may want to explore";
@@ -134,6 +134,25 @@ section.content aside::before {
     border-radius: 0.175rem;
     padding: 0.2rem 1rem;
 }
+
+.content img {
+  display: block;
+  margin: 1.2rem auto 0.4rem auto;
+  max-width: 85%;
+  border-radius: 12px;
+  border: 2px solid rgb(148 163 184);
+}
+
+.content img + em,
+.content img + p > em {
+  display: block;
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgb(148 163 184);
+  font-style: italic;
+  margin-bottom: 1.4rem;
+}
+
 
 header.articleheader { 
   background-size: cover;

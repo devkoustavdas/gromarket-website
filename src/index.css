@@ -71,88 +71,6 @@
     border-radius: 0px 132px 0px 0px;
   }
 
-  section.content h2 {
-    text-align: start;
-    line-height: 1.3;
-    color: rgb(129 140 248);
-    font-size: 24px !important;
-    font-style: italic;
-    font-weight: 600;
-    font-family: 'Noto Serif JP', serif;
-    margin: 20px 0px 8px 0px !important;
-}
-
-section.content h3 {
-    text-align: left;
-    line-height: 1.3;
-    color: rgb(129 140 248);
-    font-size: 18px !important;
-    font-family: 'Noto Serif JP', serif;
-    margin: 15px 0px 8px 0px !important;
-}
-
-section.content p {
-    text-align: justify;
-    word-break: keep-all;    
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
-} 
-
-section.content h2 section.content strong, 
-section.content h3 section.content strong,
-section.content h2 section.content b, 
-section.content h3 section.content b {
-    color: rgb(20 184 166);
-    font-weight: 800 !important;
-}
-
-section.content h2 section.content em, 
-section.content h3 section.content em,
-section.content h2 section.content i, 
-section.content h3 section.content i  {
-    color: rgb(20 184 166);
-    font-style: italic;
-}
-
-section.content strong {
-    font-weight: 600 !important;
-    color: rgb(20 184 166);
-}
-
-section.content em {
-    font-style: italic;
-    color: rgb(20 184 166);
-}
-
-section.content a {
-    text-decoration: underline;
-    text-decoration-color: #5271ff;
-    text-decoration-thickness: 1.5px;
-    text-underline-offset: 2px;
-}
-
-section.content li {
-    margin: 5px 0px;
-    list-style: none;
-}
-
-section.content li::before {
-    content: "→";
-    padding: 0px 5px 2px 5px;
-    border: solid 1px rgb(129 140 248);
-    margin-right: 7px;
-    font-size: inherit;
-    font-weight: 700;
-    color: rgb(129 140 248);
-    text-decoration: none;
-}
-
-section.content blockquote {
-    padding-left: 20px !important;
-    text-align: justify;
-    word-break: keep-all;
-    border-left: solid 2px rgb(129 140 248);
-}
 }
 
 @layer utilities {
@@ -247,5 +165,20 @@ section.content blockquote {
     margin: 10px;
     border-radius: 4px;
     z-index: 25;
+  }
+
+  .button {
+    @apply block py-3 px-3 text-center rounded-md duration-200 bg-slate-800 hover:bg-slate-600 hover:text-slate-300 hover:shadow-md active:bg-slate-600 active:text-slate-300 my-2;
+    box-shadow: 0px 0px 10px 3px #cbd5e157 inset;
+    -webkit-box-shadow: 0px 0px 10px 3px #cbd5e157 inset;
+    -moz-box-shadow: 0px 0px 10px 3px #cbd5e157 inset;
+  }
+
+  .subheading {
+    text-align: start;
+    line-height: 1.3;
+    color: rgb(129 140 248);
+    font-family: 'Noto Serif JP', serif;
+    @apply mt-4 mb-3 text-2xl font-semibold italic;
   }
 }

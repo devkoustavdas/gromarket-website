@@ -1,7 +1,10 @@
 import BlogCard from "../../components/Html.jsx/BlogCard";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
+import { getAllNews } from "./getAllNews";
 
 const NewsList = ({ type }) => {
+    const posts = getAllNews();
+
     var cl = "";
     if (type == "full") {
         cl = "grid lg:grid-cols-2 sl:grid-cols-1 md:grid-cols-2"
@@ -9,15 +12,24 @@ const NewsList = ({ type }) => {
     else if (type == "part") {
         cl = "grid md:grid-cols-1"
     }
+
     return (
-        <div className={cl}>
-            <BlogCard head="Amazon spends $2.75 billion on AI startup Anthropic in its largest venture investment yet" tag={["Corporate Finance", "Investment"]} body={"Tech giant Amazon spends $2.75 billion on American artificial intelligence (AI) startup Anthropic (developer of Claude) in its largest venture investment yet"} link={"/news/amazon-spends-on-startup-anthropic-claude"} />
+        <div className="cl">
+            {posts.map(post => (
+                <BlogCard
+                    key={post.slug}
+                    head={post.title}
+                    body={post.description}
+                    tag={post.tags}
+                    link={`/news/${post.slug}`}
+                />
+            ))}
         </div>
-    )
-}
+    );
+};
 
 NewsList.propTypes = {
     type: PropTypes.string.isRequired,
 };
 
-export default NewsList
+export default NewsList;

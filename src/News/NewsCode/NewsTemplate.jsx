@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
 import Heading from '../../components/BlogMarkdown/Heading';
 import Share from '../../components/Html.jsx/Share';
 import Meta from '../../components/Html.jsx/Meta';
@@ -59,11 +57,9 @@ const NewsTemplate = ({ title, description, image, date, tags, link, content }) 
                             </span>
                         </div>
                         <Share title={title} link={`news/${link}`} description={description} />
-                        <article className="text-justify mt-10">
+                        <article className={`text-justify mt-10 ${styles.content}`}>
                             <h2 className="sr-only">{description}</h2>
-                            <ReactMarkdown remarkPlugins={[remarkGfm]} className={styles.content}>
-                                {content}
-                            </ReactMarkdown>
+                            {content}
                         </article>
                     </section>
                 </div>
@@ -87,8 +83,8 @@ NewsTemplate.propTypes = {
     description: PropTypes.string,
     image: PropTypes.string,
     date: PropTypes.string,
-    link: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired, 
+    content: PropTypes.node.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string),
 };
 
