@@ -60,20 +60,62 @@
     text-underline-offset: 2px;
 }
 
-.content li {
-    margin: 5px 0px;
-    list-style: none;
+.content ul,
+.content ol {
+  margin: 0.6rem 0;
 }
 
-.content li::before {
-    content: "→";
-    padding: 0px 5px 2px 5px;
-    border: solid 1px rgb(129 140 248);
-    margin-right: 7px;
-    font-size: inherit;
-    font-weight: 700;
-    color: rgb(129 140 248);
-    text-decoration: none;
+.content ul {
+  list-style: none;
+}
+
+.content ul > li {
+  position: relative;
+  padding-left: 1.6rem;
+  margin: 6px 0;
+}
+
+.content ul > li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  font-weight: 700;
+  color: rgb(129 140 248);
+}
+
+.content ol {
+  list-style: none;
+  counter-reset: item;
+}
+
+.content ol > li {
+  counter-increment: item;
+  position: relative;
+  padding-left: 2rem;
+  margin: 6px 0;
+}
+
+.content ol > li::before {
+  content: counter(item);
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  width: 1.3rem;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgb(129 140 248);
+  border: 1.5px solid rgb(129 140 248);
+}
+
+.content li ul,
+.content li ol {
+  margin-top: 6px;
+  padding-left: 1.6rem;
 }
 
 .content blockquote {
